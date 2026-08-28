@@ -16,16 +16,19 @@ function parseSeriesInfo(title) {
       season: 1,
       episode: episode,
       isSeries: true,
+      seriesSlug: 'love',
     };
   }
 
   const match = title.match(/(.*?)\s*\(?S(\d+)[:.]?EP:?\s*(\d+)\)?/i);
   if (match) {
+    const seriesName = match[1].replace(/[✨❤️💕]/g, '').trim();
     return {
-      seriesName: match[1].replace(/[✨❤️💕]/g, '').trim(),
+      seriesName: seriesName,
       season: parseInt(match[2], 10),
       episode: parseInt(match[3], 10),
       isSeries: true,
+      seriesSlug: seriesName.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''),
     };
   }
   return { isSeries: false };
@@ -98,4 +101,21 @@ export async function getWritingData(slug) {
     ...matterResult.data,
     ...seriesInfo,
   };
+}
+
+export function getAllSeriesSlugs() {
+  const allWriting = getSortedWritingsData();
+  const seriesSlugs = new Set();
+  
+  allWriting.forEach(post => {
+    if (post.isSeries && post.seriesSlug) {
+      seriesSlugs.add(post.seriesSlug);
+    }
+  });
+
+  return Array.from(seriesSlugs).map(slug => ({
+    params: {
+      series: slug
+    }
+  }));
 }

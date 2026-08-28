@@ -52,17 +52,19 @@ export default function WritingIndex() {
                   <span style={{ fontSize: '0.65rem', padding: '3px 8px', borderRadius: '12px', background: 'var(--gold)', color: 'var(--ink)', textTransform: 'uppercase', letterSpacing: '0.05em', fontWeight: 'bold' }}>Ongoing</span>
                 )}
               </h3>
-              <p style={{ color: 'var(--ink-soft)', fontStyle: 'italic', fontSize: '0.98rem', margin: '0 0 20px' }}>
-                {group.episodes.length} Episodes
+              <p style={{ color: 'var(--ink-soft)', fontStyle: 'italic', fontSize: '0.98rem', margin: '0 0 20px', flexGrow: 1 }}>
+                {group.seriesName === 'Love' 
+                  ? 'A collection exploring love in all its forms — from its initial spark and overwhelming warmth to the profound depths of its final chapter.' 
+                  : group.seriesName === 'Echoes of Absence'
+                  ? 'A deeply emotional serialized novel exploring the delicate intricacies of love, the profound pain of separation, and the desperate search for redemption.'
+                  : group.episodes[0].excerpt || 'An episodic journey.'}
               </p>
               
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginTop: 'auto', borderTop: '1px solid var(--line)', paddingTop: '16px' }}>
-                {group.episodes.map(ep => (
-                  <Link key={ep.slug} href={`/writing/${ep.slug}`} style={{ color: 'var(--berry)', display: 'flex', justifyContent: 'space-between', fontSize: '0.9rem' }}>
-                    <span>Episode {ep.episode}</span>
-                    <span style={{ fontSize: '0.8rem' }}>{new Date(ep.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })} &rarr;</span>
-                  </Link>
-                ))}
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', fontSize: '0.85rem', color: 'var(--ink-soft)', borderTop: '1px solid var(--line)', paddingTop: '16px', marginTop: 'auto' }}>
+                <span>{group.episodes.length} Episodes</span>
+                <Link href={`/writing/series/${group.episodes[0].seriesSlug}`} style={{ color: 'var(--berry)' }}>
+                  Read &rarr;
+                </Link>
               </div>
             </article>
           ))}

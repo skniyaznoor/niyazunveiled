@@ -16,6 +16,11 @@ async function importPosts() {
     entries.forEach(entry => {
       const title = entry.title.$t;
 
+      if (title.toLowerCase().includes('a night more to dream')) {
+        console.log(`Skipping: ${title}`);
+        return;
+      }
+
 
       const published = entry.published.$t; // e.g. "2024-09-09T10:01:00.003-07:00"
       const contentHtml = entry.content ? entry.content.$t : '';
