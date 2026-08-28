@@ -5,6 +5,8 @@ import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 import { db } from '@/lib/firebase';
 import { useAuth } from '@/context/AuthContext';
 
+import { createPortal } from 'react-dom';
+
 export default function PreOrderModal({ isOpen, onClose }) {
   const { user } = useAuth();
   const [name, setName] = useState('');
@@ -12,6 +14,11 @@ export default function PreOrderModal({ isOpen, onClose }) {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(null);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     if (user) {
@@ -20,7 +27,7 @@ export default function PreOrderModal({ isOpen, onClose }) {
     }
   }, [user]);
 
-  if (!isOpen) return null;
+  if (!isOpen || !mounted) return null;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -42,7 +49,7 @@ export default function PreOrderModal({ isOpen, onClose }) {
     }
   };
 
-  return (
+  return createPortal(
     <div style={{
       position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh',
       backgroundColor: 'rgba(0,0,0,0.5)', display: 'flex', alignItems: 'center',
@@ -101,6 +108,7 @@ export default function PreOrderModal({ isOpen, onClose }) {
           </>
         )}
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }
