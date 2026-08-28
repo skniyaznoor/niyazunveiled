@@ -21,9 +21,9 @@ export default function RootLayout({ children }) {
               Niyaz <span style={brandSpanStyle}>Unveiled</span>
             </Link>
             <nav style={navLinksStyle}>
-              <Link href="/writing" style={linkStyle}>Writing</Link>
-              <Link href="/book" style={linkStyle}>The Book</Link>
-              <Link href="/book" className="btn btn-primary" style={navCtaStyle}>Get the book</Link>
+              <Link href="/writing" className="nav-link" style={linkStyle}>Writing</Link>
+              <Link href="/book" className="nav-link" style={linkStyle}>The Book</Link>
+              <Link href="/book" className="btn btn-primary nav-cta" style={navCtaStyle}>Get the book</Link>
             </nav>
           </div>
         </header>
@@ -37,13 +37,13 @@ export default function RootLayout({ children }) {
             <div style={footerInnerStyle}>
               <Link href="#top" style={brandStyle}>Niyaz <span style={brandSpanStyle}>Unveiled</span></Link>
               <div style={footerLinksWrapperStyle}>
-                <Link href="/writing" style={footerLinkStyle}>Stories & Poetry</Link>
-                <Link href="/book" style={footerLinkStyle}>The Book</Link>
+                <Link href="/writing" className="footer-link" style={footerLinkStyle}>Stories & Poetry</Link>
+                <Link href="/book" className="footer-link" style={footerLinkStyle}>The Book</Link>
               </div>
               <div style={socialStyle}>
                 {/* Social icons placeholder */}
-                <span style={footerLinkStyle}>Instagram</span>
-                <span style={footerLinkStyle}>Goodreads</span>
+                <span className="footer-link" style={footerLinkStyle}>Instagram</span>
+                <span className="footer-link" style={footerLinkStyle}>Goodreads</span>
               </div>
             </div>
             <p style={copyrightStyle}>&copy; {new Date().getFullYear()} Niyaz Unveiled. Words made with tea and patience.</p>

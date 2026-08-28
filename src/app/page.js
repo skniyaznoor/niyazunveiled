@@ -10,8 +10,8 @@ export default function Home() {
 
   const echoesCount = echoesPosts.length;
   const loveCount = lovePosts.length;
-  const firstEchoesSlug = echoesPosts.sort((a,b) => a.episode - b.episode)[0]?.slug;
-  const firstLoveSlug = lovePosts.sort((a,b) => a.episode - b.episode)[0]?.slug;
+  const firstEchoesSlug = echoesPosts.sort((a, b) => a.episode - b.episode)[0]?.slug;
+  const firstLoveSlug = lovePosts.sort((a, b) => a.episode - b.episode)[0]?.slug;
   return (
     <>
       {/* HERO */}
@@ -19,10 +19,10 @@ export default function Home() {
         <div className="container" style={heroInnerStyle}>
           <div>
             <span className="eyebrow">Niyaz Unveiled — a tapestry of love and poetic intrigue</span>
-            <h1 style={heroTitleStyle}>Where love speaks<br/>first,<br/>and silence writes<br/>the rest.</h1>
-            <p style={heroLedeStyle}>I write short stories and poems about the moments love<br/>leaves behind — a glance held a second too long, a message<br/>read twice, the ache of a goodbye that never quite finished.<br/>Whether you're a hopeless romantic or just here to feel<br/>something, these words were written for you.</p>
+            <h1 style={heroTitleStyle}>Where love speaks<br />first,<br />and silence writes<br />the rest.</h1>
+            <p style={heroLedeStyle}>I write short stories and poems about the moments love<br />leaves behind — a glance held a second too long, a message<br />read twice, the ache of a goodbye that never quite finished.<br />Whether you're a hopeless romantic or just here to feel<br />something, these words were written for you.</p>
             <div style={heroNoteStyle}>
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M4 17L15 6M15 6H8M15 6V13" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/></svg>
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M4 17L15 6M15 6H8M15 6V13" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg>
               for every heart still waiting to be unveiled
             </div>
             <div className="btn-row">
@@ -32,14 +32,14 @@ export default function Home() {
           </div>
           <div style={heroArtStyle}>
             <svg viewBox="0 0 300 300" fill="none" style={{ width: '100%', maxWidth: '360px', height: 'auto' }}>
-              <ellipse cx="150" cy="270" rx="110" ry="12" fill="#33302219"/>
-              <path d="M60 230 C60 120, 90 90, 150 90 C210 90, 240 120, 240 230 Z" fill="#6B4226" opacity="0.9"/>
-              <path d="M150 90 C150 90, 150 230, 150 230" stroke="#F6ECDF" strokeWidth="2" opacity="0.5"/>
-              <rect x="120" y="60" width="60" height="40" rx="4" fill="#B98B3E"/>
-              <ellipse cx="150" cy="60" rx="30" ry="10" fill="#D8B877"/>
-              <path d="M150 30 Q160 45 150 60 Q140 45 150 30" fill="#B98B3E" opacity="0.7"/>
-              <circle cx="150" cy="45" r="55" fill="#D8B877" opacity="0.12"/>
-              <path d="M90 235 Q150 255 210 235 L210 245 Q150 265 90 245 Z" fill="#4A2C17"/>
+              <ellipse cx="150" cy="270" rx="110" ry="12" fill="#33302219" />
+              <path d="M60 230 C60 120, 90 90, 150 90 C210 90, 240 120, 240 230 Z" fill="#6B4226" opacity="0.9" />
+              <path d="M150 90 C150 90, 150 230, 150 230" stroke="#F6ECDF" strokeWidth="2" opacity="0.5" />
+              <rect x="120" y="60" width="60" height="40" rx="4" fill="#B98B3E" />
+              <ellipse cx="150" cy="60" rx="30" ry="10" fill="#D8B877" />
+              <path d="M150 30 Q160 45 150 60 Q140 45 150 30" fill="#B98B3E" opacity="0.7" />
+              <circle cx="150" cy="45" r="55" fill="#D8B877" opacity="0.12" />
+              <path d="M90 235 Q150 255 210 235 L210 245 Q150 265 90 245 Z" fill="#4A2C17" />
             </svg>
           </div>
         </div>
@@ -50,46 +50,48 @@ export default function Home() {
       {/* BOOK SPOTLIGHT */}
       <section style={bookSectionStyle}>
         <div className="container" style={bookGridStyle}>
-          <div style={bookCoverStyle}>
-            <span style={ribbonStyle}>Coming Soon</span>
-            <div style={coverFaceStyle}>
-              <img src="/coffee/InShot_20260827_090952359.jpg" alt="Coffee" style={{width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0, opacity: 0.9, mixBlendMode: 'multiply'}} />
-              <div style={{position: 'relative', zIndex: 2}}>
-                <span style={coverEyebrowStyle}>A love story novel</span>
+          <div>
+            <div className="book-cover" style={bookCoverStyle}>
+              <span style={ribbonStyle}>Coming Soon</span>
+              <div className="cover-face" style={coverFaceStyle}>
+                <img src="/coffee/InShot_20260827_090952359.jpg" alt="Coffee" style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0, opacity: 0.9, mixBlendMode: 'multiply' }} />
+                <div style={{ position: 'relative', zIndex: 2 }}>
+                  <span style={coverEyebrowStyle}>A love story</span>
+                </div>
               </div>
+            </div>
+            <div style={{ textAlign: 'center', marginTop: '16px', fontFamily: 'var(--font-fraunces)', fontSize: '0.9rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--ink-soft)' }}>
+              Sk Niyaz Noor
             </div>
           </div>
           <div style={bookCopyStyle}>
-            <span className="eyebrow">My debut novel</span>
-            <h2 style={{ marginBottom: '16px' }}>Coffee</h2>
-            <p style={{ fontSize: '1.1rem', color: 'var(--ink-soft)', marginBottom: '24px', lineHeight: '1.7' }}>
+            <span className="eyebrow" style={{ marginBottom: '16px' }}>My debut novel</span>
+            <p style={{ fontSize: '1.15rem', color: 'var(--ink-soft)', marginBottom: '24px', lineHeight: '1.7' }}>
               Some stories begin long before we realize we are living them.
-              <br/><br/>
-              He is moving through a life that looks perfectly ordinary, while quietly wondering if there is something more waiting beyond the walls of his work, his routine, and the days that keep repeating themselves.
-              <br/><br/>
-              She is trying to build a life of her own, carrying dreams that are modest enough to seem simple, yet distant enough to feel impossible.
-              <br/><br/>
-              Two lives. Two unfinished journeys.
-              <br/><br/>
-              Between crowded offices and quiet streets, between conversations and silences, between what they want and what life allows, their paths begin to overlap.
-              <br/><br/>
-              And sometimes, the people who enter our lives are not answers.
-              <br/><br/>
-              They are questions.
+              <br /><br />
+              Two lives. Two unfinished journeys. Between crowded offices and quiet streets, their paths begin to overlap.
+              <br /><br />
+              And sometimes, the people who enter our lives are not answers... They are questions.
             </p>
-            
+
             <ul style={bookPointsStyle}>
               <li style={bookPointItemStyle}>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" style={{flexShrink: 0, marginTop: '4px'}}><path d="M20 6L9 17L4 12" stroke="#6E7F58" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"/></svg>
-                <span>A quiet story about work, loneliness, dreams, love and the beautiful mess of being human.</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" style={{ flexShrink: 0, marginTop: '4px' }}><path d="M20 6L9 17L4 12" stroke="#6E7F58" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>
+                <span>Print and digital editions planned</span>
+              </li>
+              <li style={bookPointItemStyle}>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" style={{ flexShrink: 0, marginTop: '4px' }}><path d="M20 6L9 17L4 12" stroke="#6E7F58" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>
+                <span>Release date: <strong style={{ color: 'var(--ink)' }}>23rd September 2026</strong></span>
               </li>
             </ul>
-            
-            <div className="btn-row" style={{marginBottom: '28px'}}>
+
+            <div className="btn-row" style={{ marginBottom: '28px' }}>
               <Link href="/book" className="btn btn-primary">Pre-order now</Link>
               <Link href={`/writing/${firstEchoesSlug || 'echoes-of-absence-s1-ep1'}`} className="btn btn-ghost">Read an excerpt</Link>
             </div>
-            <p className="marginalia">Nirvit and Suprita</p>
+            <p className="marginalia" style={{ fontFamily: 'var(--font-caveat)', fontSize: '1.25rem', color: 'var(--ink-soft)', maxWidth: 'none', whiteSpace: 'nowrap' }}>
+              Nirvit and Suprita — where two unfinished journeys quietly overlap.
+            </p>
           </div>
         </div>
       </section>
@@ -105,7 +107,7 @@ export default function Home() {
             <Link href="/writing" style={seeAllStyle}>View all stories &rarr;</Link>
           </div>
           <div style={gridStyle}>
-            <article style={cardStyle}>
+            <article className="card" style={cardStyle}>
               <span style={tagStyle}>Story &middot; Series</span>
               <h3 style={cardTitleStyle}>The Adventures of Neil and Litu</h3>
               <p style={cardDescStyle}>Three friends, a mysterious mist, and a night that blurs the line between heaven and something far more dangerous. Season 1, Episode 4: "Heaven."</p>
@@ -114,7 +116,7 @@ export default function Home() {
                 <Link href="/writing/series/the-adventures-of-neil-and-litu" style={readMoreStyle}>Read &rarr;</Link>
               </div>
             </article>
-            <article style={{...cardStyle, position: 'relative'}}>
+            <article className="card" style={{ ...cardStyle, position: 'relative' }}>
               <div className="sticky-note">my favorite writing project</div>
               <span style={tagStyle}>Story</span>
               <h3 style={cardTitleStyle}>Echoes of Absence</h3>
@@ -124,7 +126,7 @@ export default function Home() {
                 <Link href="/writing/series/echoes-of-absence" style={readMoreStyle}>Read &rarr;</Link>
               </div>
             </article>
-            <article style={cardStyle}>
+            <article className="card" style={cardStyle}>
               <span style={tagStyle}>Story</span>
               <h3 style={cardTitleStyle}>Riddle</h3>
               <p style={cardDescStyle}>Not everything is what it seems — a story that asks you to look twice before you believe what you're reading.</p>
@@ -148,7 +150,7 @@ export default function Home() {
             <Link href="/writing" style={seeAllStyle}>View all poems &rarr;</Link>
           </div>
           <div style={gridStyle}>
-            <article style={cardStyle}>
+            <article className="card" style={cardStyle}>
               <span style={tagStyle}>Diary</span>
               <h3 style={cardTitleStyle}>Love: It Starts With You 💕</h3>
               <p style={cardDescStyle}>A tender reminder that love, in all its immensity, begins with the smallest, simplest choice — you.</p>
@@ -157,7 +159,7 @@ export default function Home() {
                 <Link href="/writing/series/love" style={readMoreStyle}>Read &rarr;</Link>
               </div>
             </article>
-            <article style={cardStyle}>
+            <article className="card" style={cardStyle}>
               <span style={tagStyle}>Diary</span>
               <h3 style={cardTitleStyle}>Suffocation</h3>
               <p style={cardDescStyle}>On love that becomes too heavy to carry, and the courage it takes to finally breathe.</p>
@@ -166,7 +168,7 @@ export default function Home() {
                 <Link href="/writing/suffocation" style={readMoreStyle}>Read &rarr;</Link>
               </div>
             </article>
-            <article style={cardStyle}>
+            <article className="card" style={cardStyle}>
               <span style={tagStyle}>Poem</span>
               <h3 style={cardTitleStyle}>A Night More To Dream</h3>
               <p style={cardDescStyle}>Start the day by kicking bed, Dress and all, eat my bread...</p>

@@ -188,3 +188,45 @@ p {
   border-left: 2px solid var(--gold-soft);
   line-height: 1.35;
 }
+
+/* Hover Effects & Animations */
+.nav-link {
+  position: relative;
+  transition: color 0.2s ease !important;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: -2px;
+  height: 1px;
+  background: var(--berry);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+}
+.nav-link:hover { color: var(--ink) !important; }
+.nav-link:hover::after { transform: scaleX(1); }
+
+.nav-cta {
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+.nav-cta:hover {
+  transform: translateY(-2px) !important; 
+  box-shadow: 0 8px 20px rgba(107,66,38,0.36) !important; 
+}
+
+.book-cover:hover .cover-face { 
+  transform: rotate(0deg) !important; 
+}
+
+.card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease !important;
+}
+.card:hover { 
+  transform: translateY(-4px) !important; 
+  box-shadow: var(--shadow) !important; 
+}
+
+.footer-link { transition: color 0.2s ease !important; }
+.footer-link:hover { color: var(--berry) !important; }
+
