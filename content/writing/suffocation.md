@@ -1,6 +1,6 @@
 ---
 title: "Suffocation"
-date: "2026-08-28"
+date: "Tuesday, September 22, 2020"
 category: "Diary"
 excerpt: "On love that becomes too heavy to carry, and the courage it takes to finally breathe."
 ---

@@ -1,6 +1,6 @@
 ---
 title: "A Night More To Dream"
-date: "2026-08-28"
+date: "Thursday, September 3, 2020"
 category: "Poem"
 excerpt: "Start the day by kicking bed, Dress and all, eat my bread..."
 ---

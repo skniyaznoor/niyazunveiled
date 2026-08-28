@@ -164,7 +164,7 @@ export default function Home() {
               <h3 style={cardTitleStyle}>Suffocation</h3>
               <p style={cardDescStyle}>On love that becomes too heavy to carry, and the courage it takes to finally breathe.</p>
               <div style={cardFootStyle}>
-                <span>Short read</span>
+                <span>Sep 22, 2020</span>
                 <Link href="/writing/suffocation" style={readMoreStyle}>Read &rarr;</Link>
               </div>
             </article>
@@ -173,7 +173,7 @@ export default function Home() {
               <h3 style={cardTitleStyle}>A Night More To Dream</h3>
               <p style={cardDescStyle}>Start the day by kicking bed, Dress and all, eat my bread...</p>
               <div style={cardFootStyle}>
-                <span>Poem</span>
+                <span>Sep 3, 2020</span>
                 <Link href="/writing/a-night-more-to-dream" style={readMoreStyle}>Read &rarr;</Link>
               </div>
             </article>
