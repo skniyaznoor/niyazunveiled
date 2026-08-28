@@ -230,3 +230,17 @@ p {
 .footer-link { transition: color 0.2s ease !important; }
 .footer-link:hover { color: var(--berry) !important; }
 
+/* Poetry Styles */
+.poetry-format p {
+  text-align: center;
+  font-family: var(--font-newsreader);
+  font-size: 1.3rem;
+  font-style: italic;
+  color: var(--ink);
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+.poetry-format {
+  max-width: 600px;
+  margin: 0 auto;
+}

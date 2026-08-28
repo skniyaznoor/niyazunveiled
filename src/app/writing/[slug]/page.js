@@ -58,7 +58,7 @@ export default async function WritingPost({ params }) {
 
         <div className="article-layout">
           <div 
-            className="prose drop-cap"
+            className={`prose drop-cap ${postData.category && postData.category.toLowerCase() === 'poem' ? 'poetry-format' : ''}`}
             dangerouslySetInnerHTML={{ __html: postData.contentHtml }} 
           />
           
