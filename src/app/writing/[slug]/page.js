@@ -1,4 +1,4 @@
-import { getWritingData, getAllWritingSlugs } from '@/lib/markdown';
+import { getWritingData, getAllWritingSlugs, getSortedWritingsData } from '@/lib/markdown';
 import Link from 'next/link';
 import ProgressBar from '@/components/ProgressBar';
 import MarketingCTA from '@/components/MarketingCTA';
@@ -23,6 +23,16 @@ export default async function WritingPost({ params }) {
   const resolvedParams = await params;
   const postData = await getWritingData(resolvedParams.slug);
 
+  const allWriting = getSortedWritingsData();
+  let nextEpisode = null;
+  let prevEpisode = null;
+
+  if (postData.isSeries) {
+    const seriesPosts = allWriting.filter(p => p.seriesName === postData.seriesName);
+    nextEpisode = seriesPosts.find(p => p.episode === postData.episode + 1);
+    prevEpisode = seriesPosts.find(p => p.episode === postData.episode - 1);
+  }
+
   return (
     <>
       <ProgressBar />
@@ -35,6 +45,12 @@ export default async function WritingPost({ params }) {
       )}
 
       <article className="container" style={{ paddingTop: postData.coverImage ? '2rem' : '5rem', paddingBottom: '6rem' }}>
+        <div style={{ marginBottom: '2rem' }}>
+          <Link href="/writing" style={{ color: 'var(--berry)', fontSize: '0.9rem', display: 'inline-flex', alignItems: 'center', gap: '5px' }}>
+            &larr; Back to Writing Index
+          </Link>
+        </div>
+
         <div style={headerStyle}>
           {postData.category && <span style={categoryStyle}>{postData.category}</span>}
           <h1 style={titleStyle}>{postData.title}</h1>
@@ -59,6 +75,35 @@ export default async function WritingPost({ params }) {
         </div>
 
         <MarketingCTA />
+
+        {postData.isSeries && (
+          <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '3rem', padding: '2rem 0', borderTop: '1px solid var(--border-color)', borderBottom: '1px solid var(--border-color)' }}>
+            {prevEpisode ? (
+              <Link href={`/writing/${prevEpisode.slug}`} style={{ color: 'var(--berry)', display: 'flex', flexDirection: 'column' }}>
+                <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>&larr; Previous</span>
+                <span style={{ fontSize: '1.1rem', fontFamily: 'var(--font-fraunces)' }}>Episode {prevEpisode.episode}</span>
+              </Link>
+            ) : <div />}
+            {nextEpisode ? (
+              <Link href={`/writing/${nextEpisode.slug}`} style={{ color: 'var(--berry)', display: 'flex', flexDirection: 'column', textAlign: 'right' }}>
+                <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>Next &rarr;</span>
+                <span style={{ fontSize: '1.1rem', fontFamily: 'var(--font-fraunces)' }}>Episode {nextEpisode.episode}</span>
+              </Link>
+            ) : <div />}
+          </div>
+        )}
+
+        <div style={{ marginTop: '4rem', padding: '3rem', background: 'var(--paper-2)', borderRadius: 'var(--radius)', border: '1px solid var(--border-color)' }}>
+          <h3 style={{ fontFamily: 'var(--font-fraunces)', fontSize: '1.8rem', marginBottom: '1rem' }}>Join the Discussion</h3>
+          <p style={{ color: 'var(--ink-soft)', marginBottom: '2rem' }}>Share your thoughts on this story. Sign in securely to leave a comment.</p>
+          <div style={{ display: 'flex', gap: '15px' }}>
+            <button className="btn btn-primary">Sign in with Google</button>
+            <button className="btn btn-secondary">Sign in with Email</button>
+          </div>
+          <div style={{ marginTop: '3rem', borderTop: '1px dashed var(--border-color)', paddingTop: '2rem' }}>
+            <p style={{ color: 'var(--ink-soft)', fontStyle: 'italic', fontSize: '0.9rem' }}>No comments yet. Be the first to share your thoughts!</p>
+          </div>
+        </div>
 
         <div style={footerStyle}>
           <Link href="/writing" className="btn btn-secondary">

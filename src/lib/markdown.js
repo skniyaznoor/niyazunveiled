@@ -6,6 +6,19 @@ import html from 'remark-html';
 
 const writingDirectory = path.join(process.cwd(), 'content/writing');
 
+function parseSeriesInfo(title) {
+  const match = title.match(/(.*?)\s*\(?S(\d+)[:.]?EP:?\s*(\d+)\)?/i);
+  if (match) {
+    return {
+      seriesName: match[1].replace(/[✨❤️💕]/g, '').trim(),
+      season: parseInt(match[2], 10),
+      episode: parseInt(match[3], 10),
+      isSeries: true,
+    };
+  }
+  return { isSeries: false };
+}
+
 export function getSortedWritingsData() {
   if (!fs.existsSync(writingDirectory)) {
     return [];
@@ -20,10 +33,12 @@ export function getSortedWritingsData() {
       const fileContents = fs.readFileSync(fullPath, 'utf8');
       
       const matterResult = matter(fileContents);
+      const seriesInfo = parseSeriesInfo(matterResult.data.title || '');
 
       return {
         slug,
         ...matterResult.data,
+        ...seriesInfo,
       };
     });
 
@@ -63,10 +78,12 @@ export async function getWritingData(slug) {
     .process(matterResult.content);
   
   const contentHtml = processedContent.toString();
+  const seriesInfo = parseSeriesInfo(matterResult.data.title || '');
 
   return {
     slug,
     contentHtml,
     ...matterResult.data,
+    ...seriesInfo,
   };
 }
