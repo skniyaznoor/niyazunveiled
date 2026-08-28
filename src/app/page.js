@@ -18,12 +18,12 @@ export default function Home() {
       <section style={heroStyle}>
         <div className="container" style={heroInnerStyle}>
           <div>
-            <span className="eyebrow">Writer of small, true things</span>
-            <h1 style={heroTitleStyle}>Stories that sit with you<br/>after the lamp goes off.</h1>
-            <p style={heroLedeStyle}>I write short fiction, poetry, and essays about memory, family, and the ordinary moments that turn out to matter most. My debut anthology arrives soon.</p>
+            <span className="eyebrow">Niyaz Unveiled — a tapestry of love and poetic intrigue</span>
+            <h1 style={heroTitleStyle}>Where love speaks<br/>first,<br/>and silence writes<br/>the rest.</h1>
+            <p style={heroLedeStyle}>I write short stories and poems about the moments love<br/>leaves behind — a glance held a second too long, a message<br/>read twice, the ache of a goodbye that never quite finished.<br/>Whether you're a hopeless romantic or just here to feel<br/>something, these words were written for you.</p>
             <div style={heroNoteStyle}>
               <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M4 17L15 6M15 6H8M15 6V13" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/></svg>
-              thanks for stopping by — pull up a chair
+              for every heart still waiting to be unveiled
             </div>
             <div className="btn-row">
               <Link href="/book" className="btn btn-primary">Pre-order the book</Link>
@@ -53,27 +53,35 @@ export default function Home() {
           <div style={bookCoverStyle}>
             <span style={ribbonStyle}>Coming Soon</span>
             <div style={coverFaceStyle}>
-              <img src="/coffee/InShot_20260827_090826767.jpg" alt="Niyaz Unveiled" style={{width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0, opacity: 0.9, mixBlendMode: 'multiply'}} />
+              <img src="/coffee/InShot_20260827_090952359.jpg" alt="Coffee" style={{width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0, opacity: 0.9, mixBlendMode: 'multiply'}} />
               <div style={{position: 'relative', zIndex: 2}}>
-                <span style={coverEyebrowStyle}>An Anthology</span>
-                <span style={coverTitleStyle}>Niyaz Unveiled</span>
+                <span style={coverEyebrowStyle}>A love story novel</span>
               </div>
-              <span style={coverAuthorStyle}>Sk Niyaz Noor</span>
             </div>
           </div>
           <div style={bookCopyStyle}>
-            <span className="eyebrow">My debut collection</span>
-            <h2 style={{ marginBottom: '16px' }}>Niyaz Unveiled</h2>
-            <p style={bookLedeStyle}>A breathtaking collection of short stories and poetry exploring the depths of love, loss, and the intricate tapestry of the human experience. Told with the same warmth and quiet attention as the stories you'll find below.</p>
+            <span className="eyebrow">My debut novel</span>
+            <h2 style={{ marginBottom: '16px' }}>Coffee</h2>
+            <p style={{ fontSize: '1.1rem', color: 'var(--ink-soft)', marginBottom: '24px', lineHeight: '1.7' }}>
+              Some stories begin long before we realize we are living them.
+              <br/><br/>
+              He is moving through a life that looks perfectly ordinary, while quietly wondering if there is something more waiting beyond the walls of his work, his routine, and the days that keep repeating themselves.
+              <br/><br/>
+              She is trying to build a life of her own, carrying dreams that are modest enough to seem simple, yet distant enough to feel impossible.
+              <br/><br/>
+              Two lives. Two unfinished journeys.
+              <br/><br/>
+              Between crowded offices and quiet streets, between conversations and silences, between what they want and what life allows, their paths begin to overlap.
+              <br/><br/>
+              And sometimes, the people who enter our lives are not answers.
+              <br/><br/>
+              They are questions.
+            </p>
             
             <ul style={bookPointsStyle}>
               <li style={bookPointItemStyle}>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" style={{flexShrink: 0, marginTop: '4px'}}><path d="M20 6L9 17L4 12" stroke="#6E7F58" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"/></svg>
-                <span>A deeply emotional serialized journey across unforgettable moments</span>
-              </li>
-              <li style={bookPointItemStyle}>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" style={{flexShrink: 0, marginTop: '4px'}}><path d="M20 6L9 17L4 12" stroke="#6E7F58" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"/></svg>
-                <span>Available in hardcover and paperback soon</span>
+                <span>A quiet story about work, loneliness, dreams, love and the beautiful mess of being human.</span>
               </li>
             </ul>
             
@@ -81,43 +89,90 @@ export default function Home() {
               <Link href="/book" className="btn btn-primary">Pre-order now</Link>
               <Link href={`/writing/${firstEchoesSlug || 'echoes-of-absence-s1-ep1'}`} className="btn btn-ghost">Read an excerpt</Link>
             </div>
-            <p className="marginalia">the story about Jaan and Dhadak took me months to get right</p>
+            <p className="marginalia">Nirvit and Suprita</p>
           </div>
         </div>
       </section>
 
-      {/* STORIES */}
+      {/* FICTION */}
       <section style={{ padding: '84px 0' }}>
         <div className="container">
           <div style={sectionHeadStyle}>
             <div>
               <span className="eyebrow">Fiction</span>
-              <h2>Recent short stories</h2>
+              <h2>Tales worth losing yourself in</h2>
             </div>
             <Link href="/writing" style={seeAllStyle}>View all stories &rarr;</Link>
           </div>
           <div style={gridStyle}>
             <article style={cardStyle}>
-              <span style={tagStyle}>Series</span>
-              <h3 style={cardTitleStyle}>Love</h3>
-              <p style={cardDescStyle}>A collection exploring love in all its forms — from its initial spark and overwhelming warmth to the profound depths of its final chapter.</p>
+              <span style={tagStyle}>Story &middot; Series</span>
+              <h3 style={cardTitleStyle}>The Adventures of Neil and Litu</h3>
+              <p style={cardDescStyle}>Three friends, a mysterious mist, and a night that blurs the line between heaven and something far more dangerous. Season 1, Episode 4: "Heaven."</p>
               <div style={cardFootStyle}>
-                <span>{loveCount} Episodes</span>
-                {firstLoveSlug && (
-                  <Link href={`/writing/${firstLoveSlug}`} style={readMoreStyle}>Read &rarr;</Link>
-                )}
+                <span>Season 1 &middot; Ep. 4</span>
+                <Link href="/writing/series/the-adventures-of-neil-and-litu" style={readMoreStyle}>Read &rarr;</Link>
               </div>
             </article>
             <article style={{...cardStyle, position: 'relative'}}>
               <div className="sticky-note">my favorite writing project</div>
-              <span style={tagStyle}>Series</span>
+              <span style={tagStyle}>Story</span>
               <h3 style={cardTitleStyle}>Echoes of Absence</h3>
-              <p style={cardDescStyle}>A deeply emotional serialized novel exploring the delicate intricacies of love, the profound pain of separation, and the desperate search for redemption.</p>
+              <p style={cardDescStyle}>A story about the ache that lingers when someone leaves — and the quiet echoes they leave behind. Season 1, Episode 1.</p>
               <div style={cardFootStyle}>
-                <span>{echoesCount} Episodes</span>
-                {firstEchoesSlug && (
-                  <Link href={`/writing/${firstEchoesSlug}`} style={readMoreStyle}>Read &rarr;</Link>
-                )}
+                <span>Season 1 &middot; Ep. 1</span>
+                <Link href="/writing/series/echoes-of-absence" style={readMoreStyle}>Read &rarr;</Link>
+              </div>
+            </article>
+            <article style={cardStyle}>
+              <span style={tagStyle}>Story</span>
+              <h3 style={cardTitleStyle}>Riddle</h3>
+              <p style={cardDescStyle}>Not everything is what it seems — a story that asks you to look twice before you believe what you're reading.</p>
+              <div style={cardFootStyle}>
+                <span>Short read</span>
+                <Link href="/writing/riddle-of-my-heart" style={readMoreStyle}>Read &rarr;</Link>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      {/* POEMS */}
+      <section style={{ padding: '84px 0', background: 'var(--paper-3)' }}>
+        <div className="container">
+          <div style={sectionHeadStyle}>
+            <div>
+              <span className="eyebrow">Poems & Diaries</span>
+              <h2>Verses from the heart</h2>
+            </div>
+            <Link href="/writing" style={seeAllStyle}>View all poems &rarr;</Link>
+          </div>
+          <div style={gridStyle}>
+            <article style={cardStyle}>
+              <span style={tagStyle}>Diary</span>
+              <h3 style={cardTitleStyle}>Love: It Starts With You 💕</h3>
+              <p style={cardDescStyle}>A tender reminder that love, in all its immensity, begins with the smallest, simplest choice — you.</p>
+              <div style={cardFootStyle}>
+                <span>Reader favorite</span>
+                <Link href="/writing/series/love" style={readMoreStyle}>Read &rarr;</Link>
+              </div>
+            </article>
+            <article style={cardStyle}>
+              <span style={tagStyle}>Diary</span>
+              <h3 style={cardTitleStyle}>Suffocation</h3>
+              <p style={cardDescStyle}>On love that becomes too heavy to carry, and the courage it takes to finally breathe.</p>
+              <div style={cardFootStyle}>
+                <span>Short read</span>
+                <Link href="/writing/suffocation" style={readMoreStyle}>Read &rarr;</Link>
+              </div>
+            </article>
+            <article style={cardStyle}>
+              <span style={tagStyle}>Poem</span>
+              <h3 style={cardTitleStyle}>A Night More To Dream</h3>
+              <p style={cardDescStyle}>Start the day by kicking bed, Dress and all, eat my bread...</p>
+              <div style={cardFootStyle}>
+                <span>Poem</span>
+                <Link href="/writing/a-night-more-to-dream" style={readMoreStyle}>Read &rarr;</Link>
               </div>
             </article>
           </div>
@@ -129,17 +184,18 @@ export default function Home() {
         <div className="container" style={aboutGridStyle}>
           <div>
             <span style={quoteMarkStyle}>"</span>
-            <blockquote style={aboutQuoteStyle}>I write to figure out what I actually think — and I've found readers looking for the same thing.</blockquote>
-            <span style={signatureStyle}>— Sk Niyaz</span>
+            <blockquote style={aboutQuoteStyle}>I may be small in stature, but my words carry entire worlds.</blockquote>
+            <span style={signatureStyle}>— Niyaz</span>
           </div>
           <div>
             <span className="eyebrow">About me</span>
-            <h2 style={{ marginBottom: '18px' }}>Hi, I'm Sk Niyaz Noor.</h2>
-            <p style={{ color: 'var(--ink-soft)', marginBottom: '16px' }}>I've been writing short fiction and poetry, and for a long time it lived only in notebooks. This site is where I'm finally gathering it all in one place — alongside my upcoming anthology, which took immense dedication and more cups of tea than I can count.</p>
-            <p style={{ color: 'var(--ink-soft)' }}>I write about love, profound pain, and the quiet decisions that end up mattering the most. If any of that sounds like your kind of story, I'm glad you're here.</p>
+            <h2 style={{ marginBottom: '18px' }}>Hi, I'm Niyaz.</h2>
+            <p style={{ color: 'var(--ink-soft)', marginBottom: '16px' }}>I'm your pocket-sized storyteller — a mini writer armed with a pen and a world of imagination far bigger than my frame. Since 2020, I've been writing short stories and poems that live in the space between a glance and a goodbye, chasing the feeling of love in all its messy, beautiful forms.</p>
+            <p style={{ color: 'var(--ink-soft)' }}>Under the name Niyaz Unveiled, I've written everything from slow-burn romance to strange, mist-covered mysteries — but at the heart of it all is the same question: what does it really mean to love someone?</p>
             <div style={statRowStyle}>
-              <div><strong style={statStrongStyle}>20+</strong><span style={statSpanStyle}>Stories & poems</span></div>
-              <div><strong style={statStrongStyle}>1</strong><span style={statSpanStyle}>Upcoming Book</span></div>
+              <div><strong style={statStrongStyle}>24+</strong><span style={statSpanStyle}>Stories & poems published</span></div>
+              <div><strong style={statStrongStyle}>5+</strong><span style={statSpanStyle}>Years writing</span></div>
+              <div><strong style={statStrongStyle}>1</strong><span style={statSpanStyle}>Book, coming soon</span></div>
             </div>
           </div>
         </div>
@@ -163,10 +219,10 @@ export default function Home() {
 
 // Styles
 const heroStyle = { position: 'relative', padding: '96px 0 110px', overflow: 'hidden' };
-const heroInnerStyle = { display: 'grid', gridTemplateColumns: '1.15fr 0.85fr', gap: '56px', alignItems: 'center' };
-const heroTitleStyle = { fontSize: 'clamp(2.6rem, 5vw, 4rem)', lineHeight: '1.05', marginBottom: '22px' };
-const heroLedeStyle = { fontSize: '1.18rem', color: 'var(--ink-soft)', maxWidth: '46ch', marginBottom: '30px' };
-const heroNoteStyle = { fontFamily: 'var(--font-caveat)', fontSize: '1.5rem', color: 'var(--berry-dark)', display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '34px' };
+const heroInnerStyle = { display: 'grid', gridTemplateColumns: '1.3fr 0.7fr', gap: '40px', alignItems: 'center' };
+const heroTitleStyle = { fontSize: 'clamp(2.2rem, 5vw, 3.8rem)', lineHeight: '1.05', marginBottom: '22px', fontFamily: 'var(--font-fraunces)', fontWeight: 700, letterSpacing: '-0.02em', color: 'var(--ink)' };
+const heroLedeStyle = { fontSize: '1.25rem', fontFamily: 'var(--font-newsreader)', color: 'var(--ink-soft)', maxWidth: '48ch', marginBottom: '35px', lineHeight: '1.6' };
+const heroNoteStyle = { fontFamily: 'var(--font-caveat)', fontSize: '1.6rem', color: 'var(--berry-dark)', display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '40px' };
 const heroArtStyle = { position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center' };
 
 const bookSectionStyle = { background: 'var(--paper-3)', position: 'relative', padding: '84px 0' };

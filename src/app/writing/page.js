@@ -2,7 +2,7 @@ import { getSortedWritingsData } from '@/lib/markdown';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Writing | Sk Niyaz Noor',
+  title: 'Writing | Niyaz Unveiled',
   description: 'A collection of short stories, poetry, and serialized novels.',
 };
 

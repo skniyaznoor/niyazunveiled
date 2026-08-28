@@ -7,7 +7,7 @@ const newsreader = Newsreader({ subsets: ['latin'], variable: '--font-newsreader
 const caveat = Caveat({ subsets: ['latin'], variable: '--font-caveat', weight: ['500', '600', '700'] });
 
 export const metadata = {
-  title: 'Sk Niyaz Noor — Writer',
+  title: 'Niyaz Unveiled — Writer',
   description: 'Writer of small, true things and captivating poetry.',
 };
 
@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
         <header style={headerStyle}>
           <div className="container" style={navContainerStyle}>
             <Link href="/" style={brandStyle}>
-              Sk Niyaz <span>Noor</span>
+              Niyaz <span style={brandSpanStyle}>Unveiled</span>
             </Link>
             <nav style={navLinksStyle}>
               <Link href="/writing" style={linkStyle}>Writing</Link>
@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
         <footer style={footerStyle}>
           <div className="container">
             <div style={footerInnerStyle}>
-              <Link href="#top" style={brandStyle}>Sk Niyaz <span>Noor</span></Link>
+              <Link href="#top" style={brandStyle}>Niyaz <span style={brandSpanStyle}>Unveiled</span></Link>
               <div style={footerLinksWrapperStyle}>
                 <Link href="/writing" style={footerLinkStyle}>Stories & Poetry</Link>
                 <Link href="/book" style={footerLinkStyle}>The Book</Link>
@@ -46,7 +46,7 @@ export default function RootLayout({ children }) {
                 <span style={footerLinkStyle}>Goodreads</span>
               </div>
             </div>
-            <p style={copyrightStyle}>&copy; {new Date().getFullYear()} Sk Niyaz Noor. Words made with tea and patience.</p>
+            <p style={copyrightStyle}>&copy; {new Date().getFullYear()} Niyaz Unveiled. Words made with tea and patience.</p>
           </div>
         </footer>
       </body>
@@ -77,6 +77,10 @@ const brandStyle = {
   fontWeight: '700',
   letterSpacing: '0.01em',
   color: 'var(--ink)'
+};
+
+const brandSpanStyle = {
+  color: 'var(--berry)'
 };
 
 const navLinksStyle = {

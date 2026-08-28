@@ -8,7 +8,7 @@ export async function generateMetadata({ params }) {
   const resolvedParams = await params;
   const postData = await getWritingData(resolvedParams.slug);
   return {
-    title: `${postData.title} | Sk Niyaz Noor`,
+    title: `${postData.title} | Niyaz Unveiled`,
   };
 }
 
