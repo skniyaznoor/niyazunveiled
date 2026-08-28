@@ -1,7 +1,17 @@
 import Link from 'next/link';
 import NewsletterForm from '@/components/NewsletterForm';
+import { getSortedWritingsData } from '@/lib/markdown';
 
 export default function Home() {
+  const allWriting = getSortedWritingsData();
+
+  const echoesPosts = allWriting.filter(p => p.seriesName === 'Echoes of Absence');
+  const lovePosts = allWriting.filter(p => p.seriesName === 'Love');
+
+  const echoesCount = echoesPosts.length;
+  const loveCount = lovePosts.length;
+  const firstEchoesSlug = echoesPosts.sort((a,b) => a.episode - b.episode)[0]?.slug;
+  const firstLoveSlug = lovePosts.sort((a,b) => a.episode - b.episode)[0]?.slug;
   return (
     <>
       {/* HERO */}
@@ -69,7 +79,7 @@ export default function Home() {
             
             <div className="btn-row" style={{marginBottom: '28px'}}>
               <Link href="/book" className="btn btn-primary">Pre-order now</Link>
-              <Link href="/writing/echoes-of-absence" className="btn btn-ghost">Read an excerpt</Link>
+              <Link href={`/writing/${firstEchoesSlug || 'echoes-of-absence-s1-ep1'}`} className="btn btn-ghost">Read an excerpt</Link>
             </div>
             <p className="marginalia">the story about Jaan and Dhadak took me months to get right</p>
           </div>
@@ -88,22 +98,26 @@ export default function Home() {
           </div>
           <div style={gridStyle}>
             <article style={cardStyle}>
-              <span style={tagStyle}>Serialized Novel</span>
-              <h3 style={cardTitleStyle}>Echoes of Absence</h3>
-              <p style={cardDescStyle}>A deeply emotional serialized novel exploring the delicate intricacies of love, the profound pain of separation, and the desperate search for redemption.</p>
+              <span style={tagStyle}>Series</span>
+              <h3 style={cardTitleStyle}>Love</h3>
+              <p style={cardDescStyle}>A collection exploring love in all its forms — from its initial spark and overwhelming warmth to the profound depths of its final chapter.</p>
               <div style={cardFootStyle}>
-                <span>30 min read</span>
-                <Link href="/writing/echoes-of-absence" style={readMoreStyle}>Read &rarr;</Link>
+                <span>{loveCount} Episodes</span>
+                {firstLoveSlug && (
+                  <Link href={`/writing/${firstLoveSlug}`} style={readMoreStyle}>Read &rarr;</Link>
+                )}
               </div>
             </article>
             <article style={{...cardStyle, position: 'relative'}}>
               <div className="sticky-note">my favorite writing project</div>
-              <span style={tagStyle}>Short Story</span>
-              <h3 style={cardTitleStyle}>Echoes of Absence (S1.EP1)</h3>
-              <p style={cardDescStyle}>The beginning of Jaan and Dhadak's emotional journey.</p>
+              <span style={tagStyle}>Series</span>
+              <h3 style={cardTitleStyle}>Echoes of Absence</h3>
+              <p style={cardDescStyle}>A deeply emotional serialized novel exploring the delicate intricacies of love, the profound pain of separation, and the desperate search for redemption.</p>
               <div style={cardFootStyle}>
-                <span>10 min read</span>
-                <Link href="/writing/echoes-of-absence" style={readMoreStyle}>Read &rarr;</Link>
+                <span>{echoesCount} Episodes</span>
+                {firstEchoesSlug && (
+                  <Link href={`/writing/${firstEchoesSlug}`} style={readMoreStyle}>Read &rarr;</Link>
+                )}
               </div>
             </article>
           </div>

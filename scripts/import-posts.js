@@ -15,12 +15,7 @@ async function importPosts() {
 
     entries.forEach(entry => {
       const title = entry.title.$t;
-      
-      // Skip Echoes of Absence because we already have a custom layout for it
-      if (title.toLowerCase().includes('echoes of absence')) {
-        console.log(`Skipping: ${title} (Already have custom file)`);
-        return;
-      }
+
 
       const published = entry.published.$t; // e.g. "2024-09-09T10:01:00.003-07:00"
       const contentHtml = entry.content ? entry.content.$t : '';

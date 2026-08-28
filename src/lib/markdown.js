@@ -7,6 +7,18 @@ import html from 'remark-html';
 const writingDirectory = path.join(process.cwd(), 'content/writing');
 
 function parseSeriesInfo(title) {
+  if (title.toLowerCase().startsWith('love:')) {
+    let episode = 1;
+    if (title.toLowerCase().includes('your to mine')) episode = 2;
+    if (title.toLowerCase().includes('final chapter')) episode = 3;
+    return {
+      seriesName: 'Love',
+      season: 1,
+      episode: episode,
+      isSeries: true,
+    };
+  }
+
   const match = title.match(/(.*?)\s*\(?S(\d+)[:.]?EP:?\s*(\d+)\)?/i);
   if (match) {
     return {

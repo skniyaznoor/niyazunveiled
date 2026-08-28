@@ -46,7 +46,12 @@ export default function WritingIndex() {
               <span style={{ fontSize: '0.72rem', letterSpacing: '0.09em', textTransform: 'uppercase', color: 'var(--sage)', fontFamily: 'var(--font-newsreader)', fontWeight: 500, marginBottom: '14px' }}>
                 {group.category || 'Series'}
               </span>
-              <h3 style={{ fontSize: '1.35rem', marginBottom: '12px', lineHeight: '1.25' }}>{group.seriesName}</h3>
+              <h3 style={{ fontSize: '1.35rem', marginBottom: '12px', lineHeight: '1.25', display: 'flex', alignItems: 'flex-start', flexWrap: 'wrap', gap: '8px' }}>
+                {group.seriesName}
+                {(group.seriesName === 'The Adventures of Neil and Litu' || group.seriesName === 'Love Bridge') && (
+                  <span style={{ fontSize: '0.65rem', padding: '3px 8px', borderRadius: '12px', background: 'var(--gold)', color: 'var(--ink)', textTransform: 'uppercase', letterSpacing: '0.05em', fontWeight: 'bold' }}>Ongoing</span>
+                )}
+              </h3>
               <p style={{ color: 'var(--ink-soft)', fontStyle: 'italic', fontSize: '0.98rem', margin: '0 0 20px' }}>
                 {group.episodes.length} Episodes
               </p>
