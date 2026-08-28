@@ -65,9 +65,9 @@ export default async function WritingPost({ params }) {
           <aside className="sticky-sidebar">
             <div className="sidebar-card">
               <h3>Support the Author</h3>
-              <p>Pre-order <strong>Niyaz Unveiled</strong> today and discover more breathtaking stories.</p>
+              <p>Pre-order my debut novel today and discover the story of Nirvit and Suprita.</p>
               <Link href="/book" className="btn btn-primary" style={{ width: '100%', textAlign: 'center', marginTop: '1rem', padding: '0.6rem' }}>
-                Pre-order Book
+                Pre-order Novel
               </Link>
             </div>
           </aside>
