@@ -1,80 +1,42 @@
-import Link from 'next/link';
 import { getSortedWritingsData } from '@/lib/markdown';
+import Link from 'next/link';
 
 export const metadata = {
-  title: 'Writing | Niyaz Unveiled',
+  title: 'Writing | Sk Niyaz Noor',
+  description: 'A collection of short stories, poetry, and serialized novels.',
 };
 
 export default function WritingIndex() {
-  const allWritings = getSortedWritingsData();
+  const allWriting = getSortedWritingsData();
 
   return (
-    <div className="container" style={{ paddingTop: '4rem', paddingBottom: '4rem' }}>
-      <h1 style={{ fontSize: '3rem', marginBottom: '1rem', textAlign: 'center' }}>Writing</h1>
-      <p style={{ textAlign: 'center', color: 'var(--text-secondary)', marginBottom: '4rem' }}>
-        A collection of poetry and short stories.
-      </p>
+    <section style={{ padding: '84px 0' }}>
+      <div className="container">
+        <div style={{ marginBottom: '44px' }}>
+          <span className="eyebrow">The Archive</span>
+          <h1 style={{ fontSize: 'clamp(2.5rem, 4vw, 3.5rem)' }}>Stories & Poetry</h1>
+        </div>
 
-      {allWritings.length === 0 ? (
-        <p style={{ textAlign: 'center', color: 'var(--text-secondary)' }}>
-          No writings found. Start by adding markdown files to the <code>content/writing</code> directory.
-        </p>
-      ) : (
-        <div style={gridStyle}>
-          {allWritings.map(({ slug, date, title, category, excerpt }) => (
-            <div key={slug} style={cardStyle}>
-              {category && <span style={categoryStyle}>{category}</span>}
-              <h2 style={titleStyle}>{title}</h2>
-              <p style={dateStyle}>{new Date(date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
-              <p style={excerptStyle}>{excerpt}</p>
-              <Link href={`/writing/${slug}`} className="btn-secondary" style={{ padding: '0.6rem 1.2rem' }}>
-                Read
-              </Link>
-            </div>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px' }}>
+          {allWriting.map(({ id, date, title, excerpt, category }) => (
+            <article key={id} style={{ background: 'var(--paper-2)', border: '1px solid var(--line)', borderRadius: 'var(--radius)', padding: '30px 28px 28px', display: 'flex', flexDirection: 'column', transition: 'transform 0.25s ease, box-shadow 0.25s ease' }}>
+              <span style={{ fontSize: '0.72rem', letterSpacing: '0.09em', textTransform: 'uppercase', color: 'var(--sage)', fontFamily: 'var(--font-newsreader)', fontWeight: 500, marginBottom: '14px' }}>
+                {category || 'Story'}
+              </span>
+              <h3 style={{ fontSize: '1.35rem', marginBottom: '12px', lineHeight: '1.25' }}>{title}</h3>
+              <p style={{ color: 'var(--ink-soft)', fontStyle: 'italic', fontSize: '0.98rem', margin: '0 0 20px', flexGrow: 1 }}>
+                {excerpt || 'A tale of emotions and lingering thoughts...'}
+              </p>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', fontSize: '0.85rem', color: 'var(--ink-soft)', borderTop: '1px solid var(--line)', paddingTop: '16px' }}>
+                <span>{new Date(date).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</span>
+                <Link href={`/writing/${id}`} style={{ color: 'var(--berry)' }}>
+                  Read &rarr;
+                </Link>
+              </div>
+            </article>
           ))}
         </div>
-      )}
-    </div>
+      </div>
+    </section>
   );
 }
-
-const gridStyle = {
-  display: 'grid',
-  gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))',
-  gap: '3rem',
-};
-
-const cardStyle = {
-  padding: '2.5rem',
-  backgroundColor: '#fff',
-  border: '1px solid var(--border-color)',
-  borderRadius: '8px',
-};
-
-const categoryStyle = {
-  fontSize: '0.8rem',
-  textTransform: 'uppercase',
-  letterSpacing: '1px',
-  color: 'var(--accent)',
-  fontWeight: '600',
-  display: 'block',
-  marginBottom: '1rem',
-};
-
-const titleStyle = {
-  fontSize: '1.8rem',
-  marginBottom: '0.5rem',
-  lineHeight: '1.3',
-};
-
-const dateStyle = {
-  fontSize: '0.9rem',
-  color: 'var(--text-secondary)',
-  marginBottom: '1.5rem',
-};
-
-const excerptStyle = {
-  color: 'var(--text-secondary)',
-  marginBottom: '2rem',
-  lineHeight: '1.7',
-};

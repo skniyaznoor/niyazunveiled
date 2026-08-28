@@ -1,118 +1,54 @@
 import Link from 'next/link';
+import MarketingCTA from '@/components/MarketingCTA';
 
 export const metadata = {
-  title: 'The Book | Niyaz Unveiled',
+  title: 'The Book | Sk Niyaz Noor',
+  description: 'Niyaz Unveiled - The upcoming anthology.',
 };
 
 export default function BookPage() {
   return (
-    <div className="container" style={{ paddingTop: '4rem', paddingBottom: '4rem' }}>
-      <div style={bookContainerStyle}>
-        <div style={imageColStyle}>
-           <img 
-            src="https://placehold.co/500x750/2c2a29/ffffff?text=Niyaz+Unveiled" 
-            alt="Niyaz Unveiled: The Anthology" 
-            style={coverStyle}
-          />
-        </div>
-        <div style={contentColStyle}>
-          <span style={tagStyle}>Available for Pre-order</span>
-          <h1 style={titleStyle}>Niyaz Unveiled: The Anthology</h1>
-          <p style={authorStyle}>by Sk Niyaz Noor</p>
+    <>
+      <section style={{ background: 'var(--paper-3)', position: 'relative', padding: '84px 0' }}>
+        <div className="container" style={{ display: 'grid', gridTemplateColumns: '0.8fr 1.2fr', gap: '64px', alignItems: 'center' }}>
           
-          <div style={synopsisStyle}>
-            <p>
-              In this mesmerizing anthology, Sk Niyaz Noor pulls back the curtain on the deepest human emotions. From the quiet solitude of a midnight storm to the overwhelming rush of new love, <em>Niyaz Unveiled</em> explores the intricate tapestry of our shared experiences.
-            </p>
-            <p>
-              This collection brings together over 50 original short stories and poems, each crafted with the signature lyrical elegance that readers have come to love. It is a journey through loss, redemption, and the beautiful complexities of simply being alive.
-            </p>
-          </div>
-
-          <div style={purchaseSectionStyle}>
-            <h3 style={{ marginBottom: '1rem', fontSize: '1.2rem', fontFamily: 'var(--font-inter)' }}>Pre-order your copy:</h3>
-            <div style={btnGroupStyle}>
-              {/* Users will replace these links with actual platform links (Amazon, Barnes & Noble, etc) */}
-              <a href="#" className="btn-primary" style={fullBtnStyle}>Amazon</a>
-              <a href="#" className="btn-secondary" style={fullBtnStyle}>Barnes &amp; Noble</a>
-              <a href="#" className="btn-secondary" style={fullBtnStyle}>Local Bookstore</a>
+          <div style={{ position: 'relative', width: '100%', maxWidth: '320px', margin: '0 auto' }}>
+            <span style={{ position: 'absolute', top: '18px', right: '-34px', background: 'var(--gold)', color: 'var(--ink)', fontSize: '0.72rem', letterSpacing: '0.08em', textTransform: 'uppercase', padding: '5px 40px', transform: 'rotate(6deg)', boxShadow: '0 6px 12px rgba(0,0,0,0.18)', zIndex: 10 }}>Coming Soon</span>
+            <div style={{ aspectRatio: '2/3', background: 'linear-gradient(155deg, var(--berry) 0%, var(--berry-dark) 100%)', borderRadius: '3px', boxShadow: 'var(--shadow), inset -6px 0 14px rgba(0,0,0,0.25)', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', padding: '34px 26px', color: 'var(--paper-2)', position: 'relative', transform: 'rotate(-2deg)', transition: 'transform 0.35s ease', overflow: 'hidden' }}>
+              <img src="/coffee/InShot_20260827_090826767.jpg" alt="Niyaz Unveiled" style={{width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0, opacity: 0.9, mixBlendMode: 'multiply'}} />
+              <div style={{position: 'relative', zIndex: 2}}>
+                <span style={{ fontFamily: 'var(--font-newsreader)', fontStyle: 'italic', fontSize: '0.85rem', opacity: 0.85, display: 'block' }}>An Anthology</span>
+                <span style={{ fontFamily: 'var(--font-fraunces)', fontSize: '1.9rem', lineHeight: '1.15', fontWeight: 600, display: 'block', marginTop: '10px' }}>Niyaz Unveiled</span>
+              </div>
+              <span style={{ fontFamily: 'var(--font-caveat)', fontSize: '1.8rem', position: 'relative', zIndex: 2 }}>Sk Niyaz Noor</span>
             </div>
           </div>
+
+          <div>
+            <span className="eyebrow">My debut collection</span>
+            <h1 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', marginBottom: '16px' }}>Niyaz Unveiled</h1>
+            <p style={{ color: 'var(--ink-soft)', fontSize: '1.08rem', marginBottom: '26px', maxWidth: '52ch' }}>
+              A breathtaking collection of short stories and poetry exploring the depths of love, loss, and the intricate tapestry of the human experience.
+            </p>
+            
+            <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 30px', display: 'grid', gap: '14px' }}>
+              <li style={{ display: 'flex', gap: '12px', alignItems: 'flex-start', color: 'var(--ink)' }}>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" style={{flexShrink: 0, marginTop: '4px'}}><path d="M20 6L9 17L4 12" stroke="#6E7F58" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                <span>A deeply emotional serialized journey across unforgettable moments</span>
+              </li>
+              <li style={{ display: 'flex', gap: '12px', alignItems: 'flex-start', color: 'var(--ink)' }}>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" style={{flexShrink: 0, marginTop: '4px'}}><path d="M20 6L9 17L4 12" stroke="#6E7F58" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                <span>Contains the massive serialized novel, "Echoes of Absence"</span>
+              </li>
+            </ul>
+            
+            <div className="btn-row" style={{marginBottom: '28px'}}>
+              <Link href="#" className="btn btn-primary">Pre-order now</Link>
+            </div>
+            <p className="marginalia">This collection took pieces of my soul to write.</p>
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </>
   );
 }
-
-const bookContainerStyle = {
-  display: 'flex',
-  gap: '5rem',
-  flexWrap: 'wrap',
-  alignItems: 'flex-start',
-  maxWidth: '1000px',
-  margin: '0 auto',
-};
-
-const imageColStyle = {
-  flex: '1',
-  minWidth: '300px',
-};
-
-const coverStyle = {
-  width: '100%',
-  borderRadius: '4px',
-  boxShadow: '0 25px 50px rgba(0,0,0,0.15)',
-};
-
-const contentColStyle = {
-  flex: '1.5',
-  minWidth: '350px',
-};
-
-const tagStyle = {
-  display: 'block',
-  fontSize: '0.9rem',
-  textTransform: 'uppercase',
-  letterSpacing: '2px',
-  color: 'var(--accent)',
-  fontWeight: '600',
-  marginBottom: '1rem',
-};
-
-const titleStyle = {
-  fontSize: '3.5rem',
-  marginBottom: '0.5rem',
-  lineHeight: '1.1',
-};
-
-const authorStyle = {
-  fontSize: '1.2rem',
-  color: 'var(--text-secondary)',
-  marginBottom: '3rem',
-  fontStyle: 'italic',
-};
-
-const synopsisStyle = {
-  fontSize: '1.15rem',
-  lineHeight: '1.8',
-  color: 'var(--text-primary)',
-  marginBottom: '4rem',
-};
-
-const purchaseSectionStyle = {
-  backgroundColor: '#fff',
-  padding: '2rem',
-  borderRadius: '8px',
-  border: '1px solid var(--border-color)',
-};
-
-const btnGroupStyle = {
-  display: 'flex',
-  flexDirection: 'column',
-  gap: '1rem',
-};
-
-const fullBtnStyle = {
-  textAlign: 'center',
-  width: '100%',
-};

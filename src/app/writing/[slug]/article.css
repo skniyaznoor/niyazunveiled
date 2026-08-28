@@ -1,0 +1,67 @@
+.article-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+@media (min-width: 1024px) {
+  .article-layout {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .prose {
+    flex: 1;
+    max-width: 750px;
+    margin: 0;
+  }
+
+  .sticky-sidebar {
+    width: 300px;
+    position: sticky;
+    top: 100px;
+  }
+}
+
+/* Sidebar Card */
+.sidebar-card {
+  background-color: var(--paper-2);
+  border: 1px solid var(--border-color);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(59, 38, 28, 0.05);
+}
+
+.sidebar-card h3 {
+  font-family: var(--font-fraunces);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  color: var(--ink);
+}
+
+.sidebar-card p {
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  margin-bottom: 0;
+  font-family: var(--font-newsreader);
+}
+
+/* Drop Cap Styling */
+.drop-cap > p:first-of-type::first-letter {
+  font-size: 4.5rem;
+  font-family: var(--font-fraunces);
+  color: var(--gold);
+  float: left;
+  line-height: 1;
+  margin-right: 0.5rem;
+  margin-top: 0.2rem;
+}
+
+/* Markdown Image overrides */
+.prose img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin: 2rem 0;
+  box-shadow: var(--shadow);
+}

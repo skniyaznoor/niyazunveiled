@@ -1,35 +1,52 @@
-import { Inter, Lora } from 'next/font/google';
+import { Fraunces, Newsreader, Caveat } from 'next/font/google';
 import './globals.css';
 import Link from 'next/link';
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
-const lora = Lora({ subsets: ['latin'], variable: '--font-lora', style: ['normal', 'italic'] });
+const fraunces = Fraunces({ subsets: ['latin'], variable: '--font-fraunces', weight: ['400', '500', '600', '700'] });
+const newsreader = Newsreader({ subsets: ['latin'], variable: '--font-newsreader', weight: ['400', '500'], style: ['normal', 'italic'] });
+const caveat = Caveat({ subsets: ['latin'], variable: '--font-caveat', weight: ['500', '600', '700'] });
 
 export const metadata = {
-  title: 'Niyaz Unveiled',
-  description: 'A tapestry of love and poetic intrigue by Sk Niyaz Noor.',
+  title: 'Sk Niyaz Noor — Writer',
+  description: 'Writer of small, true things and captivating poetry.',
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${lora.variable}`}>
-        <nav style={navStyle}>
+      <body className={`${fraunces.variable} ${newsreader.variable} ${caveat.variable}`}>
+        <header style={headerStyle}>
           <div className="container" style={navContainerStyle}>
-            <Link href="/" style={logoStyle}>Niyaz Unveiled</Link>
-            <div style={navLinksStyle}>
-              <Link href="/book" style={linkStyle}>The Book</Link>
+            <Link href="/" style={brandStyle}>
+              Sk Niyaz <span>Noor</span>
+            </Link>
+            <nav style={navLinksStyle}>
               <Link href="/writing" style={linkStyle}>Writing</Link>
-              <Link href="/about" style={linkStyle}>About</Link>
-            </div>
+              <Link href="/book" style={linkStyle}>The Book</Link>
+              <Link href="/book" className="btn btn-primary" style={navCtaStyle}>Get the book</Link>
+            </nav>
           </div>
-        </nav>
-        <main style={{ minHeight: '80vh' }}>
+        </header>
+
+        <main id="top" style={{ minHeight: '80vh' }}>
           {children}
         </main>
+
         <footer style={footerStyle}>
           <div className="container">
-            <p>&copy; {new Date().getFullYear()} Niyaz Unveiled. All rights reserved.</p>
+            <div style={footerInnerStyle}>
+              <Link href="#top" style={brandStyle}>Sk Niyaz <span>Noor</span></Link>
+              <div style={footerLinksWrapperStyle}>
+                <Link href="/writing" style={footerLinkStyle}>Stories & Poetry</Link>
+                <Link href="/book" style={footerLinkStyle}>The Book</Link>
+              </div>
+              <div style={socialStyle}>
+                {/* Social icons placeholder */}
+                <span style={footerLinkStyle}>Instagram</span>
+                <span style={footerLinkStyle}>Goodreads</span>
+              </div>
+            </div>
+            <p style={copyrightStyle}>&copy; {new Date().getFullYear()} Sk Niyaz Noor. Words made with tea and patience.</p>
           </div>
         </footer>
       </body>
@@ -37,46 +54,86 @@ export default function RootLayout({ children }) {
   );
 }
 
-// Inline styles for structural elements (can be moved to css modules later if needed)
-const navStyle = {
-  borderBottom: '1px solid var(--border-color)',
-  padding: '1.5rem 0',
+// Inline Styles
+const headerStyle = {
   position: 'sticky',
   top: 0,
-  backgroundColor: 'rgba(253, 252, 248, 0.95)',
-  backdropFilter: 'blur(10px)',
   zIndex: 100,
+  background: 'rgba(246, 236, 223, 0.88)',
+  backdropFilter: 'blur(8px)',
+  borderBottom: '1px solid var(--line)',
 };
 
 const navContainerStyle = {
   display: 'flex',
-  justifyContent: 'space-between',
   alignItems: 'center',
+  justifyContent: 'space-between',
+  padding: '18px 32px',
 };
 
-const logoStyle = {
-  fontFamily: 'var(--font-lora)',
-  fontSize: '1.5rem',
-  fontWeight: '600',
-  letterSpacing: '-0.02em',
+const brandStyle = {
+  fontFamily: 'var(--font-fraunces)',
+  fontSize: '1.35rem',
+  fontWeight: '700',
+  letterSpacing: '0.01em',
+  color: 'var(--ink)'
 };
 
 const navLinksStyle = {
   display: 'flex',
-  gap: '2rem',
+  alignItems: 'center',
+  gap: '34px',
+  fontSize: '0.95rem',
 };
 
 const linkStyle = {
-  fontSize: '0.95rem',
-  fontWeight: '600',
-  textTransform: 'uppercase',
-  letterSpacing: '1px',
+  color: 'var(--ink-soft)',
+  transition: 'color 0.2s ease',
+  position: 'relative',
+  padding: '4px 0'
+};
+
+const navCtaStyle = {
+  background: 'var(--berry)',
+  color: 'var(--paper-2)',
+  padding: '9px 20px',
+  borderRadius: '999px',
+  fontFamily: 'var(--font-newsreader)',
+  fontSize: '0.92rem',
+  boxShadow: '0 6px 16px rgba(147,49,75,0.28)',
 };
 
 const footerStyle = {
-  borderTop: '1px solid var(--border-color)',
-  padding: '3rem 0',
+  padding: '54px 0 40px',
+  borderTop: '1px solid var(--line)',
+};
+
+const footerInnerStyle = {
+  display: 'flex',
+  justifyContent: 'space-between',
+  alignItems: 'center',
+  flexWrap: 'wrap',
+  gap: '20px',
+};
+
+const footerLinksWrapperStyle = {
+  display: 'flex',
+  gap: '26px',
+  fontSize: '0.9rem',
+};
+
+const footerLinkStyle = {
+  color: 'var(--ink-soft)',
+};
+
+const socialStyle = {
+  display: 'flex',
+  gap: '16px',
+};
+
+const copyrightStyle = {
+  fontSize: '0.82rem',
+  color: 'var(--ink-soft)',
+  marginTop: '18px',
   textAlign: 'center',
-  color: 'var(--text-secondary)',
-  marginTop: '4rem',
 };
