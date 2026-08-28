@@ -5,7 +5,8 @@ import MarketingCTA from '@/components/MarketingCTA';
 import './article.css';
 
 export async function generateMetadata({ params }) {
-  const postData = await getWritingData(params.slug);
+  const resolvedParams = await params;
+  const postData = await getWritingData(resolvedParams.slug);
   return {
     title: `${postData.title} | Sk Niyaz Noor`,
   };
@@ -19,7 +20,8 @@ export async function generateStaticParams() {
 }
 
 export default async function WritingPost({ params }) {
-  const postData = await getWritingData(params.slug);
+  const resolvedParams = await params;
+  const postData = await getWritingData(resolvedParams.slug);
 
   return (
     <>

@@ -18,8 +18,8 @@ export default function WritingIndex() {
         </div>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px' }}>
-          {allWriting.map(({ id, date, title, excerpt, category }) => (
-            <article key={id} style={{ background: 'var(--paper-2)', border: '1px solid var(--line)', borderRadius: 'var(--radius)', padding: '30px 28px 28px', display: 'flex', flexDirection: 'column', transition: 'transform 0.25s ease, box-shadow 0.25s ease' }}>
+          {allWriting.map(({ slug, date, title, excerpt, category }) => (
+            <article key={slug} style={{ background: 'var(--paper-2)', border: '1px solid var(--line)', borderRadius: 'var(--radius)', padding: '30px 28px 28px', display: 'flex', flexDirection: 'column', transition: 'transform 0.25s ease, box-shadow 0.25s ease' }}>
               <span style={{ fontSize: '0.72rem', letterSpacing: '0.09em', textTransform: 'uppercase', color: 'var(--sage)', fontFamily: 'var(--font-newsreader)', fontWeight: 500, marginBottom: '14px' }}>
                 {category || 'Story'}
               </span>
@@ -29,7 +29,7 @@ export default function WritingIndex() {
               </p>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', fontSize: '0.85rem', color: 'var(--ink-soft)', borderTop: '1px solid var(--line)', paddingTop: '16px' }}>
                 <span>{new Date(date).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</span>
-                <Link href={`/writing/${id}`} style={{ color: 'var(--berry)' }}>
+                <Link href={`/writing/${slug}`} style={{ color: 'var(--berry)' }}>
                   Read &rarr;
                 </Link>
               </div>
