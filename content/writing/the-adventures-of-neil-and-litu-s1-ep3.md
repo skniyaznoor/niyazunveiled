@@ -7,7 +7,7 @@ excerpt: "Episode 3: Death  Litu realized that he was in a serious mess. Being a
 
 # 
 
-**Episode** **3: Death**
+### Episode 3: Death
 
 **L**itu realized that he was in a serious mess. Being a science student, these things made him think deeply. In the morning, he planned to go check out the mysterious creature or thing from another world. Thoughts of this, coupled with worrying about Neil, made it difficult for him to sleep. Not wanting to drag Abhi into this mess, he decided not to tell him. As Litu's anxiety grew, his body temperature began to rise again. He texted Neil, but the messages only showed a single tick, leaving him in anxious anticipation for the long night to end. Each tick of the clock only added to his panic.
 

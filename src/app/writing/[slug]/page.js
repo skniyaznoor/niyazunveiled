@@ -2,6 +2,7 @@ import { getWritingData, getAllWritingSlugs, getSortedWritingsData } from '@/lib
 import Link from 'next/link';
 import ProgressBar from '@/components/ProgressBar';
 import MarketingCTA from '@/components/MarketingCTA';
+import BackButton from '@/components/BackButton';
 import './article.css';
 
 export async function generateMetadata({ params }) {
@@ -46,9 +47,7 @@ export default async function WritingPost({ params }) {
 
       <article className="container" style={{ paddingTop: postData.coverImage ? '2rem' : '5rem', paddingBottom: '6rem' }}>
         <div style={{ marginBottom: '2rem' }}>
-          <Link href="/writing" style={{ color: 'var(--berry)', fontSize: '0.9rem', display: 'inline-flex', alignItems: 'center', gap: '5px' }}>
-            &larr; Back to Writing Index
-          </Link>
+          <BackButton style={{ color: 'var(--berry)', fontSize: '0.9rem', display: 'inline-flex', alignItems: 'center', gap: '5px' }} />
         </div>
 
         <div style={headerStyle}>
@@ -106,9 +105,7 @@ export default async function WritingPost({ params }) {
         </div>
 
         <div style={footerStyle}>
-          <Link href="/writing" className="btn btn-secondary">
-            &larr; Back to all writing
-          </Link>
+          <BackButton className="btn btn-secondary" />
         </div>
       </article>
     </>

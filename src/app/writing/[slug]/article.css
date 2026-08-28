@@ -46,16 +46,7 @@
   font-family: var(--font-newsreader);
 }
 
-/* Drop Cap Styling */
-.drop-cap > p:first-of-type::first-letter {
-  font-size: 4.5rem;
-  font-family: var(--font-fraunces);
-  color: var(--gold);
-  float: left;
-  line-height: 1;
-  margin-right: 0.5rem;
-  margin-top: 0.2rem;
-}
+
 
 /* Markdown Image overrides */
 .prose img {

@@ -5,11 +5,11 @@ category: "Short Story"
 excerpt: "Epilogue:  Here are some adventures of two teen boys, in which they encountered some bizarre incidents that affected their lives and made them see the..."
 ---
 
-**Epilogue:**
+### Epilogue:
 
 Here are some adventures of two teen boys, in which they encountered some bizarre incidents that affected their lives and made them see the world differently. Litu, an 18-year-old tall and muscular, crack-headed boy, is an emerging singer. And Neil, a 19-year-old skinny weirdo, is fascinated by the concept of vampires and ruins. Together, they are walking psychopaths. Since their kindergarten days, they have had only one friend who claims that they are abnormally normal beings. Abhi, a harmless creature, has a built-in 0.5x speed while processing. Well! Enough with the intro. Let's roll.
 
-**Episode 1: The College on the Hill**
+### Episode 1: The College on the Hill
 
 Neil: "Come on, sloth, pick it up."
 

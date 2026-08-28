@@ -1,5 +1,6 @@
 import { getSortedWritingsData, getAllSeriesSlugs } from '@/lib/markdown';
 import Link from 'next/link';
+import BackButton from '@/components/BackButton';
 
 export async function generateStaticParams() {
   return getAllSeriesSlugs();
@@ -18,7 +19,7 @@ export default async function SeriesPage({ params }) {
     return (
       <div className="container" style={{ padding: '100px 0', textAlign: 'center' }}>
         <h2>Series not found</h2>
-        <Link href="/writing" style={{ color: 'var(--berry)' }}>&larr; Back to Writing</Link>
+        <BackButton style={{ color: 'var(--berry)' }} />
       </div>
     );
   }
@@ -30,9 +31,7 @@ export default async function SeriesPage({ params }) {
     <section style={{ padding: '84px 0 120px' }}>
       <div className="container">
         <div style={{ marginBottom: '2rem' }}>
-          <Link href="/writing" style={{ color: 'var(--berry)', fontSize: '0.9rem', display: 'inline-flex', alignItems: 'center', gap: '5px' }}>
-            &larr; Back to Writing Index
-          </Link>
+          <BackButton style={{ color: 'var(--berry)', fontSize: '0.9rem', display: 'inline-flex', alignItems: 'center', gap: '5px' }} />
         </div>
 
         <div style={{ marginBottom: '64px', borderBottom: '1px solid var(--line)', paddingBottom: '40px' }}>

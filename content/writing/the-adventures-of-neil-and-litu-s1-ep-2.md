@@ -5,7 +5,7 @@ category: "Short Story"
 excerpt: "Episode 2: The Fear  The next day, at 4:00 pm  Abhi on call: “Neil! Where are you? I’m bored out of my mind here.”  Neil: “I told you to stay in the v..."
 ---
 
-**Episode** **2: The Fear**
+### Episode 2: The Fear
 
 **T**he next day, at 4:00 pm
 

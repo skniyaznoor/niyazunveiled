@@ -5,7 +5,7 @@ category: "Short Story"
 excerpt: "Episode 4: Heaven  Neil: “Wow! What’s with the smoke? Is this heaven? Am I dead? No! Man, I had plans.”  Litu: “Well, it doesn’t feel like it.”  Neil:..."
 ---
 
-**Episode 4****: Heaven**
+### Episode 4: Heaven
 
 Neil: “Wow! What’s with the smoke? Is this heaven? Am I dead? No! Man, I had plans.”
 
