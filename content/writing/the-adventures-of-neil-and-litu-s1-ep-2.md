@@ -1,5 +1,6 @@
 ---
 title: "The Adventures of Neil and Litu S1:EP:2"
+episodeTitle: "Episode-2: Fear"
 date: "2024-08-25T05:43:00.000-07:00"
 category: "Short Story"
 excerpt: "Episode 2: The Fear  The next day, at 4:00 pm  Abhi on call: “Neil! Where are you? I’m bored out of my mind here.”  Neil: “I told you to stay in the v..."

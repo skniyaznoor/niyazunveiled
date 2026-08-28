@@ -1,5 +1,6 @@
 ---
 title: "Love Bridge ✨ (S1.EP2)"
+episodeTitle: "EP2 - Acceptance"
 date: "2022-05-05T05:23:00.003-07:00"
 category: "Short Story"
 excerpt: "Well! There are a few things in our lives that we don't want to lose, even if it's best for us. It's just that we're so stubborn to accept the realit"

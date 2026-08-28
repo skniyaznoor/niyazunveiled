@@ -1,5 +1,6 @@
 ---
 title: "Echoes of Absence (S1.EP7)"
+episodeTitle: "S1.EP7 - Miss Ninja"
 date: "2022-01-27T08:27:00.004-08:00"
 category: "Short Story"
 excerpt: "Lub-dub sound of the heartbeat is echoing in my ears as a 8D audio song. And it increases with the decreasing distance between Dhadak.  And my mind is..."

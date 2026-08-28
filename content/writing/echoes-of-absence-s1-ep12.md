@@ -1,5 +1,6 @@
 ---
 title: "Echoes of Absence (S1.EP12)"
+episodeTitle: "S1.EP12 - Call"
 date: "2022-03-22T06:49:00.003-07:00"
 category: "Short Story"
 excerpt: "Day! .... Night! .... I'm getting unable to differentiate between them, all are replenished with darkness. I don't know what just happened, but I lost..."

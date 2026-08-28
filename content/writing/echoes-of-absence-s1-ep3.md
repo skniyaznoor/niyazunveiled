@@ -1,5 +1,6 @@
 ---
 title: "Echoes of Absence (S1.EP3)"
+episodeTitle: "S1.EP3 - Being Yours"
 date: "2022-01-05T07:26:00.019-08:00"
 category: "Short Story"
 excerpt: "Space is melting down into pearls from the precious heaven adorning the street, leading by sparkling garlands of glitter, and light the realm which hu..."

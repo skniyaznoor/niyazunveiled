@@ -1,5 +1,6 @@
 ---
 title: "Echoes of Absence (S1.EP11)"
+episodeTitle: "S1.EP11 - The Bridge"
 date: "2022-03-17T06:00:00.001-07:00"
 category: "Short Story"
 excerpt: "The noise of the traffic, the chaos of the people, the annoying horns of vehicles gradually increase to unbearable. Then it turns into a long beep sou..."

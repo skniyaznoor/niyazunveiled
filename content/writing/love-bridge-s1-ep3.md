@@ -1,5 +1,6 @@
 ---
 title: "Love Bridge ✨ (S1.EP3)"
+episodeTitle: "EP3 - Flashback"
 date: "2022-05-15T06:45:00.007-07:00"
 category: "Short Story"
 excerpt: "Memories are precious but they live in the past. Some memories might break us but in the end, it's the good stuff that stays. Moving forward may be di..."

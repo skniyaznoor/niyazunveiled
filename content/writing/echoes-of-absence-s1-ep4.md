@@ -1,5 +1,6 @@
 ---
 title: "Echoes of Absence (S1.EP4)"
+episodeTitle: "S1.EP4 - The Wait"
 date: "2022-01-11T18:54:00.011-08:00"
 category: "Short Story"
 excerpt: "Drowning in the space and blossoms in the ocean, yet miles away from the isle. Sauntering in a desert heading towards the berg, consumed by the flames..."

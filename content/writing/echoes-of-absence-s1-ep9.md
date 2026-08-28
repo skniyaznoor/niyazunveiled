@@ -1,5 +1,6 @@
 ---
 title: "Echoes of Absence (S1.EP9)"
+episodeTitle: "S1.EP9 - Kohinoor"
 date: "2022-02-17T07:25:00.009-08:00"
 category: "Short Story"
 excerpt: "Why do we always hurt the one, whom we love the most?  Because they cared ❤️ ....      It was really a hell of a day, it doesn't go as expected. A few..."

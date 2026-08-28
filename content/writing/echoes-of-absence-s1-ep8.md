@@ -1,5 +1,6 @@
 ---
 title: "Echoes of Absence (S1.EP8)"
+episodeTitle: "S1.EP8 - My Moon"
 date: "2022-02-08T06:57:00.000-08:00"
 category: "Short Story"
 excerpt: "Twinkling dots in the sky at night is nothing but memories huddling in our minds. Some are so brighter and some are about to die, and some are lost in..."

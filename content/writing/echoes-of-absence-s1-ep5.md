@@ -1,5 +1,6 @@
 ---
 title: "Echoes of Absence (S1.EP5)"
+episodeTitle: "S1.EP5 - Salvation"
 date: "2022-01-17T07:12:00.003-08:00"
 category: "Short Story"
 excerpt: "Oscillating heartbeat, restlessness eyes, and this lunatic suspicious heart all are searching for redemption in the apocalypse. And this heart is beha..."

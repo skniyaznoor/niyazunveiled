@@ -1,5 +1,6 @@
 ---
 title: "The Adventures of Neil and Litu S1:EP:1"
+episodeTitle: "Episode-1: The College"
 date: "2024-08-24T09:36:00.000-07:00"
 category: "Short Story"
 excerpt: "Epilogue:  Here are some adventures of two teen boys, in which they encountered some bizarre incidents that affected their lives and made them see the..."

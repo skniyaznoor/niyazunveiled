@@ -77,7 +77,7 @@ export default async function SeriesPage({ params }) {
                 <span style={{ fontSize: '0.75rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--sage)', fontFamily: 'var(--font-newsreader)', fontWeight: 600, display: 'block', marginBottom: '8px' }}>
                   Episode {ep.episode}
                 </span>
-                <h3 style={{ fontSize: '1.3rem', margin: 0 }}>{ep.title}</h3>
+                <h3 style={{ fontSize: '1.3rem', margin: 0 }}>{ep.episodeTitle || ep.title}</h3>
               </div>
               <div style={{ color: 'var(--berry)', display: 'flex', alignItems: 'center', gap: '10px' }}>
                 <span style={{ fontSize: '0.9rem', color: 'var(--ink-soft)' }}>

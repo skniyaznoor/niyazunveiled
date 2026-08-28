@@ -1,5 +1,6 @@
 ---
 title: "The Adventures of Neil and Litu S1:EP3"
+episodeTitle: "Episode-3: Death"
 date: "2024-09-01T07:47:00.000-07:00"
 category: "Short Story"
 excerpt: "Episode 3: Death  Litu realized that he was in a serious mess. Being a science student, these things made him think deeply. In the morning, he plan"

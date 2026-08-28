@@ -1,5 +1,6 @@
 ---
 title: "Love Bridge ✨ (S1.EP1)"
+episodeTitle: "EP1 - Give Up"
 date: "2022-04-29T06:53:00.002-07:00"
 category: "Short Story"
 excerpt: "Love ❤️ ✨ ....  Well! Love, itself is a bridge that connects two hearts. It's the weirdest feeling ever. It breaches us to the limits of the unthinkab..."

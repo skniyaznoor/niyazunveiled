@@ -1,5 +1,6 @@
 ---
 title: "Echoes of Absence (S1.EP10)"
+episodeTitle: "S1.EP10 - Nukes"
 date: "2022-02-28T07:44:00.007-08:00"
 category: "Short Story"
 excerpt: "Broken bones hurt but broken heart kills. That night at that moment I realized, how it feels when someone leaves you. Well! I'm breathing but somethin..."

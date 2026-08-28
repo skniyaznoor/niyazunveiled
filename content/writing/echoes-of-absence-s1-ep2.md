@@ -1,5 +1,6 @@
 ---
 title: "Echoes of Absence (S1.EP2)"
+episodeTitle: "S1.EP2 - The Meeting"
 date: "2022-01-02T05:55:00.015-08:00"
 category: "Short Story"
 excerpt: "Surrounding is reaping in the space, everything is getting hazy and I am continuously falling into the void. It seems like a mirage but It's a whirlpo..."

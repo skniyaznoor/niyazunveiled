@@ -1,5 +1,6 @@
 ---
 title: "Echoes of Absence (S1.EP6)"
+episodeTitle: "S1.EP6 - Best Phase"
 date: "2022-01-22T07:48:00.005-08:00"
 category: "Short Story"
 excerpt: "Erasing the eternal silence of the night and dimming the spread twinkling dots, a red circle rises from the horizon with the chirping sound of birds a..."
