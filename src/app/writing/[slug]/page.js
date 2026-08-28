@@ -3,6 +3,8 @@ import Link from 'next/link';
 import ProgressBar from '@/components/ProgressBar';
 import MarketingCTA from '@/components/MarketingCTA';
 import BackButton from '@/components/BackButton';
+import PreOrderButton from '@/components/PreOrderButton';
+import Comments from '@/components/Comments';
 import './article.css';
 
 export async function generateMetadata({ params }) {
@@ -66,9 +68,9 @@ export default async function WritingPost({ params }) {
             <div className="sidebar-card">
               <h3>Support the Author</h3>
               <p>Pre-order my debut novel today and discover the story of Nirvit and Suprita.</p>
-              <Link href="/book" className="btn btn-primary" style={{ width: '100%', textAlign: 'center', marginTop: '1rem', padding: '0.6rem' }}>
+              <PreOrderButton className="btn btn-primary" style={{ width: '100%', textAlign: 'center', marginTop: '1rem', padding: '0.6rem' }}>
                 Pre-order Novel
-              </Link>
+              </PreOrderButton>
             </div>
           </aside>
         </div>
@@ -92,17 +94,7 @@ export default async function WritingPost({ params }) {
           </div>
         )}
 
-        <div style={{ marginTop: '4rem', padding: '3rem', background: 'var(--paper-2)', borderRadius: 'var(--radius)', border: '1px solid var(--border-color)' }}>
-          <h3 style={{ fontFamily: 'var(--font-fraunces)', fontSize: '1.8rem', marginBottom: '1rem' }}>Join the Discussion</h3>
-          <p style={{ color: 'var(--ink-soft)', marginBottom: '2rem' }}>Share your thoughts on this story. Sign in securely to leave a comment.</p>
-          <div style={{ display: 'flex', gap: '15px' }}>
-            <button className="btn btn-primary">Sign in with Google</button>
-            <button className="btn btn-secondary">Sign in with Email</button>
-          </div>
-          <div style={{ marginTop: '3rem', borderTop: '1px dashed var(--border-color)', paddingTop: '2rem' }}>
-            <p style={{ color: 'var(--ink-soft)', fontStyle: 'italic', fontSize: '0.9rem' }}>No comments yet. Be the first to share your thoughts!</p>
-          </div>
-        </div>
+        <Comments slug={postData.slug} />
 
         <div style={footerStyle}>
           <BackButton className="btn btn-secondary" />

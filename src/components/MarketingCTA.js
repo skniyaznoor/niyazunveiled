@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import PreOrderButton from './PreOrderButton';
 
 export default function MarketingCTA() {
   return (
@@ -30,13 +31,15 @@ export default function MarketingCTA() {
       </p>
       
       <div style={{ position: 'relative', zIndex: 2 }}>
-        <Link href="/book" style={{
+        <PreOrderButton style={{
           fontFamily: 'var(--font-newsreader)',
           background: 'var(--gold)',
           color: 'var(--ink)',
           padding: '13px 26px',
           borderRadius: '999px',
           display: 'inline-block',
+          border: 'none',
+          cursor: 'pointer',
           textDecoration: 'none',
           fontSize: '1rem',
           boxShadow: '0 10px 24px rgba(185,139,62,0.3)',
@@ -44,7 +47,7 @@ export default function MarketingCTA() {
           fontWeight: 500
         }}>
           Pre-order Now
-        </Link>
+        </PreOrderButton>
       </div>
     </div>
   );

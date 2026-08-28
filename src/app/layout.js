@@ -1,6 +1,7 @@
 import { Fraunces, Newsreader, Caveat } from 'next/font/google';
 import './globals.css';
 import Link from 'next/link';
+import { AuthProvider } from '@/context/AuthContext';
 
 const fraunces = Fraunces({ subsets: ['latin'], variable: '--font-fraunces', weight: ['400', '500', '600', '700'] });
 const newsreader = Newsreader({ subsets: ['latin'], variable: '--font-newsreader', weight: ['400', '500'], style: ['normal', 'italic'] });
@@ -15,22 +16,24 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${fraunces.variable} ${newsreader.variable} ${caveat.variable}`}>
-        <header style={headerStyle}>
-          <div className="container" style={navContainerStyle}>
-            <Link href="/" style={brandStyle}>
-              Niyaz <span style={brandSpanStyle}>Unveiled</span>
-            </Link>
-            <nav style={navLinksStyle}>
-              <Link href="/writing" className="nav-link" style={linkStyle}>Writing</Link>
-              <Link href="/book" className="nav-link" style={linkStyle}>The Book</Link>
-              <Link href="/book" className="btn btn-primary nav-cta" style={navCtaStyle}>Get the book</Link>
-            </nav>
-          </div>
-        </header>
+        <AuthProvider>
+          <header style={headerStyle}>
+            <div className="container" style={navContainerStyle}>
+              <Link href="/" style={brandStyle}>
+                Niyaz <span style={brandSpanStyle}>Unveiled</span>
+              </Link>
+              <nav style={navLinksStyle}>
+                <Link href="/writing" className="nav-link" style={linkStyle}>Writing</Link>
+                <Link href="/book" className="nav-link" style={linkStyle}>The Book</Link>
+                <Link href="/book" className="btn btn-primary nav-cta" style={navCtaStyle}>Get the book</Link>
+              </nav>
+            </div>
+          </header>
 
-        <main id="top" style={{ minHeight: '80vh' }}>
-          {children}
-        </main>
+          <main id="top" style={{ minHeight: '80vh' }}>
+            {children}
+          </main>
+
 
         <footer style={footerStyle}>
           <div className="container">
@@ -49,6 +52,7 @@ export default function RootLayout({ children }) {
             <p style={copyrightStyle}>&copy; {new Date().getFullYear()} Niyaz Unveiled. Words made with tea and patience.</p>
           </div>
         </footer>
+        </AuthProvider>
       </body>
     </html>
   );

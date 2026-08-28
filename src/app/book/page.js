@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import MarketingCTA from '@/components/MarketingCTA';
 import Countdown from '@/components/Countdown';
+import PreOrderButton from '@/components/PreOrderButton';
 
 export const metadata = {
   title: 'The Book | Sk Niyaz Noor',
@@ -48,7 +49,7 @@ export default function BookPage() {
             <Countdown targetDate="2026-09-23T00:00:00" />
 
             <div className="btn-row" style={{ marginBottom: '28px' }}>
-              <Link href="#" className="btn btn-primary">Pre-order now</Link>
+              <PreOrderButton className="btn btn-primary">Pre-order now</PreOrderButton>
             </div>
             <p className="marginalia" style={{ fontFamily: 'var(--font-caveat)', fontSize: '1.25rem', color: 'var(--ink-soft)', whiteSpace: 'nowrap', maxWidth: 'none' }}>
               Nirvit and Suprita — where two unfinished journeys quietly overlap.
