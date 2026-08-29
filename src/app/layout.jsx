@@ -44,7 +44,7 @@ export default function RootLayout({ children }) {
                 <Link href="/book" className="footer-link" style={footerLinkStyle}>The Book</Link>
               </div>
               <div style={socialStyle}>
-                {/* Social icons placeholder */}
+                <a href="mailto:niyazunveiled@gmail.com" className="footer-link" style={footerLinkStyle}>Email</a>
                 <a href="https://www.instagram.com/niyazunveiled" target="_blank" rel="noopener noreferrer" className="footer-link" style={footerLinkStyle}>Instagram</a>
                 <span className="footer-link" style={footerLinkStyle}>Goodreads</span>
               </div>

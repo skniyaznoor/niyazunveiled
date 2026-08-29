@@ -31,60 +31,55 @@ export default function Home() {
             </div>
           </div>
           <div style={heroArtStyle}>
-            <img 
-              src="/Sunflowers-Photoroom.png" 
-              alt="You are my sunshine" 
-              style={{ width: '100%', maxWidth: '480px', height: 'auto', display: 'block', transform: 'scale(1.3) translateY(5px)', position: 'relative', zIndex: 2 }} 
+            <img
+              src="/Sunflowers-Photoroom.png"
+              alt="You are my sunshine"
+              style={{ width: '100%', maxWidth: '480px', height: 'auto', display: 'block', transform: 'scale(1.3) translateY(5px)', position: 'relative', zIndex: 2 }}
             />
             {/* SVG OVERLAY for hearts, arrows, text, and outlines */}
             <svg viewBox="0 0 500 500" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', pointerEvents: 'none', zIndex: 3, overflow: 'visible' }}>
-               
-               {/* Elegant smooth outlines around the flowers */}
-               <ellipse cx="250" cy="240" rx="300" ry="320" fill="none" stroke="#e8a825" strokeWidth="1.5" strokeDasharray="8 6" strokeLinecap="round" transform="rotate(5 250 240)" />
-               <ellipse cx="260" cy="230" rx="280" ry="310" fill="none" stroke="#e8a825" strokeWidth="1" strokeDasharray="4 8" opacity="0.6" transform="rotate(-5 260 230)" />
-               
-               {/* Text: you are my sunshine (Top Right) */}
-               <text x="450" y="-40" fill="#e8a825" style={{ fontFamily: 'var(--font-caveat)', fontSize: '32px', transform: 'rotate(12deg)', transformOrigin: '450px -40px' }}>
-                 you are my sunshine ♡
-               </text>
-               
-               {/* Elegant swooping arrow from text pointing to flower */}
-               <path d="M 540 -15 Q 600 50 510 110" fill="none" stroke="#e8a825" strokeWidth="2" strokeLinecap="round" />
-               <path d="M 530 95 L 510 110 L 525 125" fill="none" stroke="#e8a825" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
 
-               {/* Elegant curved arrow from bottom left text area to image */}
-               <path d="M -150 420 Q -100 280 10 270" fill="none" stroke="#e8a825" strokeWidth="2" strokeLinecap="round" />
-               <path d="M -10 260 L 10 270 L 0 285" fill="none" stroke="#e8a825" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-               
-               {/* Decorative subtle arrow from top left */}
-               <path d="M -100 60 Q -60 30 10 90" fill="none" stroke="#e8a825" strokeWidth="1.5" strokeLinecap="round" strokeDasharray="4 4" />
-               <path d="M -5 75 L 10 90 L -5 95" fill="none" stroke="#e8a825" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              {/* Elegant smooth outlines around the flowers */}
+              <ellipse cx="250" cy="240" rx="300" ry="320" fill="none" stroke="#e8a825" strokeWidth="1.5" strokeDasharray="8 6" strokeLinecap="round" transform="rotate(5 250 240)" />
+              <ellipse cx="260" cy="230" rx="280" ry="310" fill="none" stroke="#e8a825" strokeWidth="1" strokeDasharray="4 8" opacity="0.6" transform="rotate(-5 260 230)" />
 
-               {/* Perfect Hearts - Using a precisely constructed cubic bezier heart path */}
-               <g transform="translate(-130, 140) rotate(-15) scale(1.2)">
-                 <path d="M 0 -3 C -5 -8 -12 -5 -12 1 C -12 7 0 15 0 15 C 0 15 12 7 12 1 C 12 -5 5 -8 0 -3 Z" fill="none" stroke="#e8a825" strokeWidth="1.5" strokeLinejoin="round" />
-               </g>
-               <g transform="translate(-60, 320) rotate(20) scale(0.9)">
-                 <path d="M 0 -3 C -5 -8 -12 -5 -12 1 C -12 7 0 15 0 15 C 0 15 12 7 12 1 C 12 -5 5 -8 0 -3 Z" fill="none" stroke="#e8a825" strokeWidth="2" strokeLinejoin="round" />
-               </g>
-               <g transform="translate(420, 520) rotate(-10) scale(1.1)">
-                 <path d="M 0 -3 C -5 -8 -12 -5 -12 1 C -12 7 0 15 0 15 C 0 15 12 7 12 1 C 12 -5 5 -8 0 -3 Z" fill="none" stroke="#e8a825" strokeWidth="1.5" strokeLinejoin="round" />
-               </g>
-               <g transform="translate(560, 190) rotate(15) scale(0.8)">
-                 <path d="M 0 -3 C -5 -8 -12 -5 -12 1 C -12 7 0 15 0 15 C 0 15 12 7 12 1 C 12 -5 5 -8 0 -3 Z" fill="#e8a825" stroke="#e8a825" strokeWidth="1.5" strokeLinejoin="round" />
-               </g>
+              {/* Elegant swooping arrow from text pointing to flower */}
+              <path d="M 540 -15 Q 600 50 510 110" fill="none" stroke="#e8a825" strokeWidth="2" strokeLinecap="round" />
+              <path d="M 530 95 L 510 110 L 525 125" fill="none" stroke="#e8a825" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
 
-               {/* Sparkles / Stars */}
-               <path d="M -120 380 Q -115 380 -115 375 Q -115 380 -110 380 Q -115 380 -115 385 Q -115 380 -120 380 Z" fill="#e8a825" stroke="#e8a825" strokeWidth="1" />
-               <path d="M -60 80 Q -55 80 -55 75 Q -55 80 -50 80 Q -55 80 -55 85 Q -55 80 -60 80 Z" fill="#e8a825" stroke="#e8a825" strokeWidth="1" />
-               <path d="M 550 380 Q 555 380 555 375 Q 555 380 560 380 Q 555 380 555 385 Q 555 380 550 380 Z" fill="#e8a825" stroke="#e8a825" strokeWidth="1" />
-               <path d="M 400 -20 Q 404 -20 404 -24 Q 404 -20 408 -20 Q 404 -20 404 -16 Q 404 -20 400 -20 Z" fill="#e8a825" stroke="#e8a825" strokeWidth="1" />
+              {/* Elegant curved arrow from bottom left text area to image */}
+              <path d="M -150 420 Q -100 280 10 270" fill="none" stroke="#e8a825" strokeWidth="2" strokeLinecap="round" />
+              <path d="M -10 260 L 10 270 L 0 285" fill="none" stroke="#e8a825" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
 
-               {/* Smiley Face */}
-               <circle cx="-10" cy="460" r="15" fill="none" stroke="#e8a825" strokeWidth="2" />
-               <circle cx="-17" cy="455" r="2" fill="#e8a825" />
-               <circle cx="-3" cy="455" r="2" fill="#e8a825" />
-               <path d="M -18 463 Q -10 472 -2 463" fill="none" stroke="#e8a825" strokeWidth="2" strokeLinecap="round" />
+              {/* Decorative subtle arrow from top left */}
+              <path d="M -100 60 Q -60 30 10 90" fill="none" stroke="#e8a825" strokeWidth="1.5" strokeLinecap="round" strokeDasharray="4 4" />
+              <path d="M -5 75 L 10 90 L -5 95" fill="none" stroke="#e8a825" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+
+              {/* Perfect Hearts - Using a precisely constructed cubic bezier heart path */}
+              <g transform="translate(-130, 140) rotate(-15) scale(1.2)">
+                <path d="M 0 -3 C -5 -8 -12 -5 -12 1 C -12 7 0 15 0 15 C 0 15 12 7 12 1 C 12 -5 5 -8 0 -3 Z" fill="none" stroke="#e8a825" strokeWidth="1.5" strokeLinejoin="round" />
+              </g>
+              <g transform="translate(-60, 320) rotate(20) scale(0.9)">
+                <path d="M 0 -3 C -5 -8 -12 -5 -12 1 C -12 7 0 15 0 15 C 0 15 12 7 12 1 C 12 -5 5 -8 0 -3 Z" fill="none" stroke="#e8a825" strokeWidth="2" strokeLinejoin="round" />
+              </g>
+              <g transform="translate(420, 520) rotate(-10) scale(1.1)">
+                <path d="M 0 -3 C -5 -8 -12 -5 -12 1 C -12 7 0 15 0 15 C 0 15 12 7 12 1 C 12 -5 5 -8 0 -3 Z" fill="none" stroke="#e8a825" strokeWidth="1.5" strokeLinejoin="round" />
+              </g>
+              <g transform="translate(560, 190) rotate(15) scale(0.8)">
+                <path d="M 0 -3 C -5 -8 -12 -5 -12 1 C -12 7 0 15 0 15 C 0 15 12 7 12 1 C 12 -5 5 -8 0 -3 Z" fill="#e8a825" stroke="#e8a825" strokeWidth="1.5" strokeLinejoin="round" />
+              </g>
+
+              {/* Sparkles / Stars */}
+              <path d="M -120 380 Q -115 380 -115 375 Q -115 380 -110 380 Q -115 380 -115 385 Q -115 380 -120 380 Z" fill="#e8a825" stroke="#e8a825" strokeWidth="1" />
+              <path d="M -60 80 Q -55 80 -55 75 Q -55 80 -50 80 Q -55 80 -55 85 Q -55 80 -60 80 Z" fill="#e8a825" stroke="#e8a825" strokeWidth="1" />
+              <path d="M 550 380 Q 555 380 555 375 Q 555 380 560 380 Q 555 380 555 385 Q 555 380 550 380 Z" fill="#e8a825" stroke="#e8a825" strokeWidth="1" />
+              <path d="M 400 -20 Q 404 -20 404 -24 Q 404 -20 408 -20 Q 404 -20 404 -16 Q 404 -20 400 -20 Z" fill="#e8a825" stroke="#e8a825" strokeWidth="1" />
+
+              {/* Smiley Face */}
+              <circle cx="-10" cy="460" r="15" fill="none" stroke="#e8a825" strokeWidth="2" />
+              <circle cx="-17" cy="455" r="2" fill="#e8a825" />
+              <circle cx="-3" cy="455" r="2" fill="#e8a825" />
+              <path d="M -18 463 Q -10 472 -2 463" fill="none" stroke="#e8a825" strokeWidth="2" strokeLinecap="round" />
             </svg>
           </div>
         </div>
@@ -243,7 +238,8 @@ export default function Home() {
             <span className="eyebrow">About me</span>
             <h2 style={{ marginBottom: '18px' }}>Hi, I'm Niyaz.</h2>
             <p style={{ color: 'var(--ink-soft)', marginBottom: '16px' }}>I'm your pocket-sized storyteller — a mini writer armed with a pen and a world of imagination far bigger than my frame. Since 2020, I've been writing short stories and poems that live in the space between a glance and a goodbye, chasing the feeling of love in all its messy, beautiful forms.</p>
-            <p style={{ color: 'var(--ink-soft)' }}>Under the name Niyaz Unveiled, I've written everything from slow-burn romance to strange, mist-covered mysteries — but at the heart of it all is the same question: what does it really mean to love someone?</p>
+            <p style={{ color: 'var(--ink-soft)', marginBottom: '16px' }}>Under the name Niyaz Unveiled, I've written everything from slow-burn romance to strange, mist-covered mysteries — but at the heart of it all is the same question: what does it really mean to love someone?</p>
+            <p style={{ color: 'var(--ink-soft)' }}>Want to reach out? Email me at <a href="mailto:niyazunveiled@gmail.com" style={{ color: 'var(--berry)', textDecoration: 'underline' }}>niyazunveiled@gmail.com</a>.</p>
             <div style={statRowStyle}>
               <div><strong style={statStrongStyle}>24+</strong><span style={statSpanStyle}>Stories & poems published</span></div>
               <div><strong style={statStrongStyle}>5+</strong><span style={statSpanStyle}>Years writing</span></div>
