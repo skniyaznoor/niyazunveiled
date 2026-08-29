@@ -13,9 +13,10 @@ excerpt: "As a leaf falls slowly to the earth, she falls into my life. Like the 
 
   
 
-[![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3N1NhSBNdVBO0Ioc6dDePEpGxyanumNWmBSeSvIeOVPPTXaEdyK_d2FfByWb7aH-vgyiQEKtN9eK6x5tjk1HwxxBUOESdbDk8xQYCRgnR_dDLnidLj1QtoYeMYwuCjKNrTODPQUZ3f18/w289-h513/1675022938676507-0.png)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3N1NhSBNdVBO0Ioc6dDePEpGxyanumNWmBSeSvIeOVPPTXaEdyK_d2FfByWb7aH-vgyiQEKtN9eK6x5tjk1HwxxBUOESdbDk8xQYCRgnR_dDLnidLj1QtoYeMYwuCjKNrTODPQUZ3f18/s1600/1675022938676507-0.png)
-
-_"Mark in the Heart" - Riddle_
+<div style="text-align: center; margin: 2rem 0;">
+  <img src="/riddle/1675022938676507-0.jpg" alt="Riddle of my heart" style="max-width: 65%; height: auto; border-radius: 4px; box-shadow: var(--shadow); margin: 0 auto 0.5rem auto; display: block;" />
+  <em style="font-size: 0.95rem; color: var(--text-secondary);">"Mark in the Heart" - Riddle</em>
+</div>
 
 **K**iss that lands on my lips twists my soul and merge in heaven. The restlessness, the misery, and all the suffering vanish in thin air. The warmth in her arms heals my cold corpse. The peace in her arms consumes me. The undying and unflinching love that she is, deforms my soul and integrates with hers.
 
@@ -35,9 +36,7 @@ _"Mark in the Heart" - Riddle_
 
   
 
-![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiSuE60LDKn9bfj2rz9fTpbuVwY5w3GcIf8rDvDBXEXbO9LdVCBlFmzTNr0Rbxl5jhZUKDwK9n2CkBRcOMhHX6xDzMPEsoCqSJeUkMBfL1l4v7hWGrAKd6rIuv2qr3XdfjSkxlC4cL8d5A/w197-h262/1675024029576432-0.png)
 
-_"Stay Blessed!"_
 
 **A** letter that is left unsend holds a lot more emotions than the sent one. That dry red rose of those years in the book smells more than the fresh ones. That unerasable smile, those adorable big eyes, and that mole in the neck skip the beat then, now, and forever. And when we met at that moment in that instance this lunatic heart utters "She is Love".
 
