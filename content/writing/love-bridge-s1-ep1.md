@@ -26,9 +26,7 @@ Being youth, we don't give up easily. We may fail, and fall but never steps back
 
   
 
-[![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAB7T5qDzahabB4wtv9rOs8j_RPbY5zd3GQBbADcpjmpzGqsfn4hlaBNdT1E84H14sDNk1gSp9hZwdhiVy6T8xpHER6WOsGVoxxtAcjilYteY8NOtTDCWvoU8xwwkETSqMOO2_jQe3l_XeQfYA3BMKHMQtHAYpa5M_W7tZubvo2cCTvevUWBB0fQ9L/w400-h225/HD-Peaceful-Image.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAB7T5qDzahabB4wtv9rOs8j_RPbY5zd3GQBbADcpjmpzGqsfn4hlaBNdT1E84H14sDNk1gSp9hZwdhiVy6T8xpHER6WOsGVoxxtAcjilYteY8NOtTDCWvoU8xwwkETSqMOO2_jQe3l_XeQfYA3BMKHMQtHAYpa5M_W7tZubvo2cCTvevUWBB0fQ9L/s1920/HD-Peaceful-Image.jpg)
 
-_(Peace for the Heart)_
 
   
 

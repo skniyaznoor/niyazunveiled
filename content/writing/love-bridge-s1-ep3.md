@@ -10,9 +10,7 @@ excerpt: "Memories are precious but they live in the past. Some memories might b
 
   
 
-[![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKQvo8Bo9O_UqTcJDGMWjqFUtRxywFmUlLy-lW63DV4PJhQUygADdQNDX-opiBuFf8COOqpHMWKKTcr4T3FqBwRK5Kgo19F0pp0zovNHInreXpnXODiy8hO9sx17MkbO7rehM0hnG74LGdvWcWVNAPtMepb957u_LXQaYpxA5mjxI9w6OZkLHLao1d/w181-h320/475e782bca24324341ecb8bf3d8ddbf9.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKQvo8Bo9O_UqTcJDGMWjqFUtRxywFmUlLy-lW63DV4PJhQUygADdQNDX-opiBuFf8COOqpHMWKKTcr4T3FqBwRK5Kgo19F0pp0zovNHInreXpnXODiy8hO9sx17MkbO7rehM0hnG74LGdvWcWVNAPtMepb957u_LXQaYpxA5mjxI9w6OZkLHLao1d/s1002/475e782bca24324341ecb8bf3d8ddbf9.jpg)
 
-_("Make a wish")_
 
 **16th April 2016,**
 
@@ -244,9 +242,7 @@ She comes closer and looks straight into his eyes.
 
   
 
-[![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinxEE4a4BZYQy68u2AGyLgtU-9hHm8U6Kd7COs0aZodUOfoiQ0nfVG_e4Laium0M7GqQrRVBn36_7hfqzzEQy5iROp_udy2e5av__pXy-W__0a7dxR6bxac7jW-tyojVX6MS9HqYeFoKTJbeEc4pVCQlEkZV4ic73CEW8Nc0OcNCP_Z75XWaFWO0L2/w400-h225/178-1782531_old-bridge-beautiful-anime-background-hd.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinxEE4a4BZYQy68u2AGyLgtU-9hHm8U6Kd7COs0aZodUOfoiQ0nfVG_e4Laium0M7GqQrRVBn36_7hfqzzEQy5iROp_udy2e5av__pXy-W__0a7dxR6bxac7jW-tyojVX6MS9HqYeFoKTJbeEc4pVCQlEkZV4ic73CEW8Nc0OcNCP_Z75XWaFWO0L2/s1920/178-1782531_old-bridge-beautiful-anime-background-hd.jpg)
 
-_("Maybe there is an empty page.")_
 
   
 

@@ -10,9 +10,7 @@ excerpt: "Well! There are a few things in our lives that we don't want to lose, 
 
   
 
-[![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiU8a35aiheP8FtrCohXfTPzH5B77PssC6uZMrhdFWlWLjO5PAm4cSWF-kktWAn0Dcd7DzlMtAiTJPalGdjwIevqVQ32FT2uFRtwMfBFr5TYr0X7GjFF5zrehobR4eSbZm5MVABgJIY1P51KJ2tyklQwZ0C64LXmA5BaWCU-YVK-dRGLQ8JUOMHcpry/s320/PicsArt_10-12-03.09.28.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiU8a35aiheP8FtrCohXfTPzH5B77PssC6uZMrhdFWlWLjO5PAm4cSWF-kktWAn0Dcd7DzlMtAiTJPalGdjwIevqVQ32FT2uFRtwMfBFr5TYr0X7GjFF5zrehobR4eSbZm5MVABgJIY1P51KJ2tyklQwZ0C64LXmA5BaWCU-YVK-dRGLQ8JUOMHcpry/s4241/PicsArt_10-12-03.09.28.jpg)
 
-_(Heart is consumed by You)_
 
 **14th April 2022,**
 
