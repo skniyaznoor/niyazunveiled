@@ -22,12 +22,12 @@ export async function POST(request) {
           email: "no-reply@niyazunveiled.com"
         },
         to: [{ email, name }],
-        subject: "Thanks for pre-ordering A love story! ✨",
+        subject: "Thanks for pre-ordering my novel - Coffee! ✨",
         htmlContent: `
           <html>
             <body style="font-family: sans-serif; line-height: 1.6; color: #333;">
               <h1 style="color: #6a1b2d;">You're on the list, ${name || 'friend'}!</h1>
-              <p>Thank you so much for pre-ordering <strong>A love story</strong>.</p>
+              <p>Thank you so much for pre-ordering <strong>my novel - Coffee</strong>.</p>
               <p>This email confirms that you will be the first to know the moment the novel launches on September 23rd, 2026.</p>
               <p>Stay tuned for more updates, and thank you for supporting my writing journey.</p>
               <br/>

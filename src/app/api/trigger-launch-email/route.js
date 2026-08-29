@@ -47,8 +47,8 @@ export async function GET(request) {
           email: "no-reply@niyazunveiled.com" // Verified sender email
         },
         to: emails.map(email => ({ email })),
-        subject: "The wait is over! A love story is out now! 🎉",
-        htmlContent: "<html><body><h1>It's Launch Day!</h1><p>Thank you so much for pre-ordering. You can now grab your copy of <strong>A love story</strong>!</p></body></html>"
+        subject: "The wait is over! my novel - Coffee is out now! 🎉",
+        htmlContent: "<html><body><h1>It's Launch Day!</h1><p>Thank you so much for pre-ordering. You can now grab your copy of <strong>my novel - Coffee</strong>!</p></body></html>"
       })
     });
 
