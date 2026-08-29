@@ -44,9 +44,10 @@ Neil: “Yeah, I got it—danger and all. Let’s go there and find out.”
 
 Litu: “We’ll go, but hold your horses. What kind of trouble have I gotten into?”
 
-[![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLCOdBJB5RGjaXMX7ZWr6yI1yd3vOLaTSZBVU1xS6t0nDlmUxjzPHqgXaQue1axiY5eGPIO5ACMtl1eVYo8RMpM7aMKhDPLu0NrVXX_2CAb29V8MMsFPPEvFxXGlvdJwyPNleDX609FLnzZky91Jntc7F3jGCzua9CzbQgv1Qj-fDusisouqhyphenhyphenkIpdcxk/w400-h265/7a136b5211c69dbcbe9315614966c556.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLCOdBJB5RGjaXMX7ZWr6yI1yd3vOLaTSZBVU1xS6t0nDlmUxjzPHqgXaQue1axiY5eGPIO5ACMtl1eVYo8RMpM7aMKhDPLu0NrVXX_2CAb29V8MMsFPPEvFxXGlvdJwyPNleDX609FLnzZky91Jntc7F3jGCzua9CzbQgv1Qj-fDusisouqhyphenhyphenkIpdcxk/s386/7a136b5211c69dbcbe9315614966c556.jpg)
-
-_The Mist ...._
+<div style="text-align: center; margin: 2rem 0;">
+  <img src="/anl/7a136b5211c69dbcbe9315614966c556.jpg" alt="Death" style="max-width: 65%; height: auto; border-radius: 4px; box-shadow: var(--shadow); margin: 0 auto 0.5rem auto; display: block;" />
+  <em style="font-size: 0.95rem; color: var(--text-secondary);">_The Mist ...._</em>
+</div>
 
 Outside the college gate:
 

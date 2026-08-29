@@ -76,9 +76,10 @@ Neil: “RUN!!!!”
 
   
 
-[![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8m-2_KetAr_0qj08FsOsxxjkXXjXV_gLhtnoTG1tKA5bC_x4s9MgU34elWUrfC2A2BZLM_2ERXOmDOK2-6UDpKi3ROXV__-oZ4XJhUtDIYW8Q7LH343_Jo-RQzaBS9NcWHFjgNbm7XreFtQNQVMktx0EWlELN536u6ubCtgtfHcGdN-Um_O9jR9QqejI/w400-h400/f613e20edb437cc7511cf9e88691ef07.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8m-2_KetAr_0qj08FsOsxxjkXXjXV_gLhtnoTG1tKA5bC_x4s9MgU34elWUrfC2A2BZLM_2ERXOmDOK2-6UDpKi3ROXV__-oZ4XJhUtDIYW8Q7LH343_Jo-RQzaBS9NcWHFjgNbm7XreFtQNQVMktx0EWlELN536u6ubCtgtfHcGdN-Um_O9jR9QqejI/s500/f613e20edb437cc7511cf9e88691ef07.jpg)
-
-_Walk in heaven_
+<div style="text-align: center; margin: 2rem 0;">
+  <img src="/anl/f613e20edb437cc7511cf9e88691ef07.jpg" alt="Heaven" style="max-width: 65%; height: auto; border-radius: 4px; box-shadow: var(--shadow); margin: 0 auto 0.5rem auto; display: block;" />
+  <em style="font-size: 0.95rem; color: var(--text-secondary);">_Walk in heaven_</em>
+</div>
 
   
 They could feel something closing in, a presence hunting them. Panic surged through their veins as they bolted from the college, heart pounding, feet barely touching the ground. Desperation led them to the old, abandoned shrine, seeking refuge. But as they stepped inside, a strange man with a sinister air emerged from the shadows. His unsettling appearance sent a chill down their spine, forcing them to change course.

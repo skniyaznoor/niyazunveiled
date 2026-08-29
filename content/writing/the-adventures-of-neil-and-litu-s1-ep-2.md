@@ -78,9 +78,10 @@ Litu: "You are hiding something."
 
 Conversation continues ….
 
-[![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGaMXkdmV53SBqDKR47gDkL3RV7KL29siQrkrHQukPyPIpllRfQ_MDI_9MDsvw1rtc9U2YFJ0lDgRat3uclfXaJ4fJmj6K5xNK5Y_o80jCS-SOhAduS__CdJ6Cb2WossTXDn7jwxAiwhuZG7UZOxjGswcFlAtXIjR68VLaZyMMiUPd6ZV058vicVngc2g/w400-h300/IMG-20240805-WA0018.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGaMXkdmV53SBqDKR47gDkL3RV7KL29siQrkrHQukPyPIpllRfQ_MDI_9MDsvw1rtc9U2YFJ0lDgRat3uclfXaJ4fJmj6K5xNK5Y_o80jCS-SOhAduS__CdJ6Cb2WossTXDn7jwxAiwhuZG7UZOxjGswcFlAtXIjR68VLaZyMMiUPd6ZV058vicVngc2g/s1152/IMG-20240805-WA0018.jpg)
-
-_Bridge to the other side ...._
+<div style="text-align: center; margin: 2rem 0;">
+  <img src="/anl/IMG-20240805-WA0018.jpg" alt="Fear" style="max-width: 65%; height: auto; border-radius: 4px; box-shadow: var(--shadow); margin: 0 auto 0.5rem auto; display: block;" />
+  <em style="font-size: 0.95rem; color: var(--text-secondary);">_Bridge to the other side ...._</em>
+</div>
 
 **O**n Saturday,
 

@@ -64,9 +64,10 @@ Neil: "Yeah! Yeah!"
 
   
 
-[![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicZzFy8pnra1DQkMLll50g7zNq50N3av5cuuEq-i7nvzeHWztc0A22OK1mqV38yqWw5WKiOJFrZ18vduGE7E-_j_UmkoCVsSnY0O7PcI_e7XtNFH-Y8iezsxpcm3qkY9d398R8uhEJPiPrP0VnWQLJRNKxLUAesTmw4TU3h22VZdal4VVhfgEtXwFyntI/w400-h300/WhatsApp%20Image%202024-08-24%20at%2021.57.04_c3bdd974.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicZzFy8pnra1DQkMLll50g7zNq50N3av5cuuEq-i7nvzeHWztc0A22OK1mqV38yqWw5WKiOJFrZ18vduGE7E-_j_UmkoCVsSnY0O7PcI_e7XtNFH-Y8iezsxpcm3qkY9d398R8uhEJPiPrP0VnWQLJRNKxLUAesTmw4TU3h22VZdal4VVhfgEtXwFyntI/s1599/WhatsApp%20Image%202024-08-24%20at%2021.57.04_c3bdd974.jpg)
-
-_The Ruins 🍃 ...._
+<div style="text-align: center; margin: 2rem 0;">
+  <img src="/anl/WhatsApp Image 2024-08-24 at 21.57.04_c3bdd974.jpg" alt="The College" style="max-width: 65%; height: auto; border-radius: 4px; box-shadow: var(--shadow); margin: 0 auto 0.5rem auto; display: block;" />
+  <em style="font-size: 0.95rem; color: var(--text-secondary);">_The Ruins 🍃 ...._</em>
+</div>
 
   
 
