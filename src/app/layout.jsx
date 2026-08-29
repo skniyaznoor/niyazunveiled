@@ -18,11 +18,11 @@ export default function RootLayout({ children }) {
       <body className={`${fraunces.variable} ${newsreader.variable} ${caveat.variable}`}>
         <AuthProvider>
           <header style={headerStyle}>
-            <div className="container" style={navContainerStyle}>
+            <div className="container nav-inner" style={navContainerStyle}>
               <Link href="/" style={brandStyle}>
                 Niyaz <span style={brandSpanStyle}>Unveiled</span>
               </Link>
-              <nav style={navLinksStyle}>
+              <nav className="nav-links" style={navLinksStyle}>
                 <Link href="/writing" className="nav-link" style={linkStyle}>Writing</Link>
                 <Link href="/book" className="nav-link" style={linkStyle}>The Book</Link>
                 <Link href="/book" className="btn btn-primary nav-cta" style={navCtaStyle}>Get the book</Link>
@@ -37,13 +37,13 @@ export default function RootLayout({ children }) {
 
         <footer style={footerStyle}>
           <div className="container">
-            <div style={footerInnerStyle}>
+            <div className="footer-inner" style={footerInnerStyle}>
               <Link href="#top" style={brandStyle}>Niyaz <span style={brandSpanStyle}>Unveiled</span></Link>
-              <div style={footerLinksWrapperStyle}>
+              <div className="footer-links-wrapper" style={footerLinksWrapperStyle}>
                 <Link href="/writing" className="footer-link" style={footerLinkStyle}>Stories & Poetry</Link>
                 <Link href="/book" className="footer-link" style={footerLinkStyle}>The Book</Link>
               </div>
-              <div style={socialStyle}>
+              <div className="social-links" style={socialStyle}>
                 <a href="mailto:niyazunveiled@gmail.com" className="footer-link" style={footerLinkStyle}>Email</a>
                 <a href="https://www.instagram.com/niyazunveiled" target="_blank" rel="noopener noreferrer" className="footer-link" style={footerLinkStyle}>Instagram</a>
                 <span className="footer-link" style={footerLinkStyle}>Goodreads</span>

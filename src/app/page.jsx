@@ -16,7 +16,7 @@ export default function Home() {
     <>
       {/* HERO */}
       <section style={heroStyle}>
-        <div className="container" style={heroInnerStyle}>
+        <div className="container hero-inner" style={heroInnerStyle}>
           <div>
             <span className="eyebrow">Niyaz Unveiled — a tapestry of love and poetic intrigue</span>
             <h1 style={heroTitleStyle}>Where love speaks<br />first,<br />and silence writes<br />the rest.</h1>
@@ -37,7 +37,7 @@ export default function Home() {
               style={{ width: '100%', maxWidth: '480px', height: 'auto', display: 'block', transform: 'scale(1.3) translateY(5px)', position: 'relative', zIndex: 2 }}
             />
             {/* SVG OVERLAY for hearts, arrows, text, and outlines */}
-            <svg viewBox="0 0 500 500" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', pointerEvents: 'none', zIndex: 3, overflow: 'visible' }}>
+            <svg className="hero-art-svg" viewBox="0 0 500 500" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', pointerEvents: 'none', zIndex: 3, overflow: 'visible' }}>
 
               {/* Elegant smooth outlines around the flowers */}
               <ellipse cx="250" cy="240" rx="300" ry="320" fill="none" stroke="#e8a825" strokeWidth="1.5" strokeDasharray="8 6" strokeLinecap="round" transform="rotate(5 250 240)" />
@@ -89,7 +89,7 @@ export default function Home() {
 
       {/* BOOK SPOTLIGHT */}
       <section style={bookSectionStyle}>
-        <div className="container" style={bookGridStyle}>
+        <div className="container book-inner" style={bookGridStyle}>
           <div>
             <div className="book-cover" style={bookCoverStyle}>
               <span style={ribbonStyle}>Coming Soon</span>
@@ -129,7 +129,7 @@ export default function Home() {
               <Link href="/book" className="btn btn-primary">Pre-order now</Link>
               <Link href={`/writing/${firstEchoesSlug || 'echoes-of-absence-s1-ep1'}`} className="btn btn-ghost">Read an excerpt</Link>
             </div>
-            <p className="marginalia" style={{ fontFamily: 'var(--font-caveat)', fontSize: '1.25rem', color: 'var(--ink-soft)', maxWidth: 'none', whiteSpace: 'nowrap' }}>
+            <p className="marginalia" style={{ fontFamily: 'var(--font-caveat)', fontSize: '1.25rem', color: 'var(--ink-soft)', maxWidth: 'none' }}>
               Nirvit and Suprita — where two unfinished journeys quietly overlap.
             </p>
           </div>
@@ -223,7 +223,7 @@ export default function Home() {
 
       {/* ABOUT */}
       <section style={{ background: 'var(--paper)', position: 'relative', padding: '84px 0' }}>
-        <div className="container" style={aboutGridStyle}>
+        <div className="container about-inner" style={aboutGridStyle}>
           <div>
             <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '32px' }}>
               <div style={{ width: '180px', height: '180px', borderRadius: '50%', overflow: 'hidden', boxShadow: '0 8px 30px rgba(0,0,0,0.12)', border: '3px solid var(--gold)', flexShrink: 0 }}>
@@ -276,7 +276,7 @@ const bookPointItemStyle = { display: 'flex', gap: '12px', alignItems: 'flex-sta
 
 const sectionHeadStyle = { display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', marginBottom: '44px', gap: '20px', flexWrap: 'wrap' };
 const seeAllStyle = { fontSize: '0.95rem', color: 'var(--berry)', whiteSpace: 'nowrap', borderBottom: '1px solid var(--berry)', paddingBottom: '2px' };
-const gridStyle = { display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px' };
+const gridStyle = { display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '30px' };
 const cardStyle = { background: 'var(--paper-2)', border: '1px solid var(--line)', borderRadius: 'var(--radius)', padding: '30px 28px 28px', position: 'relative', display: 'flex', flexDirection: 'column', transition: 'transform 0.25s ease, box-shadow 0.25s ease' };
 const tagStyle = { fontSize: '0.72rem', letterSpacing: '0.09em', textTransform: 'uppercase', color: 'var(--sage)', fontFamily: 'var(--font-newsreader)', fontWeight: 500, marginBottom: '14px' };
 const cardTitleStyle = { fontSize: '1.35rem', marginBottom: '12px', lineHeight: '1.25' };

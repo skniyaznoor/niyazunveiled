@@ -67,6 +67,8 @@ export default async function SeriesPage({ params }) {
                 display: 'flex', 
                 alignItems: 'center', 
                 justifyContent: 'space-between',
+                flexWrap: 'wrap',
+                gap: '10px',
                 transition: 'transform 0.25s ease, box-shadow 0.25s ease',
                 textDecoration: 'none',
                 color: 'inherit'

@@ -40,7 +40,7 @@ export default function WritingIndex() {
           <h1 style={{ fontSize: 'clamp(2.5rem, 4vw, 3.5rem)' }}>Stories & Poetry</h1>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '30px' }}>
           {Object.values(seriesGroups).map(group => (
             <article key={group.seriesName} style={{ background: 'var(--paper-2)', border: '1px solid var(--line)', borderRadius: 'var(--radius)', padding: '30px 28px 28px', display: 'flex', flexDirection: 'column' }}>
               <span style={{ fontSize: '0.72rem', letterSpacing: '0.09em', textTransform: 'uppercase', color: 'var(--sage)', fontFamily: 'var(--font-newsreader)', fontWeight: 500, marginBottom: '14px' }}>

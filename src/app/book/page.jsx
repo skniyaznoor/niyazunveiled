@@ -12,7 +12,7 @@ export default function BookPage() {
   return (
     <>
       <section style={{ background: 'var(--paper-3)', position: 'relative', padding: '84px 0' }}>
-        <div className="container" style={{ display: 'grid', gridTemplateColumns: '0.8fr 1.2fr', gap: '64px', alignItems: 'center' }}>
+        <div className="container book-inner" style={{ display: 'grid', gridTemplateColumns: '0.8fr 1.2fr', gap: '64px', alignItems: 'center' }}>
 
           <div className="book-cover" style={{ position: 'relative', width: '100%', maxWidth: '320px', margin: '0 auto', perspective: '1000px' }}>
             <span style={{ position: 'absolute', top: '18px', right: '-34px', background: 'var(--gold)', color: 'var(--ink)', fontSize: '0.72rem', letterSpacing: '0.08em', textTransform: 'uppercase', padding: '5px 40px', transform: 'rotate(6deg)', boxShadow: '0 6px 12px rgba(0,0,0,0.18)', zIndex: 10 }}>Coming Soon</span>
@@ -51,7 +51,7 @@ export default function BookPage() {
             <div className="btn-row" style={{ marginBottom: '28px' }}>
               <PreOrderButton className="btn btn-primary">Pre-order now</PreOrderButton>
             </div>
-            <p className="marginalia" style={{ fontFamily: 'var(--font-caveat)', fontSize: '1.25rem', color: 'var(--ink-soft)', whiteSpace: 'nowrap', maxWidth: 'none' }}>
+            <p className="marginalia" style={{ fontFamily: 'var(--font-caveat)', fontSize: '1.25rem', color: 'var(--ink-soft)', maxWidth: 'none' }}>
               Nirvit and Suprita — where two unfinished journeys quietly overlap.
             </p>
           </div>
