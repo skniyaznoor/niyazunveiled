@@ -45,7 +45,7 @@ export default function RootLayout({ children }) {
               </div>
               <div style={socialStyle}>
                 {/* Social icons placeholder */}
-                <span className="footer-link" style={footerLinkStyle}>Instagram</span>
+                <a href="https://www.instagram.com/niyazunveiled" target="_blank" rel="noopener noreferrer" className="footer-link" style={footerLinkStyle}>Instagram</a>
                 <span className="footer-link" style={footerLinkStyle}>Goodreads</span>
               </div>
             </div>
