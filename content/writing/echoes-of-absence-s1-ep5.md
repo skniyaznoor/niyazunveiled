@@ -18,9 +18,7 @@ Before I could think or say anything, a pair of very warm and fluffy arms squeez
 
   
 
-[![](https://blogger.googleusercontent.com/img/a/AVvXsEg0_Zi9MjPvEuERfGqVV4V341CjyA2FPnHMcbcwpAS6lj3g7bnZABNHVyXMf6n75LDGVmOVpmqKFOdC8wIrckDTfi93B8t9yniiZnDuE4zgBrkQ3RJZzmfvx-OgtQThmByDyX_w3NK_iYhzbygoVGnHFzr1u53_ZDfzs0CBbp4ke3mOMARHqIK_X6rB=s320)](https://blogger.googleusercontent.com/img/a/AVvXsEg0_Zi9MjPvEuERfGqVV4V341CjyA2FPnHMcbcwpAS6lj3g7bnZABNHVyXMf6n75LDGVmOVpmqKFOdC8wIrckDTfi93B8t9yniiZnDuE4zgBrkQ3RJZzmfvx-OgtQThmByDyX_w3NK_iYhzbygoVGnHFzr1u53_ZDfzs0CBbp4ke3mOMARHqIK_X6rB=s880)
 
-_**(Missed Your Blessing)**_
 
   
 
@@ -102,9 +100,7 @@ She was sitting opposite side of mine, so she switches and seated herself side t
 
   
 
-![](https://blogger.googleusercontent.com/img/a/AVvXsEg4SGYVaD5UwX9BPO9DzDHf5X_mAogtdg5r0MwouO4KXJuGosJPcfqGM3Eb0mKCPCHwWT6_B64W8yzGMN9WHNGFu-QrfOZS2I3usmeGsEMn_JeMT-zdhkVrgJxCO1le-ZhOKfmWVYT9vddj-o5ksg6T15TP9bS7Zol06gErYgaXOWxIN7kslOZMt1ls=w235-h400)
 
-_**(Keep My Heart Safe)**_
 
   
 
@@ -136,7 +132,6 @@ No, it was. (said with a bit sad face)
 
 **I told you na .... It's fine. Now give it to me properly.** 
 
-[](https://blogger.googleusercontent.com/img/a/AVvXsEg4SGYVaD5UwX9BPO9DzDHf5X_mAogtdg5r0MwouO4KXJuGosJPcfqGM3Eb0mKCPCHwWT6_B64W8yzGMN9WHNGFu-QrfOZS2I3usmeGsEMn_JeMT-zdhkVrgJxCO1le-ZhOKfmWVYT9vddj-o5ksg6T15TP9bS7Zol06gErYgaXOWxIN7kslOZMt1ls)
 
   
 
@@ -153,3 +148,6 @@ Peace ❤️ .... (My soul uttered)
   
 
 To be continued ....
+
+<div style="font-size: 0.85rem; font-style: italic; text-align: center; margin-top: 1rem;">Missed Your Blessing & Keep My Heart Safe</div>
+

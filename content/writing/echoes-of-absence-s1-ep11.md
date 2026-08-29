@@ -14,11 +14,8 @@ And the next thing I remember is that I found myself standing at the edge of tha
 
   
 
-![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjI0ORilkQQR7gH4MTV5JzeOuqrCnzG2WBqPET6nAWbw37xUH6ro3aER8m1thlhilacvGCco1Ns7Yx6D6Z-GN8Uj-HsgJkuYc_PmwmcQxv7P-1EALVA3f5xK3aBjX2R6Qj4Z-Q2xicLP4s/s1600/1647457516207889-0.png)
 
-_**(You knew I .... But still)**_
 
-[](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjI0ORilkQQR7gH4MTV5JzeOuqrCnzG2WBqPET6nAWbw37xUH6ro3aER8m1thlhilacvGCco1Ns7Yx6D6Z-GN8Uj-HsgJkuYc_PmwmcQxv7P-1EALVA3f5xK3aBjX2R6Qj4Z-Q2xicLP4s/s1600/1647457516207889-0.png)
 
   
 
@@ -101,3 +98,6 @@ I looked around and see, a very thin layer of fog is covered around the bridge. 
   
 
 To be continued ....
+
+<div style="font-size: 0.85rem; font-style: italic; text-align: center; margin-top: 1rem;">You knew me .... But still</div>
+

@@ -114,9 +114,7 @@ I blushed. 
 
   
 
-[![](https://blogger.googleusercontent.com/img/a/AVvXsEgPkLdHO7tgunFNq0KDG3ibySdsCt6jis1l4E4UDWI6HsFS2LATrbbvTZcklun0e40eVh4hdel6pmM5NQhRz6QKB1ltXiJpy9qAaUwHzdiN9TWwAfwHN2G8OMRdjTekBmHRCSB9oTSIEAZ7taYo_uiDSK0jIKA8wVjmGizH9xv4TdKCZU3nr44oCXYM=w400-h334)](https://blogger.googleusercontent.com/img/a/AVvXsEgPkLdHO7tgunFNq0KDG3ibySdsCt6jis1l4E4UDWI6HsFS2LATrbbvTZcklun0e40eVh4hdel6pmM5NQhRz6QKB1ltXiJpy9qAaUwHzdiN9TWwAfwHN2G8OMRdjTekBmHRCSB9oTSIEAZ7taYo_uiDSK0jIKA8wVjmGizH9xv4TdKCZU3nr44oCXYM=s639)
 
-_**(You are the moon of my darkest night)**_  
 
   
 
@@ -141,3 +139,6 @@ Then we both look at each other and start laughing.
   
 
 To be continued ....
+
+<div style="font-size: 0.85rem; font-style: italic; text-align: center; margin-top: 1rem;">You are the moon of my darkest night</div>
+

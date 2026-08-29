@@ -32,9 +32,7 @@ That's why I hate you.
 
   
 
-[![](https://blogger.googleusercontent.com/img/a/AVvXsEhFg7Yy6cBUna5D7B62xbmLmBh6-HQZdCw5oc6yGmgjTcuRKWyI7kqaNI5MTZmwgbMFHUh5pBV95C5YUEsqHi32u1NFOKO-YU9QstrdzDfunoc17oOxNMH-pd6-044-F4Nx1QdMF60PcflShEMogDNt78L_BwXmtcvhbCw2P6Cw6881OenUTLOMKA6d=s320)](https://blogger.googleusercontent.com/img/a/AVvXsEhFg7Yy6cBUna5D7B62xbmLmBh6-HQZdCw5oc6yGmgjTcuRKWyI7kqaNI5MTZmwgbMFHUh5pBV95C5YUEsqHi32u1NFOKO-YU9QstrdzDfunoc17oOxNMH-pd6-044-F4Nx1QdMF60PcflShEMogDNt78L_BwXmtcvhbCw2P6Cw6881OenUTLOMKA6d=s800)
 
-_**(Losing self in the darkness)**_
 
   
 
@@ -109,3 +107,6 @@ Seriously!!! (Went speechless)
   
 
 To be continued ....
+
+<div style="font-size: 0.85rem; font-style: italic; text-align: center; margin-top: 1rem;">Losing self in the darkness</div>
+

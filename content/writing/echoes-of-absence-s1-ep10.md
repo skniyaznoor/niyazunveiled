@@ -22,9 +22,7 @@ It's midnight and I'm running on the streets. My blurred eyes are searching for 
 
   
 
-[![](https://blogger.googleusercontent.com/img/a/AVvXsEj1cj69Riw_QpU1P1ZkhA3iA4r0z9prdb4K0mZ-u5W3S3gRpy3WPPqkQSfTkb9I8Du8_BMIAjZyEAeMiwRwYL004RhdugILi84ihloTzaQY40nBIDIhy8LrgLD9I4DrJHsMPAvxSK1nbl3CAxlNkGduY3epvC0vZ2EVLuK8WkH43AapsJJ537rH7Ts_=w259-h400)](https://blogger.googleusercontent.com/img/a/AVvXsEj1cj69Riw_QpU1P1ZkhA3iA4r0z9prdb4K0mZ-u5W3S3gRpy3WPPqkQSfTkb9I8Du8_BMIAjZyEAeMiwRwYL004RhdugILi84ihloTzaQY40nBIDIhy8LrgLD9I4DrJHsMPAvxSK1nbl3CAxlNkGduY3epvC0vZ2EVLuK8WkH43AapsJJ537rH7Ts_=s1016)
 
-_(Deploy nukes but still my heart is yours)_
 
   
 
@@ -97,3 +95,6 @@ These are like nuclear bombs which were dropped in my heart by her. I become spe
   
 
 To be continued ....
+
+<div style="font-size: 0.85rem; font-style: italic; text-align: center; margin-top: 1rem;">Deploy nukes but still my heart is yours</div>
+

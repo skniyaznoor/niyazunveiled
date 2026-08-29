@@ -24,9 +24,7 @@ Well! It is this bad. “Dhadak! Let me clarify. Yaar” I said.
 
 And this makes me sad and I feel guilty. I feel like a very bad person. You know, it hurts when you see your loved ones in pain. And it breaks you when you become the reason for their tears. I love her the most and yet I made her cry. I won’t be able to forgive myself for what I have done.
 
-[![](https://blogger.googleusercontent.com/img/a/AVvXsEgYHxcc4-uH8aZUpJEgVAis8tavOBdz1_2UIrFnulXo21znLcH8MsNfiecu15rNqk1wNfNnoKSM-E9wcO0eJAQkmSYtF_-7Buo_8v8DqF8IFb_InoVpzqQQHypP6J70C6yDYIAF8KGUpAuNYOuZFdknpMxrFH4VihtANrC37_em_EaLvvD6nT5Yx7jl=w250-h400)](https://blogger.googleusercontent.com/img/a/AVvXsEgYHxcc4-uH8aZUpJEgVAis8tavOBdz1_2UIrFnulXo21znLcH8MsNfiecu15rNqk1wNfNnoKSM-E9wcO0eJAQkmSYtF_-7Buo_8v8DqF8IFb_InoVpzqQQHypP6J70C6yDYIAF8KGUpAuNYOuZFdknpMxrFH4VihtANrC37_em_EaLvvD6nT5Yx7jl=s1602)
 
-_(Your Smile is still a blessing for me ....)_
 
   
 
@@ -77,3 +75,6 @@ She smiled. And Finally, I got blessed. I have been dying just to see her smile.
   
 
 To be continued ....
+
+<div style="font-size: 0.85rem; font-style: italic; text-align: center; margin-top: 1rem;">Your Smile is still a blessing for me ....</div>
+

@@ -48,9 +48,7 @@ Fine! Die alone.
 
   
 
-[![](https://blogger.googleusercontent.com/img/a/AVvXsEiU8tzJQpUddmE9juR8jXOrAo7JiU51aPPNbk3Q7TyhoujxPXALTZ-uaknJ-U683SdFkZIpvYM6IsQH19XGSdJIfMSTQ_DowTteBeh8Yx056Y5wCANWLqYzveYikK5kMnWmWcn1Yo1_Cnzdh1KPnamU6ILTCRZLpLkr7Q0leWo1W86v19BlJ1QvCCFZ=s320)](https://blogger.googleusercontent.com/img/a/AVvXsEiU8tzJQpUddmE9juR8jXOrAo7JiU51aPPNbk3Q7TyhoujxPXALTZ-uaknJ-U683SdFkZIpvYM6IsQH19XGSdJIfMSTQ_DowTteBeh8Yx056Y5wCANWLqYzveYikK5kMnWmWcn1Yo1_Cnzdh1KPnamU6ILTCRZLpLkr7Q0leWo1W86v19BlJ1QvCCFZ=s720)
 
-_**(Voice snatched by Time)**_
 
   
 
@@ -195,3 +193,6 @@ I parked my bike and run towards the arrival terminals. 
   
 
 To be continued ....
+
+<div style="font-size: 0.85rem; font-style: italic; text-align: center; margin-top: 1rem;">Voice snatched by Time</div>
+

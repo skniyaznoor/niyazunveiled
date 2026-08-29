@@ -14,9 +14,7 @@ It was really a hell of a day, it doesn't go as expected. A few things went wron
 
   
 
-[![](https://blogger.googleusercontent.com/img/a/AVvXsEhyN-9GaaM0VTk63dK36-GkKQNn5ZBApC5-VqLV835UCtBZ8X02FBZm-Rh3UuBjYvdL2cM4g03a_EQHbpJFhQvu_kPknXPv8lB1xO-M8liPVKZeS4siYslQvOAtqV6dnhj6H0qdJOmW_lP8uz_5COVda9PzuelD_tloAcHmLt8VcDTOGAuKeV5j-1QD=w267-h400)](https://blogger.googleusercontent.com/img/a/AVvXsEhyN-9GaaM0VTk63dK36-GkKQNn5ZBApC5-VqLV835UCtBZ8X02FBZm-Rh3UuBjYvdL2cM4g03a_EQHbpJFhQvu_kPknXPv8lB1xO-M8liPVKZeS4siYslQvOAtqV6dnhj6H0qdJOmW_lP8uz_5COVda9PzuelD_tloAcHmLt8VcDTOGAuKeV5j-1QD=s1000)
 
-_(I don't know about the diamond but you are my Kohinoor)_
 
   
 
@@ -131,3 +129,6 @@ She pulled the door handle and is about to leave, and I'm right there. I can sto
   
 
 To be continued ....
+
+<div style="font-size: 0.85rem; font-style: italic; text-align: center; margin-top: 1rem;">I don't know about the diamond but you are my Kohinoor</div>
+

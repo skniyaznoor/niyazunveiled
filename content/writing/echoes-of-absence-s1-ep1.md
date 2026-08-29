@@ -16,13 +16,9 @@ Alright, that's it. Let's not hear Mr. Lame anymore. So basically he is an idiot
 
   
 
-Well, as you can see I'm the apple of the eye of this weird family. And It's not the story you are looking for, so here it comes .... my story, my heartbeat, my world, my universe, my love. Don't be bored, it's on my gens what should I do? Well! I'm talking about my Dhadak. I swear her name is Dhadak Basu. Ok. Ok. It's awkwardly terrible but it's true and I'm blushing, right now. In short, I'm her Jaan and she is my Dhadak (Still blushing). I saw her for the first time at the famous Broken Bridge of Nile's. You know Nile, right? You will know him in the upcoming story. Anyway, she was wearing a red Kurti and a white-pink Chunri. What if I tell you red is my favorite color. Come on guys, my name is Jaan and it's totally fine (blushing continues).  At first, I thought it was some red color cloth wrapped on a pillar but when I came closer I saw an angel sprinkling love in that wintry warm afternoon of December**.** 
+Well, as you can see I'm the apple of the eye of this weird family. And It's not the story you are looking for, so here it comes .... my story, my heartbeat, my world, my universe, my love. Don't be bored, it's on my gens what should I do? Well! I'm talking about my Dhadak. I swear her name is Dhadak Basu. Ok. Ok. It's awkwardly terrible but it's true and I'm blushing, right now. In short, I'm her Jaan and she is my Dhadak (Still blushing). I saw her for the first time at the famous Broken Bridge of Nile's. You know Nile, right? You will know him in the upcoming story. Anyway, she was wearing a red Kurti and a white-pink Chunri. What if I tell you red is my favorite color. Come on guys, my name is Jaan and it's totally fine (blushing continues).  At first, I thought it was some red color cloth wrapped on a pillar but when I came closer I saw an angel sprinkling love in that wintry warm afternoon of December.
 
-  
 
-[![](https://blogger.googleusercontent.com/img/a/AVvXsEgi_CaW0Itd2XTcHSnKTiv3efTjJ9XLKE9DWGLWWFN0TByJkoMVvagb8b4zRtgxoZS4pNbD5J55GS985xIBaklalXIlUrqwERTsiHtXFmr3vt6IagJN2_4__kiYjyMzwoGRm6Ot1SaGUynjbLdW5GKKaMEkvK0svIwmRqEK7F0clNb2LmUKhQ3qe6o2=w285-h400)](https://blogger.googleusercontent.com/img/a/AVvXsEgi_CaW0Itd2XTcHSnKTiv3efTjJ9XLKE9DWGLWWFN0TByJkoMVvagb8b4zRtgxoZS4pNbD5J55GS985xIBaklalXIlUrqwERTsiHtXFmr3vt6IagJN2_4__kiYjyMzwoGRm6Ot1SaGUynjbLdW5GKKaMEkvK0svIwmRqEK7F0clNb2LmUKhQ3qe6o2=s1033)
-
-**_(Drained from the Heart but still beats for you)_**
 
   
 
@@ -30,11 +26,8 @@ Oh! God, that drugged black eyes, those raised waved eyebrows, that red lipstick
 
   
 
-_
-
 _"What I'm the one who irritates? I just narrate the reality and it becomes bitter for your overdramatic, sensitive, filmy heart. In my sentiment, you should stop watching those shitty love story movies because there is no happy ending in reality. And that's all are shitty fiction."_
 
-_
 
   
 
@@ -42,23 +35,16 @@ I told you, he is very good at his greeting talent (sarcasm). So moving on to th
 
   
 
-_
 
 _"Woh! Hold on. You are not going to tell how you chase her everywhere. I mean not on Instagram or Facebook like as a stalker, you stalk in real. Her college, her coaching center, her house, the salon, you stalk her everywhere as a pervert."_
-
-_
-
   
 
 Ok. Stop. I'm not a pervert alright. It's just co-incidences. 
 
   
 
-_
 
 _"Seems like you are the luckiest person in the world (sarcasm)."_
-
-_
 
   
 
@@ -67,3 +53,6 @@ Ignore!!!! So, where was I? I'm getting late. See you. 
   
 
 To be continued ....
+
+<div style="font-size: 0.85rem; font-style: italic; text-align: center; margin-top: 1rem;">Drained from the Heart but still beats for you</div>
+

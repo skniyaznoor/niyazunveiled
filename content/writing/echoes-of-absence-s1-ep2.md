@@ -50,11 +50,7 @@ _"They are waiting. You were into her eyes. Muted! (Zero's signature sarcasm)"_
 
 _"Are you done? Now, please! Focus on her words. It's going worse, solve it. (Zero's concerned)"_
 
-  
 
-[![](https://blogger.googleusercontent.com/img/a/AVvXsEiBCjFlbOZHOv9fdKSmZZklZ5OQZtJ2tq0x9N0cYJF4h_J-vNMGgq3ol8oUHMxU1yAQT2Y4U5SnMJjij42lpfTIeqpo33bBurNaSuE7kH3Ga7xNhkiy_DfTj5vDDhwEf4f8-FD2KPbXBFZJz3ErWFZj0BjG00xnqShhf2W5RaC9_ibpsngzycijesFD=s320)](https://blogger.googleusercontent.com/img/a/AVvXsEiBCjFlbOZHOv9fdKSmZZklZ5OQZtJ2tq0x9N0cYJF4h_J-vNMGgq3ol8oUHMxU1yAQT2Y4U5SnMJjij42lpfTIeqpo33bBurNaSuE7kH3Ga7xNhkiy_DfTj5vDDhwEf4f8-FD2KPbXBFZJz3ErWFZj0BjG00xnqShhf2W5RaC9_ibpsngzycijesFD=s1075)
-
-**_(Flamed in your love)_**
 
   
 
@@ -103,3 +99,6 @@ I just nod my head.
   
 
 To be continued ....
+
+<div style="font-size: 0.85rem; font-style: italic; text-align: center; margin-top: 1rem;">Flamed in your love</div>
+

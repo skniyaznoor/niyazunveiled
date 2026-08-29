@@ -52,9 +52,7 @@ Ok, let's make some money. I re-replied.
 
   
 
-[![](https://blogger.googleusercontent.com/img/a/AVvXsEgJlwofir3TLS6Dp2GW8-ziQeJL4sZOOgyLsIOqslrBtUDpMPm6-7lthkDm8SuG98x5QYC8UBFYuRmxN30YO3flznSTbDKIHUFcvk1CYW-dfzMJWk8PhKm72Loe8sWZTG-0qDzn1uUPjca-l68oqQSQlfUY4YBReJIGcqANgJfbYYYer0u44M25Away=w288-h400)](https://blogger.googleusercontent.com/img/a/AVvXsEgJlwofir3TLS6Dp2GW8-ziQeJL4sZOOgyLsIOqslrBtUDpMPm6-7lthkDm8SuG98x5QYC8UBFYuRmxN30YO3flznSTbDKIHUFcvk1CYW-dfzMJWk8PhKm72Loe8sWZTG-0qDzn1uUPjca-l68oqQSQlfUY4YBReJIGcqANgJfbYYYer0u44M25Away=s1389)
 
-_(This Heart still beats You ....)_
 
   
   
@@ -74,3 +72,6 @@ She is sitting on a beach wearing a beautiful green and white dress, I don't kno
   
 
 To be continued ....
+
+<div style="font-size: 0.85rem; font-style: italic; text-align: center; margin-top: 1rem;">This Heart still beats You ....</div>
+

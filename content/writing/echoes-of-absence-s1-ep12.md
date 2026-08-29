@@ -16,9 +16,7 @@ I'm dying here without her and why this isn't affecting her. Why I'm the only on
 
   
 
-![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDrrI9_HAjXvlyaIdsp3UjQ55t2lPbuSW6Ux3COWzYm1kzskb-4gnZZ1v8sF6rrM9wyTrfpM69mIeKRo6gAIIfbuFp7H4UgYWzSPaGTiWcKJtNOpljJHReNKwBtWMrHNuItrR-m4BAmtA/s1600/1647953713313017-0.png)
 
-_(I will always choose you over myself)_ 
 
   
 
@@ -95,3 +93,6 @@ To be continued ....
   
 
 **Dhadak That Left** ❤️💕 **....**
+
+<div style="font-size: 0.85rem; font-style: italic; text-align: center; margin-top: 1rem;">I will always choose you over myself</div>
+
