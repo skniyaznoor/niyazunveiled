@@ -40,6 +40,14 @@ export default function PreOrderModal({ isOpen, onClose }) {
         email,
         createdAt: serverTimestamp(),
       });
+      
+      // Trigger immediate confirmation email
+      await fetch('/api/send-confirmation-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email }),
+      });
+
       setSuccess(true);
     } catch (err) {
       console.error('Error adding preorder:', err);

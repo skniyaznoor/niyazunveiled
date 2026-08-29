@@ -44,7 +44,7 @@ export async function GET(request) {
       body: JSON.stringify({
         sender: {
           name: "Sk Niyaz Noor",
-          email: "author@niyazunveiled.com" // Replace with verified sender email
+          email: "no-reply@niyazunveiled.com" // Verified sender email
         },
         to: emails.map(email => ({ email })),
         subject: "The wait is over! A love story is out now! 🎉",
