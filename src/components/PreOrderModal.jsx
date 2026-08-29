@@ -40,7 +40,7 @@ export default function PreOrderModal({ isOpen, onClose }) {
         email,
         createdAt: serverTimestamp(),
       });
-      
+
       // Trigger immediate confirmation email
       await fetch('/api/send-confirmation-email', {
         method: 'POST',
@@ -67,13 +67,13 @@ export default function PreOrderModal({ isOpen, onClose }) {
         backgroundColor: 'var(--paper-2)', padding: '40px', borderRadius: '8px',
         maxWidth: '400px', width: '100%', position: 'relative', boxShadow: 'var(--shadow)'
       }}>
-        <button 
+        <button
           onClick={onClose}
           style={{ position: 'absolute', top: '15px', right: '15px', background: 'transparent', border: 'none', fontSize: '1.5rem', cursor: 'pointer', color: 'var(--ink-soft)' }}
         >
           &times;
         </button>
-        
+
         {success ? (
           <div style={{ textAlign: 'center' }}>
             <h2 style={{ fontFamily: 'var(--font-fraunces)', color: 'var(--berry)', marginBottom: '16px' }}>Thank you!</h2>
@@ -82,33 +82,33 @@ export default function PreOrderModal({ isOpen, onClose }) {
           </div>
         ) : (
           <>
-            <h2 style={{ fontFamily: 'var(--font-fraunces)', color: 'var(--ink)', marginBottom: '16px' }}>Pre-order "A love story"</h2>
+            <h2 style={{ fontFamily: 'var(--font-fraunces)', color: 'var(--ink)', marginBottom: '16px' }}>Pre-order</h2>
             <p style={{ color: 'var(--ink-soft)', marginBottom: '24px', fontSize: '0.95rem' }}>Leave your details below to get notified the moment the novel launches on September 23rd, 2026.</p>
-            
+
             {error && <p style={{ color: 'red', marginBottom: '16px', fontSize: '0.9rem' }}>{error}</p>}
-            
+
             <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
               <div>
                 <label style={{ display: 'block', marginBottom: '8px', fontSize: '0.9rem', color: 'var(--ink)' }}>Name</label>
-                <input 
-                  type="text" 
-                  value={name} 
-                  onChange={(e) => setName(e.target.value)} 
-                  required 
+                <input
+                  type="text"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  required
                   style={{ width: '100%', padding: '10px', borderRadius: '4px', border: '1px solid #ccc', fontFamily: 'inherit' }}
                 />
               </div>
               <div>
                 <label style={{ display: 'block', marginBottom: '8px', fontSize: '0.9rem', color: 'var(--ink)' }}>Email Address</label>
-                <input 
-                  type="email" 
-                  value={email} 
-                  onChange={(e) => setEmail(e.target.value)} 
-                  required 
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
                   style={{ width: '100%', padding: '10px', borderRadius: '4px', border: '1px solid #ccc', fontFamily: 'inherit' }}
                 />
               </div>
-              
+
               <button type="submit" className="btn btn-primary" disabled={loading} style={{ marginTop: '10px' }}>
                 {loading ? 'Submitting...' : 'Confirm Pre-order'}
               </button>
