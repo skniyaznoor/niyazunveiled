@@ -185,6 +185,11 @@ export default function Home() {
       <section style={{ background: 'var(--paper-3)', position: 'relative', padding: '84px 0' }}>
         <div className="container" style={aboutGridStyle}>
           <div>
+            <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '32px' }}>
+              <div style={{ width: '180px', height: '180px', borderRadius: '50%', overflow: 'hidden', boxShadow: '0 8px 30px rgba(0,0,0,0.12)', border: '3px solid var(--gold)', flexShrink: 0 }}>
+                <img src="/profile/InShot_20260829_231327003.jpg" alt="Sk Niyaz Noor" style={{ width: '100%', height: '100%', display: 'block', objectFit: 'cover' }} />
+              </div>
+            </div>
             <span style={quoteMarkStyle}>"</span>
             <blockquote style={aboutQuoteStyle}>I may be small in stature, but my words carry entire worlds.</blockquote>
             <span style={signatureStyle}>— Niyaz</span>
@@ -250,7 +255,7 @@ const cardDescStyle = { color: 'var(--ink-soft)', fontStyle: 'italic', fontSize:
 const cardFootStyle = { display: 'flex', alignItems: 'center', justifyContent: 'space-between', fontSize: '0.85rem', color: 'var(--ink-soft)', borderTop: '1px solid var(--line)', paddingTop: '16px' };
 const readMoreStyle = { color: 'var(--berry)' };
 
-const aboutGridStyle = { display: 'grid', gridTemplateColumns: '0.9fr 1.1fr', gap: '60px', alignItems: 'center' };
+const aboutGridStyle = { display: 'grid', gridTemplateColumns: '0.9fr 1.1fr', gap: '60px', alignItems: 'flex-start' };
 const quoteMarkStyle = { fontFamily: 'var(--font-fraunces)', fontSize: '5rem', color: 'var(--gold-soft)', lineHeight: '0.6', marginBottom: '6px', display: 'block' };
 const aboutQuoteStyle = { fontFamily: 'var(--font-fraunces)', fontSize: '1.7rem', fontWeight: 500, lineHeight: '1.35', margin: '0 0 20px' };
 const signatureStyle = { fontFamily: 'var(--font-caveat)', fontSize: '1.7rem', color: 'var(--berry-dark)' };
