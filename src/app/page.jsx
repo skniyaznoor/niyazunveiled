@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import NewsletterForm from '@/components/NewsletterForm';
+
 import { getSortedWritingsData } from '@/lib/markdown';
 
 export default function Home() {
@@ -182,7 +182,7 @@ export default function Home() {
       </section>
 
       {/* ABOUT */}
-      <section style={{ background: 'var(--paper-3)', position: 'relative', padding: '84px 0' }}>
+      <section style={{ background: 'var(--paper)', position: 'relative', padding: '84px 0' }}>
         <div className="container" style={aboutGridStyle}>
           <div>
             <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '32px' }}>
@@ -208,18 +208,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* NEWSLETTER */}
-      <section style={{ padding: '84px 0' }}>
-        <div className="container">
-          <div style={newsletterStyle}>
-            <div>
-              <h2 style={{ color: 'var(--paper-2)', fontSize: '1.8rem', marginBottom: '10px' }}>Get new stories before anyone else</h2>
-              <p style={{ color: 'rgba(246,236,223,0.82)', maxWidth: '40ch' }}>A short, occasional email with new stories, poems, and updates on the book. No noise, just the good stuff.</p>
-            </div>
-            <NewsletterForm />
-          </div>
-        </div>
-      </section>
     </>
   );
 }
