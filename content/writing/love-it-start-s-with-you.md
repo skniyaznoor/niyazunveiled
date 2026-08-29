@@ -11,11 +11,10 @@ Love is the only thing in this world that remains unchanged, untouched, unaffect
 
 Sometimes … No! Not sometimes. It always happens in everyone’s life. It may happen several times but never the same as the first time. Well! It happens with me or I say, it happens with us. And we still got it; Okay! I’m not sure about that. Are we?
 
-![](https://blogger.googleusercontent.com/img/a/AVvXsEhwVi_S2VpiwtO2OHZgUixLIU_Au61pMYp8GfvHHNgzBTrv_BEjmwN89Rd43zNE7TM1WNBhpECzB78VM2XqWXOTirsCBbMMTZ_MJmVkK7LRlgrVSrXpTvyPEt0ZTynZ-GA-whKeZTLKf56BnwM90xxVv0NKplSqJQWiMUU2YM7I250wwwmlRDlxBxao=w400-h225)
-
-_(Waiting for you in You)_
-
-[](https://blogger.googleusercontent.com/img/a/AVvXsEhwVi_S2VpiwtO2OHZgUixLIU_Au61pMYp8GfvHHNgzBTrv_BEjmwN89Rd43zNE7TM1WNBhpECzB78VM2XqWXOTirsCBbMMTZ_MJmVkK7LRlgrVSrXpTvyPEt0ZTynZ-GA-whKeZTLKf56BnwM90xxVv0NKplSqJQWiMUU2YM7I250wwwmlRDlxBxao)
+<div style="text-align: center; margin: 2rem 0;">
+  <img src="/love/1642156259224711-0.png" alt="Love: It Start's with You" style="max-width: 65%; height: auto; border-radius: 4px; box-shadow: var(--shadow); margin: 0 auto 0.5rem auto; display: block;" />
+  <em style="font-size: 0.95rem; color: var(--text-secondary);">_(Waiting for you in You)_</em>
+</div>
 
 Three years ago I met a girl, very beautiful and pretty and charming as well. And if you look at her for a few seconds, I can assure you that your heart will fill with joy & happiness. I don’t know, how did she have that magic? But it’s very effective. Well! I don’t believe in the concept of love at first sight. But to be honest, I fell in love with her. Yeah! I know, it sounds odd, meeting a girl for the first time and falling in love with her. But how can’t I fall in love? The way she was tucking her hair back to her ears; that smile of her could bring a dead person to live. Those drugged & deep black eyes have the power to sink the entire ocean. And that cute & little nose, which tickles the wind. Those ground-touching long & shiny hair is taking my breath away. Well! I can go on & on … 
 

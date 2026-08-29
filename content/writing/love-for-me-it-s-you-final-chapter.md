@@ -17,9 +17,10 @@ Well! This quantum concept can be visualized if you were in love. You are mixed 
 
   
 
-[![](https://blogger.googleusercontent.com/img/a/AVvXsEhyP-VZQAwii0hziYW2UI88IANT3d6MVR64jaihxTv41tpm6Am302_MP8-oVfVaixjoWbKoay1aa-ZjEhXD8B4TKBmuNfDw95Hd4J7JUtskSxmr8medsxYixd3-fJIpMn7t_r5HzYrPbNlb93N35BUcSg69XjHx-cRSWRVV-FzmRjANcZ6ZPLKQhIKb=w201-h357)](https://blogger.googleusercontent.com/img/a/AVvXsEhyP-VZQAwii0hziYW2UI88IANT3d6MVR64jaihxTv41tpm6Am302_MP8-oVfVaixjoWbKoay1aa-ZjEhXD8B4TKBmuNfDw95Hd4J7JUtskSxmr8medsxYixd3-fJIpMn7t_r5HzYrPbNlb93N35BUcSg69XjHx-cRSWRVV-FzmRjANcZ6ZPLKQhIKb=s1280)
-
-_(Reality in breaking apart without You)_
+<div style="text-align: center; margin: 2rem 0;">
+  <img src="/love/8d303f420c4659f046f96b0cb937696d.jpg" alt="Love: For me, It's You" style="max-width: 65%; height: auto; border-radius: 4px; box-shadow: var(--shadow); margin: 0 auto 0.5rem auto; display: block;" />
+  <em style="font-size: 0.95rem; color: var(--text-secondary);">_(Reality in breaking apart without You)_</em>
+</div>
 
   
 

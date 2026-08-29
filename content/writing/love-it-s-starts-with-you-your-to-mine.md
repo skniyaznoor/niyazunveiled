@@ -17,9 +17,10 @@ You are more necessary than the heartbeat. And heart, it's a very complicated th
 
   
 
-[![](https://blogger.googleusercontent.com/img/a/AVvXsEgs7KOSvPOAWrgqWGVwl8H52YKii9XeHDcR7qEdPDjggitNcBVhmO_iaiwgZOUYlc83r_9PtvM8nVGblD4tzkq30pOb8EBzOCMzVaOXEc93_MH3xMpLN1oQG8yBKTIMQsHBq1Ii77t0Ilwr5q0-PwioLUs3uw1y0Q6LeO9SW-UQfLgcC7UgHmuwowrQ=s320)](https://blogger.googleusercontent.com/img/a/AVvXsEgs7KOSvPOAWrgqWGVwl8H52YKii9XeHDcR7qEdPDjggitNcBVhmO_iaiwgZOUYlc83r_9PtvM8nVGblD4tzkq30pOb8EBzOCMzVaOXEc93_MH3xMpLN1oQG8yBKTIMQsHBq1Ii77t0Ilwr5q0-PwioLUs3uw1y0Q6LeO9SW-UQfLgcC7UgHmuwowrQ=s811)
-
-_(Let's go to the world where only You remains)_
+<div style="text-align: center; margin: 2rem 0;">
+  <img src="/love/268a1294534db35414d9d4d3d163e816_1.jpg" alt="Love: It's Starts with You" style="max-width: 65%; height: auto; border-radius: 4px; box-shadow: var(--shadow); margin: 0 auto 0.5rem auto; display: block;" />
+  <em style="font-size: 0.95rem; color: var(--text-secondary);">_(Let's go to the world where only You remains)_</em>
+</div>
 
   
 
