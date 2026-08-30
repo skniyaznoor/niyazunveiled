@@ -90,7 +90,7 @@ export default function Home() {
       {/* BOOK SPOTLIGHT */}
       <section style={bookSectionStyle}>
         <div className="container book-inner" style={bookGridStyle}>
-          <div>
+          <div style={{ width: '100%' }}>
             <div className="book-cover" style={bookCoverStyle}>
               <span style={ribbonStyle}>Coming Soon</span>
               <div className="cover-face" style={coverFaceStyle}>
