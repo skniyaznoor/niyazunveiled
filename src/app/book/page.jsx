@@ -14,7 +14,7 @@ export default function BookPage() {
       <section style={{ background: 'var(--paper-3)', position: 'relative', padding: '84px 0' }}>
         <div className="container book-inner" style={{ display: 'grid', gridTemplateColumns: '0.8fr 1.2fr', gap: '64px', alignItems: 'center' }}>
 
-          <div className="book-cover" style={{ position: 'relative', width: '100%', maxWidth: '320px', margin: '0 auto', perspective: '1000px' }}>
+          <div className="book-cover" style={{ position: 'relative', width: '100%', maxWidth: '400px', margin: '0 auto', perspective: '1000px' }}>
             <span style={{ position: 'absolute', top: '18px', right: '-34px', background: 'var(--gold)', color: 'var(--ink)', fontSize: '0.72rem', letterSpacing: '0.08em', textTransform: 'uppercase', padding: '5px 40px', transform: 'rotate(6deg)', boxShadow: '0 6px 12px rgba(0,0,0,0.18)', zIndex: 10 }}>Coming Soon</span>
             <div className="cover-face" style={{ aspectRatio: '2/3', background: 'linear-gradient(155deg, var(--berry) 0%, var(--berry-dark) 100%)', borderRadius: '3px', boxShadow: 'var(--shadow), inset -6px 0 14px rgba(0,0,0,0.25)', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', padding: '34px 26px', color: 'var(--paper-2)', position: 'relative', transform: 'rotate(-2deg)', transition: 'transform 0.35s ease', overflow: 'hidden' }}>
               <img src="/coffee/InShot_20260827_090952359.jpg" alt="Coffee" style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0, opacity: 0.9, mixBlendMode: 'multiply' }} />
