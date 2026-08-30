@@ -37,32 +37,24 @@ export async function GET(request) {
       if (data.email) emails.push(data.email);
     });
 
-    // 4. Send email via Brevo API
-    const response = await fetch('https://api.brevo.com/v3/smtp/email', {
-      method: 'POST',
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json',
-        'api-key': process.env.BREVO_API_KEY
-      },
-      body: JSON.stringify({
-        sender: {
-          name: "Sk Niyaz Noor",
-          email: "no-reply@niyazunveiled.com" // Verified sender email
-        },
-        to: emails.map(email => ({ email })),
-        subject: "The wait is over! my novel - Coffee is out now! 🎉",
-        htmlContent: "<html><body><h1>It's Launch Day!</h1><p>Thank you so much for pre-ordering. You can now grab your copy of <strong>my novel - Coffee</strong>!</p></body></html>"
-      })
+    // 4. Send email via Resend API
+    const { Resend } = require('resend');
+    const resend = new Resend(process.env.RESEND_API_KEY);
+
+    const { data, error } = await resend.emails.send({
+      from: 'Sk Niyaz Noor <no-reply@niyazunveiled.com>',
+      to: ['no-reply@niyazunveiled.com'],
+      bcc: emails,
+      subject: "The wait is over! my novel - Coffee is out now! 🎉",
+      html: "<html><body><h1>It's Launch Day!</h1><p>Thank you so much for pre-ordering. You can now grab your copy of <strong>my novel - Coffee</strong>!</p></body></html>"
     });
 
-    if (!response.ok) {
-      const errorText = await response.text();
-      console.error('Brevo error:', errorText);
+    if (error) {
+      console.error('Resend error:', error);
       return NextResponse.json({ error: 'Failed to send emails' }, { status: 500 });
     }
 
-    return NextResponse.json({ message: `Successfully sent launch emails to ${emails.length} subscribers!` }, { status: 200 });
+    return NextResponse.json({ message: `Successfully sent launch emails to ${emails.length} subscribers!`, data }, { status: 200 });
 
   } catch (error) {
     console.error('Error triggering launch email:', error);
