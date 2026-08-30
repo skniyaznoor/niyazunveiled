@@ -12,9 +12,13 @@ export async function GET(request) {
   try {
     // 2. Initialize Firebase Admin
     if (!getApps().length) {
-      // In a real scenario, you'd add your service account credentials here
-      // For this example, if running on GCP/Vercel with proper env, it uses application default credentials
+      // Initialize Firebase Admin securely using a Service Account
+      const serviceAccount = process.env.FIREBASE_SERVICE_ACCOUNT 
+        ? JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT)
+        : undefined;
+
       initializeApp({
+        credential: serviceAccount ? cert(serviceAccount) : undefined,
         projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
       });
     }
