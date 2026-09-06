@@ -46,7 +46,7 @@ export default function RootLayout({ children }) {
                 <div className="social-links" style={socialStyle}>
                   <a href="mailto:niyazunveiled@gmail.com" className="footer-link" style={footerLinkStyle}>Email</a>
                   <a href="https://www.instagram.com/niyazunveiled" target="_blank" rel="noopener noreferrer" className="footer-link" style={footerLinkStyle}>Instagram</a>
-                  <span className="footer-link" style={footerLinkStyle}>Goodreads</span>
+                  <a href="https://www.reddit.com/user/niyazunveiled" target="_blank" rel="noopener noreferrer" className="footer-link" style={footerLinkStyle}>Reddit</a>
                 </div>
               </div>
               <p style={copyrightStyle}>&copy; {new Date().getFullYear()} Niyaz Unveiled. Words made with tea and patience.</p>
