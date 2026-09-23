@@ -77,13 +77,13 @@ export default function PreOrderModal({ isOpen, onClose }) {
         {success ? (
           <div style={{ textAlign: 'center' }}>
             <h2 style={{ fontFamily: 'var(--font-fraunces)', color: 'var(--berry)', marginBottom: '16px' }}>Thank you!</h2>
-            <p style={{ color: 'var(--ink)' }}>Your pre-order has been registered. We'll send you an email on September 23rd, 2026 when the novel launches!</p>
+            <p style={{ color: 'var(--ink)' }}>Your pre-order has been registered. We'll send you an email on September 25th, 2026 when the novel launches!</p>
             <button onClick={onClose} className="btn btn-primary" style={{ marginTop: '20px' }}>Close</button>
           </div>
         ) : (
           <>
             <h2 style={{ fontFamily: 'var(--font-fraunces)', color: 'var(--ink)', marginBottom: '16px' }}>Pre-order</h2>
-            <p style={{ color: 'var(--ink-soft)', marginBottom: '24px', fontSize: '0.95rem' }}>Leave your details below to get notified the moment the novel launches on September 23rd, 2026.</p>
+            <p style={{ color: 'var(--ink-soft)', marginBottom: '24px', fontSize: '0.95rem' }}>Leave your details below to get notified the moment the novel launches on September 25th, 2026.</p>
 
             {error && <p style={{ color: 'red', marginBottom: '16px', fontSize: '0.9rem' }}>{error}</p>}
 

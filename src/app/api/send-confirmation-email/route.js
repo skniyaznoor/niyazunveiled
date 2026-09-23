@@ -19,7 +19,7 @@ export async function POST(request) {
           <body style="font-family: sans-serif; line-height: 1.6; color: #333;">
             <h1 style="color: #6a1b2d;">You're on the list, ${name || 'friend'}!</h1>
             <p>Thank you so much for pre-ordering <strong>my novel - Coffee</strong>.</p>
-            <p>This email confirms that you will be the first to know the moment the novel launches on September 23rd, 2026.</p>
+            <p>This email confirms that you will be the first to know the moment the novel launches on September 25th, 2026.</p>
             <p>Stay tuned for more updates, and thank you for supporting my writing journey.</p>
             <br/>
             <p>Warmly,<br/>Sk Niyaz Noor</p>
