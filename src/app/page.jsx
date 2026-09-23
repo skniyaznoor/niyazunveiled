@@ -121,9 +121,15 @@ export default function Home() {
               </li>
               <li style={bookPointItemStyle}>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" style={{ flexShrink: 0, marginTop: '4px' }}><path d="M20 6L9 17L4 12" stroke="#6E7F58" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>
-                <span>Release date: <strong style={{ color: 'var(--ink)' }}>23rd September 2026</strong></span>
+                <span>Release date: <del style={{ opacity: 0.6 }}>23rd</del> <strong style={{ color: 'var(--ink)' }}>25th September 2026</strong></span>
               </li>
             </ul>
+
+            <div style={{ marginBottom: '24px', padding: '14px 18px', background: 'rgba(200, 50, 50, 0.04)', borderLeft: '3px solid var(--berry)', borderRadius: '4px' }}>
+              <p style={{ margin: 0, color: 'var(--ink-soft)', fontSize: '0.95rem', lineHeight: '1.5' }}>
+                <strong>Apologies for the delay!</strong> We need just a little more time to get everything perfect. The release has been pushed to Saturday. Thank you for your patience!
+              </p>
+            </div>
 
             <div className="btn-row" style={{ marginBottom: '28px' }}>
               <Link href="/book" className="btn btn-primary">Pre-order now</Link>
