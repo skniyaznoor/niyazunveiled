@@ -26,7 +26,7 @@ export default function Home() {
               for every heart still waiting to be unveiled
             </div>
             <div className="btn-row">
-              <Link href="/book" className="btn btn-primary">Pre-order the book</Link>
+              <Link href="/book" className="btn btn-primary">Get the book</Link>
               <Link href="/writing" className="btn btn-ghost">Read a story</Link>
             </div>
           </div>
@@ -92,9 +92,9 @@ export default function Home() {
         <div className="container book-inner" style={bookGridStyle}>
           <div style={{ width: '100%' }}>
             <div className="book-cover" style={bookCoverStyle}>
-              <span style={ribbonStyle}>Coming Soon</span>
+              <span style={{ ...ribbonStyle, fontWeight: 'bold' }}>Out Now</span>
               <div className="cover-face" style={coverFaceStyle}>
-                <img src="/coffee/InShot_20260827_090952359.jpg" alt="Coffee" style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0, opacity: 0.9, mixBlendMode: 'multiply' }} />
+                <img src="/coffee/InShot_20260827_090952359.jpg" alt="Coffee" style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0 }} />
                 <div style={{ position: 'relative', zIndex: 2 }}>
                   <span style={coverEyebrowStyle}>A love story</span>
                 </div>
@@ -117,22 +117,16 @@ export default function Home() {
             <ul style={bookPointsStyle}>
               <li style={bookPointItemStyle}>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" style={{ flexShrink: 0, marginTop: '4px' }}><path d="M20 6L9 17L4 12" stroke="#6E7F58" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>
-                <span>Print and digital editions planned</span>
+                <span>Available now in Print and Digital editions</span>
               </li>
               <li style={bookPointItemStyle}>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" style={{ flexShrink: 0, marginTop: '4px' }}><path d="M20 6L9 17L4 12" stroke="#6E7F58" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>
-                <span>Release date: <del style={{ opacity: 0.6 }}>23rd</del> <strong style={{ color: 'var(--ink)' }}>25th September 2026</strong></span>
+                <span>Get it on NotionPress, Amazon, and Flipkart</span>
               </li>
             </ul>
 
-            <div style={{ marginBottom: '24px', padding: '14px 18px', background: 'rgba(200, 50, 50, 0.04)', borderLeft: '3px solid var(--berry)', borderRadius: '4px' }}>
-              <p style={{ margin: 0, color: 'var(--ink-soft)', fontSize: '0.95rem', lineHeight: '1.5' }}>
-                <strong>Apologies for the delay!</strong> We need just a little more time to get everything perfect. The release has been pushed to Saturday. Thank you for your patience!
-              </p>
-            </div>
-
             <div className="btn-row" style={{ marginBottom: '28px' }}>
-              <Link href="/book" className="btn btn-primary">Pre-order now</Link>
+              <Link href="/book" className="btn btn-primary">Get the book</Link>
               <Link href={`/writing/${firstEchoesSlug || 'echoes-of-absence-s1-ep1'}`} className="btn btn-ghost">Read an excerpt</Link>
             </div>
             <p className="marginalia" style={{ fontFamily: 'var(--font-caveat)', fontSize: '1.25rem', color: 'var(--ink-soft)', maxWidth: 'none' }}>
@@ -249,7 +243,7 @@ export default function Home() {
             <div style={statRowStyle}>
               <div><strong style={statStrongStyle}>24+</strong><span style={statSpanStyle}>Stories & poems published</span></div>
               <div><strong style={statStrongStyle}>5+</strong><span style={statSpanStyle}>Years writing</span></div>
-              <div><strong style={statStrongStyle}>1</strong><span style={statSpanStyle}>Book, coming soon</span></div>
+              <div><strong style={statStrongStyle}>1</strong><span style={statSpanStyle}>Published Book</span></div>
             </div>
           </div>
         </div>
