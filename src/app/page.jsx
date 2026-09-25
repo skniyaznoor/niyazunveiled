@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import BookCoverFlip from '@/components/BookCoverFlip';
 
 import { getSortedWritingsData } from '@/lib/markdown';
 
@@ -91,15 +92,10 @@ export default function Home() {
       <section style={bookSectionStyle}>
         <div className="container book-inner" style={bookGridStyle}>
           <div style={{ width: '100%' }}>
-            <div className="book-cover" style={bookCoverStyle}>
-              <span style={{ ...ribbonStyle, fontWeight: 'bold' }}>Out Now</span>
-              <div className="cover-face" style={coverFaceStyle}>
-                <img src="/coffee/InShot_20260827_090952359.jpg" alt="Coffee" style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0 }} />
-                <div style={{ position: 'relative', zIndex: 2 }}>
-                  <span style={coverEyebrowStyle}>A love story</span>
-                </div>
-              </div>
-            </div>
+            <BookCoverFlip 
+              frontImage="/coffee/InShot_20260827_090952359.jpg" 
+              backImage="/coffee/InShot_20260920_030026359.jpg" 
+            />
             <div style={{ textAlign: 'center', marginTop: '16px', fontFamily: 'var(--font-fraunces)', fontSize: '0.9rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--ink-soft)' }}>
               Sk Niyaz Noor
             </div>
