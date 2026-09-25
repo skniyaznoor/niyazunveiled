@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
               </Link>
               <nav className="nav-links" style={navLinksStyle}>
                 <Link href="/writing" className="nav-link" style={linkStyle}>Writing</Link>
-                {/* <Link href="/book" className="nav-link" style={linkStyle}>The Book</Link> */}
+                <Link href="/feedback" className="nav-link" style={linkStyle}>Feedback</Link>
                 <Link href="/book" className="btn btn-primary nav-cta" style={navCtaStyle}>Get the book</Link>
               </nav>
             </div>
@@ -42,6 +42,7 @@ export default function RootLayout({ children }) {
                 <div className="footer-links-wrapper" style={footerLinksWrapperStyle}>
                   <Link href="/writing" className="footer-link" style={footerLinkStyle}>Stories & Poetry</Link>
                   <Link href="/book" className="footer-link" style={footerLinkStyle}>The Book</Link>
+                  <Link href="/feedback" className="footer-link" style={footerLinkStyle}>Feedback</Link>
                 </div>
                 <div className="social-links" style={socialStyle}>
                   <a href="mailto:niyazunveiled@gmail.com" className="footer-link" style={footerLinkStyle}>Email</a>
