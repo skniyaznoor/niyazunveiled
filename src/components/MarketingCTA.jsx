@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import PreOrderButton from './PreOrderButton';
 
 export default function MarketingCTA() {
   return (
@@ -27,11 +26,11 @@ export default function MarketingCTA() {
         Did you enjoy this story?
       </h2>
       <p style={{ color: 'rgba(246,236,223,0.82)', marginBottom: '2rem', fontSize: '1.1rem', position: 'relative', zIndex: 2, maxWidth: '500px', margin: '0 auto 2rem auto' }}>
-        Discover the full story of Nirvit and Suprita in my upcoming debut novel, <strong>A love story</strong>.
+        Discover the full story of Nirvit and Suprita in my debut novel, <strong>Coffee</strong> — available now.
       </p>
       
       <div style={{ position: 'relative', zIndex: 2 }}>
-        <PreOrderButton style={{
+        <Link href="/book" style={{
           fontFamily: 'var(--font-body)',
           background: 'var(--gold)',
           color: 'var(--ink)',
@@ -46,8 +45,8 @@ export default function MarketingCTA() {
           transition: 'transform 0.2s ease',
           fontWeight: 500
         }}>
-          Pre-order Now
-        </PreOrderButton>
+          Get the Book
+        </Link>
       </div>
     </div>
   );

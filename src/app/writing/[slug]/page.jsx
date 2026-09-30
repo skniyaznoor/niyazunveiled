@@ -3,7 +3,6 @@ import Link from 'next/link';
 import ProgressBar from '@/components/ProgressBar';
 import MarketingCTA from '@/components/MarketingCTA';
 import BackButton from '@/components/BackButton';
-import PreOrderButton from '@/components/PreOrderButton';
 import Comments from '@/components/Comments';
 import './article.css';
 
@@ -67,10 +66,10 @@ export default async function WritingPost({ params }) {
           <aside className="sticky-sidebar">
             <div className="sidebar-card">
               <h3>Support the Author</h3>
-              <p>Pre-order my debut novel today and discover the story of Nirvit and Suprita.</p>
-              <PreOrderButton className="btn btn-primary" style={{ width: '100%', textAlign: 'center', marginTop: '1rem', padding: '0.6rem' }}>
-                Pre-order Novel
-              </PreOrderButton>
+              <p>My debut novel <strong>Coffee</strong> is available now. Discover the story of Nirvit and Suprita.</p>
+              <Link href="/book" className="btn btn-primary" style={{ width: '100%', textAlign: 'center', marginTop: '1rem', padding: '0.6rem' }}>
+                Get the Book
+              </Link>
             </div>
           </aside>
         </div>
