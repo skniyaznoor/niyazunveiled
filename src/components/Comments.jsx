@@ -61,7 +61,7 @@ export default function Comments({ slug }) {
 
   return (
     <div style={{ marginTop: '4rem', padding: '2rem 0', borderTop: '1px solid var(--border-color)' }}>
-      <h3 style={{ fontFamily: 'var(--font-fraunces)', fontSize: '1.5rem', marginBottom: '1.5rem', color: 'var(--ink)' }}>
+      <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: '1.5rem', marginBottom: '1.5rem', color: 'var(--ink)' }}>
         Comments ({comments.length})
       </h3>
 

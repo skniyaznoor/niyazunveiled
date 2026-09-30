@@ -82,13 +82,13 @@ export default async function WritingPost({ params }) {
             {prevEpisode ? (
               <Link href={`/writing/${prevEpisode.slug}`} style={{ color: 'var(--berry)', display: 'flex', flexDirection: 'column' }}>
                 <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>&larr; Previous</span>
-                <span style={{ fontSize: '1.1rem', fontFamily: 'var(--font-fraunces)' }}>Episode {prevEpisode.episode}</span>
+                <span style={{ fontSize: '1.1rem', fontFamily: 'var(--font-heading)' }}>Episode {prevEpisode.episode}</span>
               </Link>
             ) : <div />}
             {nextEpisode ? (
               <Link href={`/writing/${nextEpisode.slug}`} style={{ color: 'var(--berry)', display: 'flex', flexDirection: 'column', textAlign: 'right' }}>
                 <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>Next &rarr;</span>
-                <span style={{ fontSize: '1.1rem', fontFamily: 'var(--font-fraunces)' }}>Episode {nextEpisode.episode}</span>
+                <span style={{ fontSize: '1.1rem', fontFamily: 'var(--font-heading)' }}>Episode {nextEpisode.episode}</span>
               </Link>
             ) : <div />}
           </div>
@@ -146,20 +146,20 @@ const categoryStyle = {
   fontWeight: '600',
   display: 'block',
   marginBottom: '1.5rem',
-  fontFamily: 'var(--font-newsreader)',
+  fontFamily: 'var(--font-body)',
 };
 
 const titleStyle = {
   fontSize: 'clamp(2.5rem, 5vw, 4rem)',
   marginBottom: '1.5rem',
   lineHeight: '1.1',
-  fontFamily: 'var(--font-fraunces)',
+  fontFamily: 'var(--font-heading)',
 };
 
 const dateStyle = {
   fontSize: '1rem',
   color: 'var(--text-secondary)',
-  fontFamily: 'var(--font-newsreader)',
+  fontFamily: 'var(--font-body)',
   fontStyle: 'italic',
 };
 

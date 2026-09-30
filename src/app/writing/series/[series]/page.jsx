@@ -49,7 +49,7 @@ export default async function SeriesPage({ params }) {
               ? 'A deeply emotional serialized novel exploring the delicate intricacies of love, the profound pain of separation, and the desperate search for redemption.'
               : seriesEpisodes[0].excerpt || 'An episodic journey through a beautifully crafted world.'}
           </p>
-          <div style={{ marginTop: '20px', color: 'var(--sage)', fontFamily: 'var(--font-newsreader)', fontSize: '1.1rem', fontStyle: 'italic' }}>
+          <div style={{ marginTop: '20px', color: 'var(--sage)', fontFamily: 'var(--font-body)', fontSize: '1.1rem', fontStyle: 'italic' }}>
             {seriesEpisodes.length} Episodes
           </div>
         </div>
@@ -76,7 +76,7 @@ export default async function SeriesPage({ params }) {
               className="series-episode-card"
             >
               <div>
-                <span style={{ fontSize: '0.75rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--sage)', fontFamily: 'var(--font-newsreader)', fontWeight: 600, display: 'block', marginBottom: '8px' }}>
+                <span style={{ fontSize: '0.75rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--sage)', fontFamily: 'var(--font-body)', fontWeight: 600, display: 'block', marginBottom: '8px' }}>
                   Episode {ep.episode}
                 </span>
                 <h3 style={{ fontSize: '1.3rem', margin: 0 }}>{ep.episodeTitle || ep.title}</h3>

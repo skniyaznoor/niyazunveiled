@@ -43,7 +43,7 @@ export default function WritingIndex() {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '30px' }}>
           {Object.values(seriesGroups).map(group => (
             <article key={group.seriesName} style={{ background: 'var(--paper-2)', border: '1px solid var(--line)', borderRadius: 'var(--radius)', padding: '30px 28px 28px', display: 'flex', flexDirection: 'column' }}>
-              <span style={{ fontSize: '0.72rem', letterSpacing: '0.09em', textTransform: 'uppercase', color: 'var(--sage)', fontFamily: 'var(--font-newsreader)', fontWeight: 500, marginBottom: '14px' }}>
+              <span style={{ fontSize: '0.72rem', letterSpacing: '0.09em', textTransform: 'uppercase', color: 'var(--sage)', fontFamily: 'var(--font-body)', fontWeight: 500, marginBottom: '14px' }}>
                 {group.category || 'Series'}
               </span>
               <h3 style={{ fontSize: '1.35rem', marginBottom: '12px', lineHeight: '1.25', display: 'flex', alignItems: 'flex-start', flexWrap: 'wrap', gap: '8px' }}>
@@ -71,7 +71,7 @@ export default function WritingIndex() {
 
           {standalones.map(({ slug, date, title, excerpt, category }) => (
             <article key={slug} style={{ background: 'var(--paper-2)', border: '1px solid var(--line)', borderRadius: 'var(--radius)', padding: '30px 28px 28px', display: 'flex', flexDirection: 'column', transition: 'transform 0.25s ease, box-shadow 0.25s ease' }}>
-              <span style={{ fontSize: '0.72rem', letterSpacing: '0.09em', textTransform: 'uppercase', color: 'var(--sage)', fontFamily: 'var(--font-newsreader)', fontWeight: 500, marginBottom: '14px' }}>
+              <span style={{ fontSize: '0.72rem', letterSpacing: '0.09em', textTransform: 'uppercase', color: 'var(--sage)', fontFamily: 'var(--font-body)', fontWeight: 500, marginBottom: '14px' }}>
                 {category || 'Story'}
               </span>
               <h3 style={{ fontSize: '1.35rem', marginBottom: '12px', lineHeight: '1.25' }}>{title}</h3>

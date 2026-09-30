@@ -97,7 +97,7 @@ export default function Home() {
               frontImage="/coffee/InShot_20260827_090952359.jpg" 
               backImage="/coffee/InShot_20260920_030026359.jpg" 
             />
-            <div style={{ textAlign: 'center', marginTop: '16px', fontFamily: 'var(--font-fraunces)', fontSize: '0.9rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--ink-soft)' }}>
+            <div style={{ textAlign: 'center', marginTop: '16px', fontFamily: 'var(--font-heading)', fontSize: '0.9rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--ink-soft)' }}>
               Sk Niyaz Noor
             </div>
           </div>
@@ -126,7 +126,7 @@ export default function Home() {
               <Link href="/book" className="btn btn-primary">Get the book</Link>
               <Link href={`/writing/${firstEchoesSlug || 'echoes-of-absence-s1-ep1'}`} className="btn btn-ghost">Read an excerpt</Link>
             </div>
-            <p className="marginalia" style={{ fontFamily: 'var(--font-caveat)', fontSize: '1.25rem', color: 'var(--ink-soft)', maxWidth: 'none' }}>
+            <p className="marginalia" style={{ fontFamily: 'var(--font-accent)', fontSize: '1.25rem', color: 'var(--ink-soft)', maxWidth: 'none' }}>
               Nirvit and Suprita — where two unfinished journeys quietly overlap.
             </p>
           </div>
@@ -256,9 +256,9 @@ export default function Home() {
 // Styles
 const heroStyle = { position: 'relative', padding: '96px 0 110px', overflow: 'hidden' };
 const heroInnerStyle = { display: 'grid', gridTemplateColumns: '1.3fr 0.7fr', gap: '40px', alignItems: 'center' };
-const heroTitleStyle = { fontSize: 'clamp(2.2rem, 5vw, 3.8rem)', lineHeight: '1.05', marginBottom: '22px', fontFamily: 'var(--font-fraunces)', fontWeight: 700, letterSpacing: '-0.02em', color: 'var(--ink)' };
-const heroLedeStyle = { fontSize: '1.25rem', fontFamily: 'var(--font-newsreader)', color: 'var(--ink-soft)', maxWidth: '48ch', marginBottom: '35px', lineHeight: '1.6' };
-const heroNoteStyle = { fontFamily: 'var(--font-caveat)', fontSize: '1.6rem', color: 'var(--berry-dark)', display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '40px' };
+const heroTitleStyle = { fontSize: 'clamp(2.2rem, 5vw, 3.8rem)', lineHeight: '1.05', marginBottom: '22px', fontFamily: 'var(--font-heading)', fontWeight: 700, letterSpacing: '-0.02em', color: 'var(--ink)' };
+const heroLedeStyle = { fontSize: '1.25rem', fontFamily: 'var(--font-body)', color: 'var(--ink-soft)', maxWidth: '48ch', marginBottom: '35px', lineHeight: '1.6' };
+const heroNoteStyle = { fontFamily: 'var(--font-accent)', fontSize: '1.6rem', color: 'var(--berry-dark)', display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '40px' };
 const heroArtStyle = { position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center' };
 
 const bookSectionStyle = { background: 'var(--paper-3)', position: 'relative', padding: '84px 0' };
@@ -266,9 +266,9 @@ const bookGridStyle = { display: 'grid', gridTemplateColumns: '0.8fr 1.2fr', gap
 const bookCoverStyle = { position: 'relative', width: '100%', maxWidth: '400px', margin: '0 auto' };
 const ribbonStyle = { position: 'absolute', top: '18px', right: '-34px', background: 'var(--gold)', color: 'var(--ink)', fontSize: '0.72rem', letterSpacing: '0.08em', textTransform: 'uppercase', padding: '5px 40px', transform: 'rotate(6deg)', boxShadow: '0 6px 12px rgba(0,0,0,0.18)', zIndex: 10 };
 const coverFaceStyle = { aspectRatio: '2/3', background: 'linear-gradient(155deg, var(--berry) 0%, var(--berry-dark) 100%)', borderRadius: '3px', boxShadow: 'var(--shadow), inset -6px 0 14px rgba(0,0,0,0.25)', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', padding: '34px 26px', color: 'var(--paper-2)', position: 'relative', transform: 'rotate(-2deg)', transition: 'transform 0.35s ease', overflow: 'hidden' };
-const coverEyebrowStyle = { fontFamily: 'var(--font-newsreader)', fontStyle: 'italic', fontSize: '0.85rem', opacity: 0.85, display: 'block' };
-const coverTitleStyle = { fontFamily: 'var(--font-fraunces)', fontSize: '1.9rem', lineHeight: '1.15', fontWeight: 600, display: 'block', marginTop: '10px' };
-const coverAuthorStyle = { fontFamily: 'var(--font-caveat)', fontSize: '1.8rem', position: 'relative', zIndex: 2 };
+const coverEyebrowStyle = { fontFamily: 'var(--font-body)', fontStyle: 'italic', fontSize: '0.85rem', opacity: 0.85, display: 'block' };
+const coverTitleStyle = { fontFamily: 'var(--font-heading)', fontSize: '1.9rem', lineHeight: '1.15', fontWeight: 600, display: 'block', marginTop: '10px' };
+const coverAuthorStyle = { fontFamily: 'var(--font-accent)', fontSize: '1.8rem', position: 'relative', zIndex: 2 };
 const bookCopyStyle = {};
 const bookLedeStyle = { color: 'var(--ink-soft)', fontSize: '1.08rem', marginBottom: '26px', maxWidth: '52ch' };
 const bookPointsStyle = { listStyle: 'none', padding: 0, margin: '0 0 30px', display: 'grid', gap: '14px' };
@@ -278,21 +278,21 @@ const sectionHeadStyle = { display: 'flex', alignItems: 'flex-end', justifyConte
 const seeAllStyle = { fontSize: '0.95rem', color: 'var(--berry)', whiteSpace: 'nowrap', borderBottom: '1px solid var(--berry)', paddingBottom: '2px' };
 const gridStyle = { display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '30px' };
 const cardStyle = { background: 'var(--paper-2)', border: '1px solid var(--line)', borderRadius: 'var(--radius)', padding: '30px 28px 28px', position: 'relative', display: 'flex', flexDirection: 'column', transition: 'transform 0.25s ease, box-shadow 0.25s ease' };
-const tagStyle = { fontSize: '0.72rem', letterSpacing: '0.09em', textTransform: 'uppercase', color: 'var(--sage)', fontFamily: 'var(--font-newsreader)', fontWeight: 500, marginBottom: '14px' };
+const tagStyle = { fontSize: '0.72rem', letterSpacing: '0.09em', textTransform: 'uppercase', color: 'var(--sage)', fontFamily: 'var(--font-body)', fontWeight: 500, marginBottom: '14px' };
 const cardTitleStyle = { fontSize: '1.35rem', marginBottom: '12px', lineHeight: '1.25' };
 const cardDescStyle = { color: 'var(--ink-soft)', fontStyle: 'italic', fontSize: '0.98rem', margin: '0 0 20px', flexGrow: 1 };
 const cardFootStyle = { display: 'flex', alignItems: 'center', justifyContent: 'space-between', fontSize: '0.85rem', color: 'var(--ink-soft)', borderTop: '1px solid var(--line)', paddingTop: '16px' };
 const readMoreStyle = { color: 'var(--berry)' };
 
 const aboutGridStyle = { display: 'grid', gridTemplateColumns: '0.9fr 1.1fr', gap: '60px', alignItems: 'flex-start' };
-const quoteMarkStyle = { fontFamily: 'var(--font-fraunces)', fontSize: '5rem', color: 'var(--gold-soft)', lineHeight: '0.6', marginBottom: '6px', display: 'block' };
-const aboutQuoteStyle = { fontFamily: 'var(--font-fraunces)', fontSize: '1.7rem', fontWeight: 500, lineHeight: '1.35', margin: '0 0 20px' };
-const signatureStyle = { fontFamily: 'var(--font-caveat)', fontSize: '1.7rem', color: 'var(--berry-dark)' };
+const quoteMarkStyle = { fontFamily: 'var(--font-heading)', fontSize: '5rem', color: 'var(--gold-soft)', lineHeight: '0.6', marginBottom: '6px', display: 'block' };
+const aboutQuoteStyle = { fontFamily: 'var(--font-heading)', fontSize: '1.7rem', fontWeight: 500, lineHeight: '1.35', margin: '0 0 20px' };
+const signatureStyle = { fontFamily: 'var(--font-accent)', fontSize: '1.7rem', color: 'var(--berry-dark)' };
 const statRowStyle = { display: 'flex', gap: '34px', marginTop: '26px', flexWrap: 'wrap' };
-const statStrongStyle = { display: 'block', fontFamily: 'var(--font-fraunces)', fontSize: '1.6rem', color: 'var(--berry)' };
+const statStrongStyle = { display: 'block', fontFamily: 'var(--font-heading)', fontSize: '1.6rem', color: 'var(--berry)' };
 const statSpanStyle = { fontSize: '0.85rem', color: 'var(--ink-soft)' };
 
 const newsletterStyle = { background: 'linear-gradient(135deg, var(--berry-dark), var(--berry))', color: 'var(--paper-2)', borderRadius: '10px', padding: '56px 60px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '40px', flexWrap: 'wrap', position: 'relative', overflow: 'hidden' };
 const newsletterFormStyle = { display: 'flex', gap: '10px', flexWrap: 'wrap', position: 'relative', zIndex: 2 };
-const newsletterInputStyle = { fontFamily: 'var(--font-newsreader)', fontSize: '1rem', padding: '13px 18px', borderRadius: '999px', border: '1px solid rgba(246,236,223,0.4)', background: 'rgba(246,236,223,0.08)', color: 'var(--paper-2)', minWidth: '240px' };
-const newsletterBtnStyle = { fontFamily: 'var(--font-newsreader)', background: 'var(--gold)', color: 'var(--ink)', border: 'none', padding: '13px 24px', borderRadius: '999px', cursor: 'pointer', fontSize: '1rem', transition: 'transform 0.2s ease' };
+const newsletterInputStyle = { fontFamily: 'var(--font-body)', fontSize: '1rem', padding: '13px 18px', borderRadius: '999px', border: '1px solid rgba(246,236,223,0.4)', background: 'rgba(246,236,223,0.08)', color: 'var(--paper-2)', minWidth: '240px' };
+const newsletterBtnStyle = { fontFamily: 'var(--font-body)', background: 'var(--gold)', color: 'var(--ink)', border: 'none', padding: '13px 24px', borderRadius: '999px', cursor: 'pointer', fontSize: '1rem', transition: 'transform 0.2s ease' };

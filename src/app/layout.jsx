@@ -1,11 +1,11 @@
-import { Fraunces, Newsreader, Caveat } from 'next/font/google';
+import { Playfair_Display, Lora, Dancing_Script } from 'next/font/google';
 import './globals.css';
 import Link from 'next/link';
 import { AuthProvider } from '@/context/AuthContext';
 
-const fraunces = Fraunces({ subsets: ['latin'], variable: '--font-fraunces', weight: ['400', '500', '600', '700'] });
-const newsreader = Newsreader({ subsets: ['latin'], variable: '--font-newsreader', weight: ['400', '500'], style: ['normal', 'italic'] });
-const caveat = Caveat({ subsets: ['latin'], variable: '--font-caveat', weight: ['500', '600', '700'] });
+const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-heading', weight: ['400', '500', '600', '700'] });
+const lora = Lora({ subsets: ['latin'], variable: '--font-body', weight: ['400', '500'], style: ['normal', 'italic'] });
+const dancingScript = Dancing_Script({ subsets: ['latin'], variable: '--font-accent', weight: ['500', '600', '700'] });
 
 export const metadata = {
   title: 'Niyaz Unveiled — Writer',
@@ -15,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${fraunces.variable} ${newsreader.variable} ${caveat.variable}`}>
+      <body className={`${playfair.variable} ${lora.variable} ${dancingScript.variable}`}>
         <AuthProvider>
           <header style={headerStyle}>
             <div className="container nav-inner" style={navContainerStyle}>
@@ -77,7 +77,7 @@ const navContainerStyle = {
 };
 
 const brandStyle = {
-  fontFamily: 'var(--font-fraunces)',
+  fontFamily: 'var(--font-heading)',
   fontSize: '1.35rem',
   fontWeight: '700',
   letterSpacing: '0.01em',
@@ -107,7 +107,7 @@ const navCtaStyle = {
   color: 'var(--paper-2)',
   padding: '9px 20px',
   borderRadius: '999px',
-  fontFamily: 'var(--font-newsreader)',
+  fontFamily: 'var(--font-body)',
   fontSize: '0.92rem',
   boxShadow: '0 6px 16px rgba(147,49,75,0.28)',
 };

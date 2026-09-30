@@ -21,7 +21,7 @@ export default function BookPage() {
 
           <div>
             <span className="eyebrow" style={{ color: 'var(--berry)' }}>My debut novel</span>
-            <h1 style={{ fontFamily: 'var(--font-fraunces)', fontSize: '3.5rem', margin: '10px 0 20px', color: 'var(--ink)', lineHeight: '1.1' }}>Niyaz Unveiled</h1>
+            <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: '3.5rem', margin: '10px 0 20px', color: 'var(--ink)', lineHeight: '1.1' }}>Niyaz Unveiled</h1>
             <p style={{ color: 'var(--ink-soft)', fontSize: '1.08rem', marginBottom: '32px', maxWidth: '52ch', lineHeight: '1.7' }}>
               Some stories begin long before we realize we are living them.
               <br /><br />
@@ -31,11 +31,11 @@ export default function BookPage() {
             </p>
 
             <div style={{ marginBottom: '40px' }}>
-              <h3 style={{ fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--ink-soft)', marginBottom: '16px', fontFamily: 'var(--font-newsreader)' }}>Available Now On</h3>
+              <h3 style={{ fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--ink-soft)', marginBottom: '16px', fontFamily: 'var(--font-body)' }}>Available Now On</h3>
               <StoreLinks />
             </div>
             
-            <p className="marginalia" style={{ fontFamily: 'var(--font-caveat)', fontSize: '1.25rem', color: 'var(--ink-soft)', maxWidth: 'none', borderTop: '1px solid rgba(0,0,0,0.05)', paddingTop: '24px' }}>
+            <p className="marginalia" style={{ fontFamily: 'var(--font-accent)', fontSize: '1.25rem', color: 'var(--ink-soft)', maxWidth: 'none', borderTop: '1px solid rgba(0,0,0,0.05)', paddingTop: '24px' }}>
               Nirvit and Suprita — where two unfinished journeys quietly overlap.
             </p>
           </div>

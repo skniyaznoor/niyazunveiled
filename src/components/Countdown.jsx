@@ -42,7 +42,7 @@ export default function Countdown({ targetDate }) {
     <div style={{
       display: 'flex',
       gap: '16px',
-      fontFamily: 'var(--font-fraunces)',
+      fontFamily: 'var(--font-heading)',
       marginTop: '10px',
       marginBottom: '32px'
     }}>

@@ -21,7 +21,7 @@ export default function StoreLinks() {
     boxShadow: '0 4px 12px rgba(0,0,0,0.05)', 
     padding: '10px 24px',
     borderRadius: '999px',
-    fontFamily: 'var(--font-newsreader)',
+    fontFamily: 'var(--font-body)',
     fontSize: '1rem',
     textDecoration: 'none',
     fontWeight: '600',
@@ -42,7 +42,7 @@ export default function StoreLinks() {
     whiteSpace: 'nowrap',
     pointerEvents: 'none',
     zIndex: 10,
-    fontFamily: 'var(--font-inter)',
+    fontFamily: 'var(--font-body)',
     boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
     opacity: 1,
     animation: 'fadeIn 0.2s ease-in-out'

@@ -23,7 +23,7 @@ export default function MarketingCTA() {
         background: 'rgba(216,184,119,0.18)'
       }} />
 
-      <h2 style={{ fontSize: '2rem', marginBottom: '1rem', fontFamily: 'var(--font-fraunces)', color: 'var(--paper-2)', position: 'relative', zIndex: 2 }}>
+      <h2 style={{ fontSize: '2rem', marginBottom: '1rem', fontFamily: 'var(--font-heading)', color: 'var(--paper-2)', position: 'relative', zIndex: 2 }}>
         Did you enjoy this story?
       </h2>
       <p style={{ color: 'rgba(246,236,223,0.82)', marginBottom: '2rem', fontSize: '1.1rem', position: 'relative', zIndex: 2, maxWidth: '500px', margin: '0 auto 2rem auto' }}>
@@ -32,7 +32,7 @@ export default function MarketingCTA() {
       
       <div style={{ position: 'relative', zIndex: 2 }}>
         <PreOrderButton style={{
-          fontFamily: 'var(--font-newsreader)',
+          fontFamily: 'var(--font-body)',
           background: 'var(--gold)',
           color: 'var(--ink)',
           padding: '13px 26px',

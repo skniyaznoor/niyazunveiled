@@ -255,8 +255,8 @@ const css = `
 
 .cb-stage { max-width: 380px; width: 100%; margin: 0 auto; }
 .cb-svg { width: 100%; height: auto; display: block; overflow: visible; filter: drop-shadow(0 18px 24px rgba(59,38,28,0.16)); }
-.cb-mug-label { font-family: var(--font-caveat), cursive; font-size: 30px; font-weight: 700; fill: var(--berry-dark); opacity: .35; transition: fill .6s ease, opacity .6s ease; }
-.cb-mug-sub { font-family: var(--font-newsreader), serif; font-size: 9px; letter-spacing: .2em; text-transform: uppercase; fill: var(--berry-dark); opacity: .3; transition: fill .6s ease, opacity .6s ease; }
+.cb-mug-label { font-family: var(--font-accent), cursive; font-size: 30px; font-weight: 700; fill: var(--berry-dark); opacity: .35; transition: fill .6s ease, opacity .6s ease; }
+.cb-mug-sub { font-family: var(--font-body), serif; font-size: 9px; letter-spacing: .2em; text-transform: uppercase; fill: var(--berry-dark); opacity: .3; transition: fill .6s ease, opacity .6s ease; }
 .cb-mug-label.is-lit, .cb-mug-sub.is-lit { fill: var(--paper-2); opacity: .92; }
 
 .cb-wave { animation: cb-wave 2.4s linear infinite; }
@@ -296,13 +296,13 @@ const css = `
 }
 .cb-ticket::before { top: -9px; transform: rotate(180deg); }
 .cb-ticket::after { bottom: -9px; }
-.cb-ticket-title { font-family: var(--font-caveat), cursive; font-size: 1.7rem; color: var(--berry-dark); border-bottom: 1px dashed var(--line); padding-bottom: 8px; margin-bottom: 18px; }
+.cb-ticket-title { font-family: var(--font-accent), cursive; font-size: 1.7rem; color: var(--berry-dark); border-bottom: 1px dashed var(--line); padding-bottom: 8px; margin-bottom: 18px; }
 
 .cb-field { border: none; margin-bottom: 18px; }
 .cb-field legend { font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-soft); margin-bottom: 10px; }
 .cb-options { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 .cb-opt {
-  font-family: var(--font-newsreader), serif; text-align: left; cursor: pointer;
+  font-family: var(--font-body), serif; text-align: left; cursor: pointer;
   background: #fff; border: 1.5px solid var(--line); border-radius: 8px; padding: 12px 14px;
   display: flex; flex-direction: column; gap: 2px; color: var(--ink);
   transition: border-color .2s ease, transform .2s ease, box-shadow .2s ease;
@@ -310,7 +310,7 @@ const css = `
 .cb-opt:hover:not(:disabled) { transform: translateY(-2px); box-shadow: 0 6px 14px rgba(0,0,0,.06); }
 .cb-opt:disabled { cursor: not-allowed; opacity: .7; }
 .cb-opt.is-active { border-color: var(--berry); box-shadow: 0 0 0 3px rgba(107,66,38,.12); }
-.cb-opt strong { font-family: var(--font-fraunces), serif; font-size: 1.05rem; }
+.cb-opt strong { font-family: var(--font-heading), serif; font-size: 1.05rem; }
 .cb-opt span { font-size: .92rem; color: var(--berry); }
 .cb-opt small { font-size: .78rem; color: var(--ink-soft); font-style: italic; }
 .cb-opt-row { flex-direction: row; align-items: center; gap: 10px; }
@@ -318,7 +318,7 @@ const css = `
 
 .cb-lines { min-height: 118px; margin: 6px 0 18px; padding: 12px 0; border-top: 1px dashed var(--line); }
 .cb-line { margin: 0 0 6px; font-style: italic; color: var(--ink-soft); animation: cb-in .5s ease both; }
-.cb-line.is-final { font-family: var(--font-fraunces), serif; font-style: normal; color: var(--ink); font-size: 1.08rem; margin-top: 10px; }
+.cb-line.is-final { font-family: var(--font-heading), serif; font-style: normal; color: var(--ink); font-size: 1.08rem; margin-top: 10px; }
 .cb-hint { opacity: .7; }
 @keyframes cb-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
 
@@ -327,7 +327,7 @@ const css = `
 .cb-ready { display: flex; flex-direction: column; align-items: center; gap: 10px; animation: cb-in .5s ease both; }
 .cb-ready .cb-cta { animation: cb-glow 2s ease-in-out infinite; }
 @keyframes cb-glow { 0%,100% { box-shadow: 0 10px 24px rgba(107,66,38,.3); } 50% { box-shadow: 0 10px 34px rgba(185,139,62,.55); } }
-.cb-rebrew { background: none; border: none; color: var(--ink-soft); text-decoration: underline; cursor: pointer; font-family: var(--font-newsreader), serif; font-size: .9rem; }
+.cb-rebrew { background: none; border: none; color: var(--ink-soft); text-decoration: underline; cursor: pointer; font-family: var(--font-body), serif; font-size: .9rem; }
 
 @media (max-width: 768px) {
   .cb-grid { grid-template-columns: 1fr; gap: 32px; }

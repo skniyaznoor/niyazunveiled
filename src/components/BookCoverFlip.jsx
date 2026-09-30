@@ -62,7 +62,7 @@ export default function BookCoverFlip({ frontImage, backImage }) {
         }}>
           <img src={frontImage} alt="Cover Front" style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0 }} />
           <div style={{ position: 'relative', zIndex: 2 }}>
-            <span style={{ fontFamily: 'var(--font-newsreader)', fontStyle: 'italic', fontSize: '0.85rem', opacity: 0.85, display: 'block', color: 'var(--paper-2)', textShadow: '0 2px 4px rgba(0,0,0,0.8)' }}>A love story</span>
+            <span style={{ fontFamily: 'var(--font-body)', fontStyle: 'italic', fontSize: '0.85rem', opacity: 0.85, display: 'block', color: 'var(--paper-2)', textShadow: '0 2px 4px rgba(0,0,0,0.8)' }}>A love story</span>
           </div>
         </div>
 
