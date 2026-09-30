@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import BookCoverFlip from '@/components/BookCoverFlip';
+import CoffeeBrew from '@/components/CoffeeBrew';
 
 import { getSortedWritingsData } from '@/lib/markdown';
 
@@ -131,6 +132,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* COFFEE COUNTER */}
+      <CoffeeBrew />
 
       {/* FICTION */}
       <section style={{ padding: '84px 0' }}>

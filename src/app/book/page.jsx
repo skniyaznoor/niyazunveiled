@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import BookCoverFlip from '@/components/BookCoverFlip';
 import StoreLinks from './StoreLinks';
+import CoffeeBrew from '@/components/CoffeeBrew';
 
 export const metadata = {
   title: 'The Book | Sk Niyaz Noor',
@@ -40,6 +41,8 @@ export default function BookPage() {
           </div>
         </div>
       </section>
+
+      <CoffeeBrew />
     </>
   );
 }
