@@ -1,15 +1,4 @@
-"use client";
-
-import { useState } from 'react';
-
 export default function StoreLinks() {
-  const [activeTooltip, setActiveTooltip] = useState(null);
-
-  const handleClick = (e, store) => {
-    e.preventDefault();
-    setActiveTooltip(store);
-    setTimeout(() => setActiveTooltip(null), 3000);
-  };
 
   const btnStyle = { 
     display: 'flex', 
@@ -27,25 +16,6 @@ export default function StoreLinks() {
     fontWeight: '600',
     transition: 'transform 0.2s ease, box-shadow 0.2s ease',
     position: 'relative'
-  };
-
-  const tooltipStyle = {
-    position: 'absolute',
-    bottom: 'calc(100% + 10px)',
-    left: '50%',
-    transform: 'translateX(-50%)',
-    background: 'var(--ink)',
-    color: 'var(--paper)',
-    padding: '8px 12px',
-    borderRadius: '6px',
-    fontSize: '0.85rem',
-    whiteSpace: 'nowrap',
-    pointerEvents: 'none',
-    zIndex: 10,
-    fontFamily: 'var(--font-body)',
-    boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
-    opacity: 1,
-    animation: 'fadeIn 0.2s ease-in-out'
   };
 
   return (
@@ -106,18 +76,25 @@ export default function StoreLinks() {
       </a>
 
       <a 
-        href="#" 
+        href="https://www.flipkart.com/coffee/p/itm193f5c5525efb?pid=9798907228979&lid=LSTBOK9798907228979KB1KO6&marketplace=FLIPKART&q=sk+niyaz+noor+novel&store=bks&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=cfad009b-9704-4485-810f-b4ae588ba57c.9798907228979.SEARCH&ppt=sp&ppn=sp&ssid=tpcdvuy9k00000001791002325925&qH=b335393142c419cd&ov_redirect=true&ov_redirect=true" 
+        target="_blank"
+        rel="noopener noreferrer"
         className="btn store-btn" 
         style={btnStyle}
-        onClick={(e) => handleClick(e, 'flipkart')}
       >
         <img src="/coffee/logo/Flipkart-Emblem.png" alt="Flipkart" style={{ height: '24px', width: 'auto', objectFit: 'contain' }} />
-        Flipkart
-        {activeTooltip === 'flipkart' && (
-          <div style={tooltipStyle}>
-            Link will be active by Monday (28) Sept
-          </div>
-        )}
+        Flipkart (Paperback)
+      </a>
+
+      <a 
+        href="https://www.flipkart.com/coffee/p/itm193f5c5525efb?pid=9798907228993&lid=LSTBOK9798907228993Y9DAG0&marketplace=FLIPKART&q=sk+niyaz+noor+novel&store=bks&srno=s_1_2&otracker=search&otracker1=search&fm=Search&iid=cfad009b-9704-4485-810f-b4ae588ba57c.9798907228993.SEARCH&ppt=sp&ppn=sp&ssid=tpcdvuy9k00000001791002325925&qH=b335393142c419cd&ov_redirect=true&ov_redirect=true" 
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn store-btn" 
+        style={btnStyle}
+      >
+        <img src="/coffee/logo/Flipkart-Emblem.png" alt="Flipkart" style={{ height: '24px', width: 'auto', objectFit: 'contain' }} />
+        Flipkart (Hardcover)
       </a>
     </div>
   );
