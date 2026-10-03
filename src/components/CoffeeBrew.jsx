@@ -342,6 +342,7 @@ const css = `
   .cb-grid { grid-template-columns: 1fr; gap: 32px; }
   .cb-ticket { transform: none; padding: 24px 18px; }
   .cb-stage { max-width: 280px; }
+  .cb-options { grid-template-columns: 1fr; }
 }
 @media (prefers-reduced-motion: reduce) {
   .cb-wave, .cb-steam.is-on path, .cb-heart.is-on, .cb-ready .cb-cta { animation: none; }
