@@ -30,7 +30,7 @@ export default function MarketingCTA() {
       </p>
       
       <div style={{ position: 'relative', zIndex: 2 }}>
-        <Link href="/book" style={{
+        <Link href="/coffee" style={{
           fontFamily: 'var(--font-body)',
           background: 'var(--gold)',
           color: 'var(--ink)',

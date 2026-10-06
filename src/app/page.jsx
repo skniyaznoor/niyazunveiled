@@ -1,8 +1,15 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import BookCoverFlip from '@/components/BookCoverFlip';
 import CoffeeBrew from '@/components/CoffeeBrew';
 
 import { getSortedWritingsData } from '@/lib/markdown';
+import JsonLd from '@/components/JsonLd';
+import { personJsonLd, websiteJsonLd } from '@/lib/site';
+
+export const metadata = {
+  alternates: { canonical: '/' },
+};
 
 export default function Home() {
   const allWriting = getSortedWritingsData();
@@ -16,6 +23,8 @@ export default function Home() {
   const firstLoveSlug = lovePosts.sort((a, b) => a.episode - b.episode)[0]?.slug;
   return (
     <>
+      <JsonLd data={websiteJsonLd} />
+      <JsonLd data={personJsonLd} />
       {/* HERO */}
       <section style={heroStyle}>
         <div className="container hero-inner" style={heroInnerStyle}>
@@ -28,7 +37,7 @@ export default function Home() {
               for every heart still waiting to be unveiled
             </div>
             <div className="btn-row">
-              <Link href="/book" className="btn btn-primary">Get the book</Link>
+              <Link href="/coffee" className="btn btn-primary">Get the book</Link>
               <Link href="/writing" className="btn btn-ghost">Read a story</Link>
             </div>
           </div>
@@ -94,8 +103,8 @@ export default function Home() {
         <div className="container book-inner" style={bookGridStyle}>
           <div style={{ width: '100%' }}>
             <BookCoverFlip 
-              frontImage="/coffee/InShot_20260827_090952359.jpg" 
-              backImage="/coffee/InShot_20260920_030026359.jpg" 
+              frontImage="/coffee/coffee-novel-sk-niyaz-noor-front-cover.jpg" 
+              backImage="/coffee/coffee-novel-sk-niyaz-noor-back-cover.jpg" 
             />
             <div style={{ textAlign: 'center', marginTop: '16px', fontFamily: 'var(--font-heading)', fontSize: '0.9rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--ink-soft)' }}>
               Sk Niyaz Noor
@@ -103,6 +112,7 @@ export default function Home() {
           </div>
           <div style={bookCopyStyle}>
             <span className="eyebrow" style={{ marginBottom: '16px' }}>My debut novel</span>
+            <h2 style={{ fontSize: 'clamp(2rem, 4vw, 2.8rem)', marginBottom: '20px' }}>Coffee? <span style={{ fontSize: '0.5em', fontWeight: 400, color: 'var(--ink-soft)' }}>— a novel by Sk Niyaz Noor</span></h2>
             <p style={{ fontSize: '1.15rem', color: 'var(--ink-soft)', marginBottom: '24px', lineHeight: '1.7' }}>
               Some stories begin long before we realize we are living them.
               <br /><br />
@@ -123,7 +133,7 @@ export default function Home() {
             </ul>
 
             <div className="btn-row" style={{ marginBottom: '28px' }}>
-              <Link href="/book" className="btn btn-primary">Get the book</Link>
+              <Link href="/coffee" className="btn btn-primary">Get the book</Link>
               <Link href={`/writing/${firstEchoesSlug || 'echoes-of-absence-s1-ep1'}`} className="btn btn-ghost">Read an excerpt</Link>
             </div>
             <p className="marginalia" style={{ fontFamily: 'var(--font-accent)', fontSize: '1.25rem', color: 'var(--ink-soft)', maxWidth: 'none' }}>
@@ -227,7 +237,7 @@ export default function Home() {
           <div>
             <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '32px' }}>
               <div style={{ width: '180px', height: '180px', borderRadius: '50%', overflow: 'hidden', boxShadow: '0 8px 30px rgba(0,0,0,0.12)', border: '3px solid var(--gold)', flexShrink: 0 }}>
-                <img src="/profile/InShot_20260829_231327003.jpg" alt="Sk Niyaz Noor" style={{ width: '100%', height: '100%', display: 'block', objectFit: 'cover' }} />
+                <Image src="/profile/InShot_20260829_231327003.jpg" alt="Sk Niyaz Noor, author of the novel Coffee?" width={180} height={180} style={{ width: '100%', height: '100%', display: 'block', objectFit: 'cover' }} />
               </div>
             </div>
             <span style={quoteMarkStyle}>"</span>
@@ -236,7 +246,7 @@ export default function Home() {
           </div>
           <div>
             <span className="eyebrow">About me</span>
-            <h2 style={{ marginBottom: '18px' }}>Hi, I'm Niyaz.</h2>
+            <h2 style={{ marginBottom: '18px' }}>Hi, I'm Sk Niyaz Noor.</h2>
             <p style={{ color: 'var(--ink-soft)', marginBottom: '16px' }}>I'm your pocket-sized storyteller — a mini writer armed with a pen and a world of imagination far bigger than my frame. Since 2020, I've been writing short stories and poems that live in the space between a glance and a goodbye, chasing the feeling of love in all its messy, beautiful forms.</p>
             <p style={{ color: 'var(--ink-soft)', marginBottom: '16px' }}>Under the name Niyaz Unveiled, I've written everything from slow-burn romance to strange, mist-covered mysteries — but at the heart of it all is the same question: what does it really mean to love someone?</p>
             <p style={{ color: 'var(--ink-soft)' }}>Want to reach out? Email me at <a href="mailto:niyazunveiled@gmail.com" style={{ color: 'var(--berry)', textDecoration: 'underline' }}>niyazunveiled@gmail.com</a>.</p>

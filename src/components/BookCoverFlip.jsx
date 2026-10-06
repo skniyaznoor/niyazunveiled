@@ -1,8 +1,11 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 
-export default function BookCoverFlip({ frontImage, backImage }) {
+const COVER_SIZES = '(max-width: 768px) 90vw, 400px';
+
+export default function BookCoverFlip({ frontImage, backImage, preload = false }) {
   const [isFlipped, setIsFlipped] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
@@ -60,7 +63,7 @@ export default function BookCoverFlip({ frontImage, backImage }) {
           backfaceVisibility: 'hidden',
           WebkitBackfaceVisibility: 'hidden'
         }}>
-          <img src={frontImage} alt="Cover Front" style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0 }} />
+          <Image src={frontImage} alt="Coffee? novel by Sk Niyaz Noor – front cover" fill sizes={COVER_SIZES} preload={preload} style={{ objectFit: 'cover' }} />
           <div style={{ position: 'relative', zIndex: 2 }}>
             <span style={{ fontFamily: 'var(--font-body)', fontStyle: 'italic', fontSize: '0.85rem', opacity: 0.85, display: 'block', color: 'var(--paper-2)', textShadow: '0 2px 4px rgba(0,0,0,0.8)' }}>A love story</span>
           </div>
@@ -76,7 +79,7 @@ export default function BookCoverFlip({ frontImage, backImage }) {
           WebkitBackfaceVisibility: 'hidden',
           transform: 'rotateY(180deg)'
         }}>
-          <img src={backImage} alt="Cover Back" style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0 }} />
+          <Image src={backImage} alt="Coffee? novel by Sk Niyaz Noor – back cover blurb" fill sizes={COVER_SIZES} style={{ objectFit: 'cover' }} />
         </div>
       </div>
     </div>

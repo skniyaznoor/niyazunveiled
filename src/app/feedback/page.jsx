@@ -1,8 +1,9 @@
 import FeedbackClient from './FeedbackClient';
 
 export const metadata = {
-  title: 'Feedback | Niyaz Unveiled',
-  description: 'Share your thoughts and feelings about the stories and the book.',
+  title: 'Reader Feedback',
+  description: 'Share your thoughts about Coffee? and the stories of Sk Niyaz Noor.',
+  alternates: { canonical: '/feedback' },
 };
 
 export default function FeedbackPage() {

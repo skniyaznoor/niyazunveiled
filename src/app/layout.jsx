@@ -2,14 +2,30 @@ import { Playfair_Display, Lora, Dancing_Script } from 'next/font/google';
 import './globals.css';
 import Link from 'next/link';
 import { AuthProvider } from '@/context/AuthContext';
+import { SITE_URL, SITE_NAME, AUTHOR_NAME, OPEN_GRAPH_BASE, SHARE_IMAGE } from '@/lib/site';
 
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-heading', weight: ['400', '500', '600', '700'] });
 const lora = Lora({ subsets: ['latin'], variable: '--font-body', weight: ['400', '500'], style: ['normal', 'italic'] });
 const dancingScript = Dancing_Script({ subsets: ['latin'], variable: '--font-accent', weight: ['500', '600', '700'] });
 
 export const metadata = {
-  title: 'Niyaz Unveiled — Writer',
-  description: 'Writer of small, true things and captivating poetry.',
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: `${AUTHOR_NAME} — Author of the Novel Coffee? | ${SITE_NAME}`,
+    template: `%s | ${AUTHOR_NAME}`,
+  },
+  description: `${AUTHOR_NAME} is the author of the romance novel Coffee? and writes short stories and poetry as ${SITE_NAME}.`,
+  applicationName: SITE_NAME,
+  authors: [{ name: AUTHOR_NAME, url: `${SITE_URL}/about` }],
+  creator: AUTHOR_NAME,
+  openGraph: {
+    ...OPEN_GRAPH_BASE,
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: [SHARE_IMAGE],
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -24,8 +40,9 @@ export default function RootLayout({ children }) {
               </Link>
               <nav className="nav-links" style={navLinksStyle}>
                 <Link href="/writing" className="nav-link" style={linkStyle}>Writing</Link>
+                <Link href="/about" className="nav-link" style={linkStyle}>About</Link>
                 <Link href="/feedback" className="nav-link" style={linkStyle}>Feedback</Link>
-                <Link href="/book" className="btn btn-primary nav-cta" style={navCtaStyle}>Get the book</Link>
+                <Link href="/coffee" className="btn btn-primary nav-cta" style={navCtaStyle}>Get the book</Link>
               </nav>
             </div>
           </header>
@@ -41,7 +58,8 @@ export default function RootLayout({ children }) {
                 <Link href="#top" style={brandStyle}>Niyaz <span style={brandSpanStyle}>Unveiled</span></Link>
                 <div className="footer-links-wrapper" style={footerLinksWrapperStyle}>
                   <Link href="/writing" className="footer-link" style={footerLinkStyle}>Stories & Poetry</Link>
-                  <Link href="/book" className="footer-link" style={footerLinkStyle}>The Book</Link>
+                  <Link href="/coffee" className="footer-link" style={footerLinkStyle}>Coffee? — The Novel</Link>
+                  <Link href="/about" className="footer-link" style={footerLinkStyle}>About Sk Niyaz Noor</Link>
                   <Link href="/feedback" className="footer-link" style={footerLinkStyle}>Feedback</Link>
                 </div>
                 <div className="social-links" style={socialStyle}>

@@ -4,13 +4,29 @@ import ProgressBar from '@/components/ProgressBar';
 import MarketingCTA from '@/components/MarketingCTA';
 import BackButton from '@/components/BackButton';
 import Comments from '@/components/Comments';
+import { AUTHOR_NAME, OPEN_GRAPH_BASE } from '@/lib/site';
 import './article.css';
 
 export async function generateMetadata({ params }) {
   const resolvedParams = await params;
   const postData = await getWritingData(resolvedParams.slug);
+  const path = `/writing/${resolvedParams.slug}`;
+  const description = postData.excerpt || `${postData.title} — a story by ${AUTHOR_NAME}.`;
+  const publishedTime = new Date(postData.date);
   return {
-    title: `${postData.title} | Niyaz Unveiled`,
+    title: postData.title,
+    description,
+    alternates: { canonical: path },
+    openGraph: {
+      ...OPEN_GRAPH_BASE,
+      type: 'article',
+      url: path,
+      title: postData.title,
+      description,
+      authors: [AUTHOR_NAME],
+      ...(isNaN(publishedTime) ? {} : { publishedTime: publishedTime.toISOString() }),
+      ...(postData.coverImage ? { images: [postData.coverImage] } : {}),
+    },
   };
 }
 
@@ -67,7 +83,7 @@ export default async function WritingPost({ params }) {
             <div className="sidebar-card">
               <h3>Support the Author</h3>
               <p>My debut novel <strong>Coffee</strong> is available now. Discover the story of Nirvit and Suprita.</p>
-              <Link href="/book" className="btn btn-primary" style={{ width: '100%', textAlign: 'center', marginTop: '1rem', padding: '0.6rem' }}>
+              <Link href="/coffee" className="btn btn-primary" style={{ width: '100%', textAlign: 'center', marginTop: '1rem', padding: '0.6rem' }}>
                 Get the Book
               </Link>
             </div>

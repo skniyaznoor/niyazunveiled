@@ -2,8 +2,9 @@ import { getSortedWritingsData } from '@/lib/markdown';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Writing | Niyaz Unveiled',
-  description: 'A collection of short stories, poetry, and serialized novels.',
+  title: 'Stories & Poetry',
+  description: 'Short stories, poetry, and serialized novels by Sk Niyaz Noor, author of Coffee? — including Echoes of Absence, Love Bridge, and The Adventures of Neil and Litu.',
+  alternates: { canonical: '/writing' },
 };
 
 export default function WritingIndex() {

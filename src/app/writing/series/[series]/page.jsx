@@ -1,9 +1,25 @@
 import { getSortedWritingsData, getAllSeriesSlugs } from '@/lib/markdown';
 import Link from 'next/link';
 import BackButton from '@/components/BackButton';
+import { AUTHOR_NAME, OPEN_GRAPH_BASE } from '@/lib/site';
 
 export async function generateStaticParams() {
   return getAllSeriesSlugs();
+}
+
+export async function generateMetadata({ params }) {
+  const { series } = await params;
+  const episodes = getSortedWritingsData().filter(post => post.seriesSlug === series);
+  if (episodes.length === 0) return {};
+  const seriesName = episodes[0].seriesName;
+  const path = `/writing/series/${series}`;
+  const description = `Read ${seriesName}, a ${episodes.length}-episode series by ${AUTHOR_NAME}.`;
+  return {
+    title: `${seriesName} — Series`,
+    description,
+    alternates: { canonical: path },
+    openGraph: { ...OPEN_GRAPH_BASE, type: 'website', url: path, title: seriesName, description },
+  };
 }
 
 export default async function SeriesPage({ params }) {
