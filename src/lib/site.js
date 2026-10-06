@@ -4,14 +4,14 @@ export const SITE_URL = 'https://niyazunveiled.com';
 export const SITE_NAME = 'Niyaz Unveiled';
 export const AUTHOR_NAME = 'Sk Niyaz Noor';
 
-// Spread into each page's openGraph — Next replaces (not merges) the parent's.
 export const SHARE_IMAGE = {
   url: '/og-coffee-novel-sk-niyaz-noor.jpg',
   width: 1200,
   height: 630,
-  alt: 'Coffee? — a novel by Sk Niyaz Noor',
+  alt: 'Coffee? - a novel by Sk Niyaz Noor',
 };
 
+// Spread into each page's openGraph — Next replaces (not merges) the parent's.
 export const OPEN_GRAPH_BASE = {
   siteName: SITE_NAME,
   locale: 'en_IN',
