@@ -3,19 +3,18 @@
 import { useState } from 'react';
 import Image from 'next/image';
 
-const COVER_SIZES = '(max-width: 768px) 90vw, 400px';
-
-export default function BookCoverFlip({ frontImage, backImage, preload = false }) {
+export default function BookCoverFlip({ frontImage, backImage, preload = false, maxWidth = 400, className = '' }) {
+  const coverSizes = `(max-width: 768px) 90vw, ${maxWidth}px`;
   const [isFlipped, setIsFlipped] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
   return (
     <div 
-      className="book-cover" 
+      className={`book-cover ${className}`.trim()}
       style={{ 
         position: 'relative', 
         width: '100%', 
-        maxWidth: '400px', 
+        maxWidth: `${maxWidth}px`, 
         margin: '0 auto', 
         perspective: '1500px', 
         cursor: 'pointer',
@@ -63,7 +62,7 @@ export default function BookCoverFlip({ frontImage, backImage, preload = false }
           backfaceVisibility: 'hidden',
           WebkitBackfaceVisibility: 'hidden'
         }}>
-          <Image src={frontImage} alt="Coffee? novel by Sk Niyaz Noor – front cover" fill sizes={COVER_SIZES} preload={preload} style={{ objectFit: 'cover' }} />
+          <Image src={frontImage} alt="Coffee? novel by Sk Niyaz Noor – front cover" fill sizes={coverSizes} preload={preload} style={{ objectFit: 'cover' }} />
           <div style={{ position: 'relative', zIndex: 2 }}>
             <span style={{ fontFamily: 'var(--font-body)', fontStyle: 'italic', fontSize: '0.85rem', opacity: 0.85, display: 'block', color: 'var(--paper-2)', textShadow: '0 2px 4px rgba(0,0,0,0.8)' }}>A love story</span>
           </div>
@@ -79,7 +78,7 @@ export default function BookCoverFlip({ frontImage, backImage, preload = false }
           WebkitBackfaceVisibility: 'hidden',
           transform: 'rotateY(180deg)'
         }}>
-          <Image src={backImage} alt="Coffee? novel by Sk Niyaz Noor – back cover blurb" fill sizes={COVER_SIZES} style={{ objectFit: 'cover' }} />
+          <Image src={backImage} alt="Coffee? novel by Sk Niyaz Noor – back cover blurb" fill sizes={coverSizes} style={{ objectFit: 'cover' }} />
         </div>
       </div>
     </div>

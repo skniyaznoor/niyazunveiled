@@ -52,10 +52,14 @@ const css = `
 }
 .store-edition:hover { background: var(--berry); border-color: var(--berry); color: var(--paper-2); }
 
-@media (max-width: 960px) {
+@media (max-width: 1100px) {
   .store-grid { grid-template-columns: 1fr; gap: 10px; }
   .store-card { flex-direction: row; align-items: center; justify-content: space-between; padding: 12px 14px; }
   .store-editions { flex: 0 0 auto; grid-template-columns: auto auto; }
   .store-edition { padding: 7px 14px; }
+}
+@media (max-width: 480px) {
+  .store-card { flex-direction: column; align-items: stretch; gap: 10px; }
+  .store-editions { grid-template-columns: 1fr 1fr; }
 }
 `;

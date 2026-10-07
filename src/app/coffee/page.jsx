@@ -27,18 +27,21 @@ export default function BookPage() {
   return (
     <>
       <JsonLd data={bookJsonLd} />
-      <section style={{ background: 'var(--paper-3)', position: 'relative', padding: '84px 0', minHeight: '80vh', display: 'flex', alignItems: 'center' }}>
-        <div className="container book-inner" style={{ display: 'grid', gridTemplateColumns: '0.8fr 1.2fr', gap: '64px', alignItems: 'center' }}>
+      <section className="coffee-hero">
+        <style>{css}</style>
+        <div className="container coffee-hero-inner">
 
           <BookCoverFlip 
             frontImage="/coffee/coffee-novel-sk-niyaz-noor-front-cover.jpg" 
             backImage="/coffee/coffee-novel-sk-niyaz-noor-back-cover.jpg" 
+            maxWidth={440}
+            className="coffee-cover"
             preload
           />
 
-          <div>
+          <div className="coffee-copy">
             <span className="eyebrow" style={{ color: 'var(--berry)' }}>My debut novel</span>
-            <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: '3.5rem', margin: '10px 0 20px', color: 'var(--ink)', lineHeight: '1.1' }}>Coffee?</h1>
+            <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(2.6rem, 6vw, 3.5rem)', margin: '10px 0 20px', color: 'var(--ink)', lineHeight: '1.1' }}>Coffee?</h1>
             <p style={{ fontFamily: 'var(--font-heading)', fontSize: '1.2rem', color: 'var(--ink-soft)', margin: '-8px 0 24px' }}>A novel by Sk Niyaz Noor</p>
             <p style={{ color: 'var(--ink-soft)', fontSize: '1.08rem', marginBottom: '32px', maxWidth: '52ch', lineHeight: '1.7' }}>
               Some stories begin long before we realize we are living them.
@@ -64,3 +67,15 @@ export default function BookPage() {
     </>
   );
 }
+
+const css = `
+.coffee-hero { background: var(--paper-3); position: relative; padding: 84px 0; min-height: 80vh; display: flex; align-items: center; overflow: hidden; }
+.coffee-hero-inner { width: 100%; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); gap: 56px; align-items: center; }
+.coffee-copy { min-width: 0; }
+
+@media (max-width: 900px) {
+  .coffee-hero { padding: 48px 0 64px; min-height: 0; }
+  .coffee-hero-inner { grid-template-columns: minmax(0, 1fr); gap: 40px; }
+  .coffee-cover { max-width: min(380px, 82vw) !important; }
+}
+`;

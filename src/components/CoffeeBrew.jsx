@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useId, useRef, useState } from 'react';
 import { STORES as CAFES } from '@/lib/site';
 
 const SIZES = [
@@ -22,12 +22,91 @@ const BREW_MS = 3600;
 const CUP_TOP = 70;
 const CUP_HEIGHT = 120;
 
+// Rendered twice (beside the ticket on desktop, inside it on mobile), so SVG ids must be unique.
+function Cup({ fill, brewing, ready }) {
+  const uid = `cb${useId().replace(/[^a-zA-Z0-9]/g, '')}`;
+  const levelY = CUP_TOP + CUP_HEIGHT - (fill / 100) * (CUP_HEIGHT - 8);
+
+  return (
+    <>
+      <svg viewBox="0 -4 260 224" className="cb-svg">
+        <defs>
+          <clipPath id={`${uid}-clip`}>
+            <path d="M44 70 L196 70 L184 172 Q180 190 160 190 L80 190 Q60 190 56 172 Z" />
+          </clipPath>
+          <linearGradient id={`${uid}-coffee`} x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#8a5a36" />
+            <stop offset="1" stopColor="#3b2213" />
+          </linearGradient>
+          <linearGradient id={`${uid}-mug`} x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stopColor="#fffbf4" />
+            <stop offset="0.7" stopColor="#f3e6d3" />
+            <stop offset="1" stopColor="#e2cfb4" />
+          </linearGradient>
+        </defs>
+
+        {/* Steam — curls into a heart when ready */}
+        <g className={`cb-steam ${ready ? 'is-on' : ''}`}>
+          <path className="s1" d="M95 60 C85 45 105 35 95 18" />
+          <path className="s2" d="M120 58 C110 40 130 30 120 10" />
+          <path className="s3" d="M145 60 C135 45 155 35 145 18" />
+        </g>
+        <path
+          className={`cb-heart ${ready ? 'is-on' : ''}`}
+          d="M120 30 C112 18 94 22 96 36 C98 48 120 58 120 58 C120 58 142 48 144 36 C146 22 128 18 120 30 Z"
+        />
+
+        {/* Pour stream */}
+        {brewing && <rect className="cb-stream" x="117" y="0" width="6" height={levelY} rx="3" />}
+
+        {/* Saucer */}
+        <ellipse cx="120" cy="200" rx="100" ry="14" fill="#e2cfb4" />
+        <ellipse cx="120" cy="197" rx="78" ry="8" fill="#efe1cc" />
+
+        {/* Handle */}
+        <path d="M190 95 C230 95 232 150 184 158" fill="none" stroke="#e2cfb4" strokeWidth="14" strokeLinecap="round" />
+
+        {/* Mug body */}
+        <path d="M44 70 L196 70 L184 172 Q180 190 160 190 L80 190 Q60 190 56 172 Z" fill={`url(#${uid}-mug)`} />
+
+        {/* Coffee */}
+        <g clipPath={`url(#${uid}-clip)`}>
+          <rect x="30" y={levelY} width="180" height="140" fill={`url(#${uid}-coffee)`} />
+          <g transform={`translate(0 ${levelY})`} style={{ opacity: fill > 0 ? 1 : 0 }}>
+            <path
+              className="cb-wave"
+              d="M0 0 Q15 -5 30 0 T60 0 T90 0 T120 0 T150 0 T180 0 T210 0 T240 0 T270 0 T300 0 T330 0 T360 0 V12 H0 Z"
+              fill="#a06b43"
+            />
+          </g>
+        </g>
+
+        {/* Rim */}
+        <ellipse cx="120" cy="70" rx="76" ry="7" fill="none" stroke="#e2cfb4" strokeWidth="3" />
+
+        {/* Label on mug */}
+        <text x="120" y="135" textAnchor="middle" className={`cb-mug-label ${fill > 55 ? 'is-lit' : ''}`}>
+          Coffee
+        </text>
+        <text x="120" y="152" textAnchor="middle" className={`cb-mug-sub ${fill > 55 ? 'is-lit' : ''}`}>
+          Sk Niyaz Noor
+        </text>
+      </svg>
+
+      <div className="cb-meter">
+        <span style={{ width: `${fill}%` }} />
+      </div>
+    </>
+  );
+}
+
 export default function CoffeeBrew() {
   const [size, setSize] = useState('paperback');
   const [cafe, setCafe] = useState('amazon');
   const [fill, setFill] = useState(0);
   const [brewing, setBrewing] = useState(false);
   const frameRef = useRef(null);
+  const miniStageRef = useRef(null);
 
   const ready = fill >= 100;
   const selectedCafe = CAFES.find(c => c.id === cafe);
@@ -39,6 +118,13 @@ export default function CoffeeBrew() {
   const brew = () => {
     if (brewing) return;
     const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const mini = miniStageRef.current;
+    if (mini && mini.offsetParent !== null) {
+      const { top, bottom } = mini.getBoundingClientRect();
+      if (top < 0 || bottom > window.innerHeight) {
+        mini.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'center' });
+      }
+    }
     if (reduceMotion) {
       setFill(100);
       return;
@@ -65,8 +151,6 @@ export default function CoffeeBrew() {
     setFill(0);
   };
 
-  const levelY = CUP_TOP + CUP_HEIGHT - (fill / 100) * (CUP_HEIGHT - 8);
-
   return (
     <section id="coffee-counter" className="cb-section">
       <style>{css}</style>
@@ -80,73 +164,7 @@ export default function CoffeeBrew() {
         <div className="cb-grid">
           {/* CUP */}
           <div className="cb-stage" aria-hidden="true">
-            <svg viewBox="0 -4 260 224" className="cb-svg">
-              <defs>
-                <clipPath id="cb-cup-clip">
-                  <path d="M44 70 L196 70 L184 172 Q180 190 160 190 L80 190 Q60 190 56 172 Z" />
-                </clipPath>
-                <linearGradient id="cb-coffee" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0" stopColor="#8a5a36" />
-                  <stop offset="1" stopColor="#3b2213" />
-                </linearGradient>
-                <linearGradient id="cb-mug" x1="0" y1="0" x2="1" y2="0">
-                  <stop offset="0" stopColor="#fffbf4" />
-                  <stop offset="0.7" stopColor="#f3e6d3" />
-                  <stop offset="1" stopColor="#e2cfb4" />
-                </linearGradient>
-              </defs>
-
-              {/* Steam — curls into a heart when ready */}
-              <g className={`cb-steam ${ready ? 'is-on' : ''}`}>
-                <path className="s1" d="M95 60 C85 45 105 35 95 18" />
-                <path className="s2" d="M120 58 C110 40 130 30 120 10" />
-                <path className="s3" d="M145 60 C135 45 155 35 145 18" />
-              </g>
-              <path
-                className={`cb-heart ${ready ? 'is-on' : ''}`}
-                d="M120 30 C112 18 94 22 96 36 C98 48 120 58 120 58 C120 58 142 48 144 36 C146 22 128 18 120 30 Z"
-              />
-
-              {/* Pour stream */}
-              {brewing && <rect className="cb-stream" x="117" y="0" width="6" height={levelY} rx="3" />}
-
-              {/* Saucer */}
-              <ellipse cx="120" cy="200" rx="100" ry="14" fill="#e2cfb4" />
-              <ellipse cx="120" cy="197" rx="78" ry="8" fill="#efe1cc" />
-
-              {/* Handle */}
-              <path d="M190 95 C230 95 232 150 184 158" fill="none" stroke="#e2cfb4" strokeWidth="14" strokeLinecap="round" />
-
-              {/* Mug body */}
-              <path d="M44 70 L196 70 L184 172 Q180 190 160 190 L80 190 Q60 190 56 172 Z" fill="url(#cb-mug)" />
-
-              {/* Coffee */}
-              <g clipPath="url(#cb-cup-clip)">
-                <rect x="30" y={levelY} width="180" height="140" fill="url(#cb-coffee)" />
-                <g transform={`translate(0 ${levelY})`} style={{ opacity: fill > 0 ? 1 : 0 }}>
-                  <path
-                    className="cb-wave"
-                    d="M0 0 Q15 -5 30 0 T60 0 T90 0 T120 0 T150 0 T180 0 T210 0 T240 0 T270 0 T300 0 T330 0 T360 0 V12 H0 Z"
-                    fill="#a06b43"
-                  />
-                </g>
-              </g>
-
-              {/* Rim */}
-              <ellipse cx="120" cy="70" rx="76" ry="7" fill="none" stroke="#e2cfb4" strokeWidth="3" />
-
-              {/* Label on mug */}
-              <text x="120" y="135" textAnchor="middle" className={`cb-mug-label ${fill > 55 ? 'is-lit' : ''}`}>
-                Coffee
-              </text>
-              <text x="120" y="152" textAnchor="middle" className={`cb-mug-sub ${fill > 55 ? 'is-lit' : ''}`}>
-                Sk Niyaz Noor
-              </text>
-            </svg>
-
-            <div className="cb-meter">
-              <span style={{ width: `${fill}%` }} />
-            </div>
+            <Cup fill={fill} brewing={brewing} ready={ready} />
           </div>
 
           {/* ORDER TICKET */}
@@ -189,6 +207,11 @@ export default function CoffeeBrew() {
                 ))}
               </div>
             </fieldset>
+
+            {/* On mobile the cup moves here so it stays in view while brewing */}
+            <div className="cb-mini-stage" aria-hidden="true" ref={miniStageRef}>
+              <Cup fill={fill} brewing={brewing} ready={ready} />
+            </div>
 
             <div className="cb-lines" aria-live="polite">
               {shownLines.length === 0 ? (
@@ -234,6 +257,7 @@ const css = `
 .cb-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
 
 .cb-stage { max-width: 380px; width: 100%; margin: 0 auto; }
+.cb-mini-stage { display: none; }
 .cb-svg { width: 100%; height: auto; display: block; overflow: visible; filter: drop-shadow(0 18px 24px rgba(59,38,28,0.16)); }
 .cb-mug-label { font-family: var(--font-accent), cursive; font-size: 30px; font-weight: 700; fill: var(--berry-dark); opacity: .35; transition: fill .6s ease, opacity .6s ease; }
 .cb-mug-sub { font-family: var(--font-body), serif; font-size: 9px; letter-spacing: .2em; text-transform: uppercase; fill: var(--berry-dark); opacity: .3; transition: fill .6s ease, opacity .6s ease; }
@@ -316,7 +340,10 @@ const css = `
   .cb-head { margin-bottom: 24px; }
   .cb-grid { grid-template-columns: 1fr; gap: 24px; }
   .cb-ticket { transform: none; padding: 24px 18px; }
-  .cb-stage { max-width: 240px; }
+  .cb-stage { display: none; }
+  .cb-mini-stage { display: block; max-width: 190px; margin: 0 auto; padding: 14px 0 4px; }
+  .cb-mini-stage .cb-meter { margin-top: 8px; max-width: 150px; }
+  .cb-ticket-title { margin-bottom: 14px; }
   .cb-options { grid-template-columns: 1fr; }
   .cb-options-cafe { grid-template-columns: repeat(3, 1fr); gap: 8px; }
 }
