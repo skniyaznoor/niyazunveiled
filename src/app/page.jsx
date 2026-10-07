@@ -5,6 +5,7 @@ import CoffeeBrew from '@/components/CoffeeBrew';
 
 import { getSortedWritingsData } from '@/lib/markdown';
 import JsonLd from '@/components/JsonLd';
+import EmailLink from '@/components/EmailLink';
 import { personJsonLd, websiteJsonLd } from '@/lib/site';
 
 export const metadata = {
@@ -45,7 +46,8 @@ export default function Home() {
             <img
               src="/Sunflowers-Photoroom.png"
               alt="You are my sunshine"
-              style={{ width: '100%', maxWidth: '480px', height: 'auto', display: 'block', transform: 'scale(1.3) translateY(5px)', position: 'relative', zIndex: 2 }}
+              className="hero-art-img"
+              style={{ width: '100%', maxWidth: '480px', height: 'auto', display: 'block', transform: 'scale(1.3) translateY(5px)', position: 'relative', zIndex: 2, pointerEvents: 'none' }}
             />
             {/* SVG OVERLAY for hearts, arrows, text, and outlines */}
             <svg className="hero-art-svg" viewBox="0 0 500 500" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', pointerEvents: 'none', zIndex: 3, overflow: 'visible' }}>
@@ -249,7 +251,7 @@ export default function Home() {
             <h2 style={{ marginBottom: '18px' }}>Hi, I'm Sk Niyaz Noor.</h2>
             <p style={{ color: 'var(--ink-soft)', marginBottom: '16px' }}>I'm your pocket-sized storyteller — a mini writer armed with a pen and a world of imagination far bigger than my frame. Since 2020, I've been writing short stories and poems that live in the space between a glance and a goodbye, chasing the feeling of love in all its messy, beautiful forms.</p>
             <p style={{ color: 'var(--ink-soft)', marginBottom: '16px' }}>Under the name Niyaz Unveiled, I've written everything from slow-burn romance to strange, mist-covered mysteries — but at the heart of it all is the same question: what does it really mean to love someone?</p>
-            <p style={{ color: 'var(--ink-soft)' }}>Want to reach out? Email me at <a href="mailto:niyazunveiled@gmail.com" style={{ color: 'var(--berry)', textDecoration: 'underline' }}>niyazunveiled@gmail.com</a>.</p>
+            <p style={{ color: 'var(--ink-soft)' }}>Want to reach out? Email me at <EmailLink style={{ color: 'var(--berry)', textDecoration: 'underline' }} />.</p>
             <div style={statRowStyle}>
               <div><strong style={statStrongStyle}>24+</strong><span style={statSpanStyle}>Stories & poems published</span></div>
               <div><strong style={statStrongStyle}>5+</strong><span style={statSpanStyle}>Years writing</span></div>

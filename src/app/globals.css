@@ -274,6 +274,13 @@ p {
     display: none !important;
   }
 
+  /* The desktop 1.3x scale spills over the hero buttons once stacked */
+  .hero-art-img {
+    transform: none !important;
+    max-width: 320px !important;
+    margin: 0 auto;
+  }
+
   /* Adjust nav */
   .nav-inner {
     flex-direction: column !important;

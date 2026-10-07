@@ -18,9 +18,45 @@ export const OPEN_GRAPH_BASE = {
   images: [SHARE_IMAGE],
 };
 
-export const AUTHOR_SAME_AS = [
-  'https://www.instagram.com/niyazunveiled',
-  'https://www.reddit.com/user/niyazunveiled',
+export const EMAIL = 'niyazunveiled@gmail.com';
+
+export const SOCIAL_LINKS = [
+  { name: 'Instagram', url: 'https://www.instagram.com/niyazunveiled' },
+  { name: 'Goodreads', url: 'https://www.goodreads.com/author/show/72747966.Sk_Niyaz_Noor' },
+  { name: 'Reddit', url: 'https://www.reddit.com/user/niyazunveiled' },
+];
+
+export const AUTHOR_SAME_AS = SOCIAL_LINKS.map((link) => link.url);
+
+// Where to buy each edition — shared by the /coffee page and the Coffee Counter.
+export const STORES = [
+  {
+    id: 'amazon',
+    name: 'Amazon',
+    logo: '/coffee/logo/Amazon_icon.png',
+    links: {
+      paperback: 'https://www.amazon.in/dp/B0HLG2VXFW',
+      hardcover: 'https://www.amazon.in/dp/B0HLG2SFPR',
+    },
+  },
+  {
+    id: 'notionpress',
+    name: 'NotionPress',
+    logo: '/coffee/logo/Notion_Press_Logo.png',
+    links: {
+      paperback: 'https://notionpress.com/in/read/coffee-1410198188/paperback',
+      hardcover: 'https://notionpress.com/in/read/coffee-1410198188',
+    },
+  },
+  {
+    id: 'flipkart',
+    name: 'Flipkart',
+    logo: '/coffee/logo/Flipkart-Emblem.png',
+    links: {
+      paperback: 'https://www.flipkart.com/coffee/p/itm193f5c5525efb?pid=9798907228979&lid=LSTBOK9798907228979KB1KO6&marketplace=FLIPKART&q=sk+niyaz+noor+novel&store=bks&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=cfad009b-9704-4485-810f-b4ae588ba57c.9798907228979.SEARCH&ppt=sp&ppn=sp&ssid=tpcdvuy9k00000001791002325925&qH=b335393142c419cd&ov_redirect=true&ov_redirect=true',
+      hardcover: 'https://www.flipkart.com/coffee/p/itm193f5c5525efb?pid=9798907228993&lid=LSTBOK9798907228993Y9DAG0&marketplace=FLIPKART&q=sk+niyaz+noor+novel&store=bks&srno=s_1_2&otracker=search&otracker1=search&fm=Search&iid=cfad009b-9704-4485-810f-b4ae588ba57c.9798907228993.SEARCH&ppt=sp&ppn=sp&ssid=tpcdvuy9k00000001791002325925&qH=b335393142c419cd&ov_redirect=true&ov_redirect=true',
+    },
+  },
 ];
 
 export const BOOK = {
@@ -63,7 +99,7 @@ export const personJsonLd = {
   image: `${SITE_URL}/profile/InShot_20260829_231327003.jpg`,
   jobTitle: 'Author',
   description: `${AUTHOR_NAME} is the author of the novel ${BOOK.title} and writes short stories and poetry as ${SITE_NAME}.`,
-  email: 'mailto:niyazunveiled@gmail.com',
+  email: `mailto:${EMAIL}`,
   sameAs: AUTHOR_SAME_AS,
 };
 

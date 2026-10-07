@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import JsonLd from '@/components/JsonLd';
-import { AUTHOR_NAME, AUTHOR_SAME_AS, BOOK, OPEN_GRAPH_BASE, personJsonLd } from '@/lib/site';
+import EmailLink from '@/components/EmailLink';
+import { AUTHOR_NAME, BOOK, SOCIAL_LINKS, OPEN_GRAPH_BASE, personJsonLd } from '@/lib/site';
 
 const description = `${AUTHOR_NAME} is the author of the debut romance novel Coffee? and has been writing short stories and poetry as Niyaz Unveiled since 2020.`;
 
@@ -55,10 +56,10 @@ export default function AboutPage() {
           </p>
 
           <h2 style={{ fontSize: '1.4rem', margin: '36px 0 14px' }}>Find {AUTHOR_NAME} online</h2>
-          <ul style={{ listStyle: 'none', padding: 0, display: 'grid', gap: '10px', color: 'var(--ink-soft)' }}>
-            <li>Email: <a href="mailto:niyazunveiled@gmail.com" style={linkStyle}>niyazunveiled@gmail.com</a></li>
-            {AUTHOR_SAME_AS.map(url => (
-              <li key={url}><a href={url} target="_blank" rel="noopener noreferrer me" style={linkStyle}>{url.replace('https://www.', '')}</a></li>
+          <ul style={{ listStyle: 'none', padding: 0, display: 'grid', gap: '10px', color: 'var(--ink-soft)', overflowWrap: 'anywhere' }}>
+            <li>Email: <EmailLink style={linkStyle} /></li>
+            {SOCIAL_LINKS.map(link => (
+              <li key={link.url}>{link.name}: <a href={link.url} target="_blank" rel="noopener noreferrer me" style={linkStyle}>{link.url.replace('https://www.', '').replace(/\/$/, '')}</a></li>
             ))}
           </ul>
 

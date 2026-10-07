@@ -2,7 +2,8 @@ import { Playfair_Display, Lora, Dancing_Script } from 'next/font/google';
 import './globals.css';
 import Link from 'next/link';
 import { AuthProvider } from '@/context/AuthContext';
-import { SITE_URL, SITE_NAME, AUTHOR_NAME, OPEN_GRAPH_BASE, SHARE_IMAGE } from '@/lib/site';
+import EmailLink from '@/components/EmailLink';
+import { SITE_URL, SITE_NAME, AUTHOR_NAME, OPEN_GRAPH_BASE, SHARE_IMAGE, SOCIAL_LINKS } from '@/lib/site';
 
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-heading', weight: ['400', '500', '600', '700'] });
 const lora = Lora({ subsets: ['latin'], variable: '--font-body', weight: ['400', '500'], style: ['normal', 'italic'] });
@@ -63,9 +64,10 @@ export default function RootLayout({ children }) {
                   <Link href="/feedback" className="footer-link" style={footerLinkStyle}>Feedback</Link>
                 </div>
                 <div className="social-links" style={socialStyle}>
-                  <a href="mailto:niyazunveiled@gmail.com" className="footer-link" style={footerLinkStyle}>Email</a>
-                  <a href="https://www.instagram.com/niyazunveiled" target="_blank" rel="noopener noreferrer" className="footer-link" style={footerLinkStyle}>Instagram</a>
-                  <a href="https://www.reddit.com/user/niyazunveiled" target="_blank" rel="noopener noreferrer" className="footer-link" style={footerLinkStyle}>Reddit</a>
+                  <EmailLink className="footer-link" style={footerLinkStyle}>Email</EmailLink>
+                  {SOCIAL_LINKS.map(link => (
+                    <a key={link.url} href={link.url} target="_blank" rel="noopener noreferrer" className="footer-link" style={footerLinkStyle}>{link.name}</a>
+                  ))}
                 </div>
               </div>
               <p style={copyrightStyle}>&copy; {new Date().getFullYear()} Niyaz Unveiled. Words made with tea and patience.</p>

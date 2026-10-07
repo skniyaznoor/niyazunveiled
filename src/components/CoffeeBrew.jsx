@@ -1,40 +1,11 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import { STORES as CAFES } from '@/lib/site';
 
 const SIZES = [
   { id: 'paperback', label: 'Regular', edition: 'Paperback', note: 'light & easy to carry' },
   { id: 'hardcover', label: 'Large', edition: 'Hardcover', note: 'rich, full-bodied, lasts forever' },
-];
-
-const CAFES = [
-  {
-    id: 'amazon',
-    name: 'Amazon',
-    logo: '/coffee/logo/Amazon_icon.png',
-    links: {
-      paperback: 'https://www.amazon.in/dp/B0HLG2VXFW',
-      hardcover: 'https://www.amazon.in/dp/B0HLG2SFPR',
-    },
-  },
-  {
-    id: 'notionpress',
-    name: 'NotionPress',
-    logo: '/coffee/logo/Notion_Press_Logo.png',
-    links: {
-      paperback: 'https://notionpress.com/in/read/coffee-1410198188/paperback',
-      hardcover: 'https://notionpress.com/in/read/coffee-1410198188',
-    },
-  },
-  {
-    id: 'flipkart',
-    name: 'Flipkart',
-    logo: '/coffee/logo/Flipkart-Emblem.png',
-    links: {
-      paperback: 'https://www.flipkart.com/coffee/p/itm193f5c5525efb?pid=9798907228979&lid=LSTBOK9798907228979KB1KO6&marketplace=FLIPKART&q=sk+niyaz+noor+novel&store=bks&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=cfad009b-9704-4485-810f-b4ae588ba57c.9798907228979.SEARCH&ppt=sp&ppn=sp&ssid=tpcdvuy9k00000001791002325925&qH=b335393142c419cd&ov_redirect=true&ov_redirect=true',
-      hardcover: 'https://www.flipkart.com/coffee/p/itm193f5c5525efb?pid=9798907228993&lid=LSTBOK9798907228993Y9DAG0&marketplace=FLIPKART&q=sk+niyaz+noor+novel&store=bks&srno=s_1_2&otracker=search&otracker1=search&fm=Search&iid=cfad009b-9704-4485-810f-b4ae588ba57c.9798907228993.SEARCH&ppt=sp&ppn=sp&ssid=tpcdvuy9k00000001791002325925&qH=b335393142c419cd&ov_redirect=true&ov_redirect=true',
-    },
-  },
 ];
 
 // Each line appears once the cup fills past its threshold.
@@ -109,7 +80,7 @@ export default function CoffeeBrew() {
         <div className="cb-grid">
           {/* CUP */}
           <div className="cb-stage" aria-hidden="true">
-            <svg viewBox="0 0 260 260" className="cb-svg">
+            <svg viewBox="0 -4 260 224" className="cb-svg">
               <defs>
                 <clipPath id="cb-cup-clip">
                   <path d="M44 70 L196 70 L184 172 Q180 190 160 190 L80 190 Q60 190 56 172 Z" />
@@ -203,12 +174,12 @@ export default function CoffeeBrew() {
 
             <fieldset className="cb-field" disabled={brewing}>
               <legend>2. Pick your café</legend>
-              <div className="cb-options">
+              <div className="cb-options cb-options-cafe">
                 {CAFES.map(c => (
                   <button
                     key={c.id}
                     type="button"
-                    className={`cb-opt cb-opt-row ${cafe === c.id ? 'is-active' : ''}`}
+                    className={`cb-opt cb-opt-cafe ${cafe === c.id ? 'is-active' : ''}`}
                     aria-pressed={cafe === c.id}
                     onClick={() => { setCafe(c.id); if (ready) reset(); }}
                   >
@@ -254,8 +225,8 @@ export default function CoffeeBrew() {
 }
 
 const css = `
-.cb-section { padding: 84px 0; background: radial-gradient(ellipse at 20% 40%, rgba(216,184,119,0.22), transparent 60%), var(--paper); }
-.cb-head { text-align: center; max-width: 640px; margin: 0 auto 44px; }
+.cb-section { padding: 72px 0; background: radial-gradient(ellipse at 20% 40%, rgba(216,184,119,0.22), transparent 60%), var(--paper); }
+.cb-head { text-align: center; max-width: 640px; margin: 0 auto 36px; }
 .cb-head h2 { font-size: clamp(2rem, 4vw, 2.8rem); margin: 8px 0 12px; }
 .cb-head h2 em { color: var(--berry); font-style: italic; }
 .cb-head p { color: var(--ink-soft); margin: 0; }
@@ -286,7 +257,7 @@ const css = `
 .cb-heart.is-on { opacity: .9; transform: scale(1) translateY(-18px); animation: cb-beat 1.6s ease-in-out 1.4s infinite; }
 @keyframes cb-beat { 0%,100% { transform: scale(1) translateY(-18px); } 50% { transform: scale(1.1) translateY(-20px); } }
 
-.cb-meter { height: 6px; border-radius: 999px; background: var(--paper-3); margin: 20px auto 0; max-width: 220px; overflow: hidden; }
+.cb-meter { height: 6px; border-radius: 999px; background: var(--paper-3); margin: 12px auto 0; max-width: 220px; overflow: hidden; }
 .cb-meter span { display: block; height: 100%; background: linear-gradient(90deg, var(--gold-soft), var(--berry)); }
 
 .cb-ticket {
@@ -322,10 +293,12 @@ const css = `
 .cb-opt strong { font-family: var(--font-heading), serif; font-size: 1.05rem; }
 .cb-opt span { font-size: .92rem; color: var(--berry); }
 .cb-opt small { font-size: .78rem; color: var(--ink-soft); font-style: italic; }
-.cb-opt-row { flex-direction: row; align-items: center; gap: 10px; }
-.cb-opt-row img { height: 22px; width: auto; object-fit: contain; }
+.cb-options-cafe { grid-template-columns: repeat(3, 1fr); }
+.cb-opt-cafe { align-items: center; text-align: center; gap: 6px; padding: 12px 8px; }
+.cb-opt-cafe img { height: 22px; width: auto; object-fit: contain; }
+.cb-opt-cafe strong { font-size: .95rem; }
 
-.cb-lines { min-height: 118px; margin: 6px 0 18px; padding: 12px 0; border-top: 1px dashed var(--line); }
+.cb-lines { min-height: 92px; margin: 4px 0 14px; padding: 12px 0 0; border-top: 1px dashed var(--line); }
 .cb-line { margin: 0 0 6px; font-style: italic; color: var(--ink-soft); animation: cb-in .5s ease both; }
 .cb-line.is-final { font-family: var(--font-heading), serif; font-style: normal; color: var(--ink); font-size: 1.08rem; margin-top: 10px; }
 .cb-hint { opacity: .7; }
@@ -339,10 +312,13 @@ const css = `
 .cb-rebrew { background: none; border: none; color: var(--ink-soft); text-decoration: underline; cursor: pointer; font-family: var(--font-body), serif; font-size: .9rem; }
 
 @media (max-width: 768px) {
-  .cb-grid { grid-template-columns: 1fr; gap: 32px; }
+  .cb-section { padding: 56px 0; }
+  .cb-head { margin-bottom: 24px; }
+  .cb-grid { grid-template-columns: 1fr; gap: 24px; }
   .cb-ticket { transform: none; padding: 24px 18px; }
-  .cb-stage { max-width: 280px; }
+  .cb-stage { max-width: 240px; }
   .cb-options { grid-template-columns: 1fr; }
+  .cb-options-cafe { grid-template-columns: repeat(3, 1fr); gap: 8px; }
 }
 @media (prefers-reduced-motion: reduce) {
   .cb-wave, .cb-steam.is-on path, .cb-heart.is-on, .cb-ready .cb-cta { animation: none; }
